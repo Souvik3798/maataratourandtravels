@@ -9,7 +9,7 @@ class Service extends Controller
 {
     public function index(){
         $services = ModelsService::all();
-        return view('service',['services'=>$services]);
+        return view('Service',['services'=>$services]);
     }
 
     public function details($id){

@@ -270,11 +270,11 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 </style>
 
 <div class="whatsapp_float">
-    <a href="https://wa.me/919531913980" target="_blank"><img src="{{asset('images/whatsappbase.png')}}" width="50px" class="whatsapp_float_btn"></a>
+    <a href="https://wa.me/9531913980" target="_blank"><img src="{{asset('images/whatsappbase.png')}}" width="50px" class="whatsapp_float_btn"></a>
 </div>
 
 <div class="callus_float">
-    <a href="tel:+91345332456789"><img src="{{asset('images/callus.png')}}" width="40px" class="callus_float_btn" alt="Call Us"></a>
+    <a href="tel:9933250564"><img src="{{asset('images/callus.png')}}" width="40px" class="callus_float_btn" alt="Call Us"></a>
 </div>
 
 <script src="{{asset('js/jquery-3.2.1.min.js')}}"></script>
