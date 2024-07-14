@@ -9,6 +9,6 @@ class TourLocation extends Controller
 {
     public function index($id){
         $location = ModelsTourLocation::find($id);
-        return view('Tourlocation',['location'=>$location]);
+        return view('TourLocation',['location'=>$location]);
     }
 }
