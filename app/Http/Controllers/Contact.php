@@ -12,12 +12,12 @@ class Contact extends Controller
     {
         $data = $request->only('name', 'email', 'subject', 'message', 'phone');
 
-        // Mail::to('souvikbarua693@gmail.com')->send(new TestEmail($data));
+        Mail::to('souvikbarua693@gmail.com')->send(new TestEmail($data));
 
-        Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
-            $m->from(env('MAIL_FROM_ADDRESS'), $request->name);
-            $m->to(env('MAIL_FROM_ADDRESS'), $request->name)->subject($request->subject);
-        });
+        // Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
+        //     $m->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));
+        //     $m->to(env('MAIL_FROM_ADDRESS'), $request->name)->subject($request->subject);
+        // });
 
         return back()->with('success', $data['name'] . ', Message sent successfully!');
     }
