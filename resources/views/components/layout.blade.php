@@ -32,9 +32,6 @@
         }
     }
 
-
-
-
     /* Ensure the logo maintains its aspect ratio and increase both height and width */
     .menu_content .logo.menu_logo img {
         height: 270px !important; /* Set the desired height */

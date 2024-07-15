@@ -92,7 +92,7 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<div class="offers_image_background" style="background-image:url({{asset('storage/'.$service->Image)}})"></div>
-										<div class="offer_name"><a href="single_listing.html">{{$service->Service }}</a></div>
+										<div class="offer_name"><a href="{{url('service-details/'.$service->id)}}">{{$service->Service }}</a></div>
 									</div>
 								</div>
 								<div class="col-lg-8">
