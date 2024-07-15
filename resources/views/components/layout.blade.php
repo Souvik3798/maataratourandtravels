@@ -16,6 +16,39 @@
 <link rel="stylesheet" type="text/css" href={{asset('styles/responsive.css')}}>
 <link rel="shortcut icon" type="image/x-icon" href={{asset('images/ABSsmall.png')}}>
 
+<style>
+    .logo img {
+        width: auto;  /* Let the browser calculate the width */
+        height: 100px;  /* Set a fixed height */
+        max-width: 100px;  /* Set a maximum width to avoid stretching */
+    }
+
+    @media (max-width: 767px) {
+        /* Adjust the size for mobile screens */
+        .logo img {
+            height: 20px;  /* Smaller height for mobile screens */
+            max-width: 50px;  /* Smaller max width for mobile screens */
+        }
+
+
+    /* Ensure the logo maintains its aspect ratio and increase both height and width */
+    .menu_content .logo.menu_logo img {
+        height: 270px !important; /* Set the desired height */
+        width: 250px !important;  /* Set the desired width */
+        object-fit: contain !important; /* Ensure the image fits within the dimensions without distortion */
+        display: block !important; /* Ensure it is treated as a block element */
+        max-width: none !important; /* Remove any max-width constraints */
+    }
+    .menu_content .logo.menu_logo {
+        width: auto !important;
+        display: block !important;
+    }
+
+
+
+}
+</style>
+
 </head>
 
 <body>
@@ -48,20 +81,20 @@
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
+                </div>
+            </div>
 
-		<!-- Main Navigation -->
+            <!-- Main Navigation -->
 
-		<nav class="main_nav">
-			<div class="container">
-				<div class="row">
-					<div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-						<div class="logo_container">
-							<div class="logo"><a href="{{url('/')}}"><img src={{asset('images/ABS.png')}} alt="" height="100px" class="rounded"></a></div>
-						</div>
-						<div class="main_nav_container ml-auto">
-							<ul class="main_nav_list">
+            <nav class="main_nav">
+                <div class="container">
+                    <div class="row">
+                        <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container">
+                                <div class="logo"><a href="{{url('/')}}"><img src={{asset('images/ABS.png')}} alt="" class="img-thumbnail" ></a></div>
+                            </div>
+                            <div class="main_nav_container ml-auto">
+                                <ul class="main_nav_list">
 								<li class="main_nav_item"><a href="{{url('/')}}">home</a></li>
 								<li class="main_nav_item"><a href="{{url('about/')}}">about us</a></li>
 								<li class="main_nav_item"><a href="{{url('service/')}}">Services</a></li>
@@ -104,18 +137,21 @@
 
 	</header>
 
-	<div class="menu trans_500">
-		<div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
-			<div class="menu_close_container"><div class="menu_close"></div></div>
-			<div class="logo menu_logo"><a href="#"><img src={{asset('images/ABSsmall.png')}} alt=""></a></div>
-			<ul>
-				<li class="menu_item"><a href="{{url('/')}}">home</a></li>
-				<li class="menu_item"><a href="{{url('about/')}}">about us</a></li>
-				<li class="menu_item"><a href="{{url('service/')}}">Services</a></li>
-				<li class="menu_item"><a href="{{url('contact/')}}">contact</a></li>
-			</ul>
-		</div>
-	</div>
+
+    <div class="menu trans_500">
+        <div class="menu_content d-flex flex-column align-items-center justify-content-center text-center">
+            <div class="menu_close_container"><div class="menu_close"></div></div>
+            <div class="logo menu_logo">
+                <a href="#"><img src="{{asset('images/ABSsmall.png')}}" alt="" style="height: 270px !important; width: 250px !important; object-fit: contain !important;"></a>
+            </div>
+            <ul>
+                <li class="menu_item"><a href="{{url('/')}}">home</a></li>
+                <li class="menu_item"><a href="{{url('about/')}}">about us</a></li>
+                <li class="menu_item"><a href="{{url('service/')}}">Services</a></li>
+                <li class="menu_item"><a href="{{url('contact/')}}">contact</a></li>
+            </ul>
+        </div>
+    </div>
 
 
 

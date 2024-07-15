@@ -199,46 +199,105 @@
 						<div class="owl-carousel owl-theme cta_slider">
 
 							<!-- CTA Slider Item -->
-							<div class="owl-item cta_item text-center">
-								<div class="cta_title">maldives deluxe package</div>
-								<div class="rating_r rating_r_4">
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-								</div>
-								<p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
-								<div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
-							</div>
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">Havelock Island</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">I had an amazing experience with Andaman Blue Ocean on my recent trip to Havelock Island. The team was incredibly professional and ensured we had the best possible time. The scuba diving session was a highlight, with crystal clear waters and vibrant marine life. The accommodations were top-notch, and every detail was taken care of. Highly recommend them for anyone looking to explore the Andamans!</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
 
-							<!-- CTA Slider Item -->
-							<div class="owl-item cta_item text-center">
-								<div class="cta_title">maldives deluxe package</div>
-								<div class="rating_r rating_r_4">
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-								</div>
-								<p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
-								<div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
-							</div>
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">Neil Island</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">Andaman Blue Ocean organized a fantastic trip for us to Neil Island. The coral reefs were stunning, and the snorkeling trip was well-organized with excellent guides. The only downside was the ferry ride, which was a bit crowded. However, the beautiful beaches and friendly service made up for it. Overall, a wonderful experience!</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
 
-							<!-- CTA Slider Item -->
-							<div class="owl-item cta_item text-center">
-								<div class="cta_title">maldives deluxe package</div>
-								<div class="rating_r rating_r_4">
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-									<i></i>
-								</div>
-								<p class="cta_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eu convallis tortor. Suspendisse potenti. In faucibus massa arcu, vitae cursus mi hendrerit nec. Proin bibendum, augue faucibus tincidunt ultrices, tortor augue gravida lectus, et efficitur enim justo vel ligula.</p>
-								<div class="button cta_button"><div class="button_bcg"></div><a href="#">book now<span></span><span></span><span></span></a></div>
-							</div>
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">Port Blair</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">Our family vacation to Port Blair was made memorable thanks to Andaman Blue Ocean. They arranged a perfect itinerary that included visits to the Cellular Jail, Ross Island, and Corbyn's Cove Beach. The local guides were knowledgeable and very accommodating. We especially appreciated the attention to detail and the seamless transportation arrangements.</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
+
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">Baratang Island</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">Exploring the limestone caves and the mangrove creeks at Baratang Island was an unforgettable experience, thanks to Andaman Blue Ocean. The tour was well-planned, and our guide was excellent in explaining the unique geological formations. The only minor issue was the early morning start, but it was worth it for the breathtaking views. Highly recommend this company!</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
+
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">North Bay Island</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">Andaman Blue Ocean provided an outstanding trip to North Bay Island. The underwater sea walk was a surreal experience, and the vibrant coral reefs were a sight to behold. The staff was extremely helpful and ensured our safety throughout. The picnic lunch on the beach was delicious and well-organized. I can't wait to book my next adventure with them!</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
+
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center">
+                                <div class="cta_title">Radhanagar Beach</div>
+                                <div class="rating_r rating_r_4">
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                    <i></i>
+                                </div>
+                                <p class="cta_text">Our day trip to Radhanagar Beach with Andaman Blue Ocean was absolutely perfect. Known as one of the best beaches in Asia, it lived up to its reputation. The clear blue waters and soft white sand were heavenly. The company arranged a comfortable cabana for us to relax and enjoy the view. The highlight was the sunset – truly a mesmerizing experience. I highly recommend their services for a hassle-free and enjoyable vacation.</p>
+                                <div class="button cta_button">
+                                    <div class="button_bcg"></div>
+                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                </div>
+                            </div>
+
 
 						</div>
 
