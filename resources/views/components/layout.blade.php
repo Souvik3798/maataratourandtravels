@@ -17,18 +17,22 @@
 <link rel="shortcut icon" type="image/x-icon" href={{asset('images/ABSsmall.png')}}>
 
 <style>
-    .logo img {
-        width: auto;  /* Let the browser calculate the width */
-        height: 100px;  /* Set a fixed height */
-        max-width: 100px;  /* Set a maximum width to avoid stretching */
+    .logo_container .logo img {
+        height: auto;  /* Auto-adjusts the height according to the width */
+        width: auto;   /* Auto-adjusts the width according to the height */
+        max-height: 120px;  /* Max height adjusted down from previous setting */
+        max-width: 180px;  /* Slightly reduces max width */
+        object-fit: contain; /* Ensures the logo is scaled without being cropped */
     }
 
     @media (max-width: 767px) {
-        /* Adjust the size for mobile screens */
-        .logo img {
-            height: 20px;  /* Smaller height for mobile screens */
-            max-width: 50px;  /* Smaller max width for mobile screens */
+        .logo_container .logo img {
+            max-height: 60px;  /* Smaller max height for mobile for better proportion */
+            max-width: 140px;  /* Smaller max width for mobile to fit better */
         }
+    }
+
+
 
 
     /* Ensure the logo maintains its aspect ratio and increase both height and width */
