@@ -638,7 +638,7 @@
                     arrow.style.transform = 'translateX(4px)';
                 });
                 button.addEventListener('mouseout', function() {
-                    button.style.background = 'linear-gradient(45deg, #00796b, #004d40)';
+                    button.style.background = 'linear-gradient(45deg, #6A1B9A, #8E24AA)';
                     var arrow = button.querySelector('span');
                     arrow.style.transform = 'translateX(0)';
                 });
