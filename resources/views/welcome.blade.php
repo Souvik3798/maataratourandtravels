@@ -531,7 +531,10 @@
                                     {{$hotel->Location}}
                                 </div>
                                 <div style="margin-top: 10px;">
-                                    <a href="{{url('hotel/'.$hotel->id)}}" style="display: inline-block; padding: 10px 20px; background-color: #00796b; color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em;">More</a>
+                                    <a href="{{url('hotel/'.$hotel->id)}}" style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #00796b, #004d40); color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em; position: relative; transition: background 0.3s ease;">
+                                        More
+                                        <span style="display: inline-block; margin-left: 8px; transition: transform 0.3s ease;">&rarr;</span>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -621,6 +624,23 @@
                 });
                 title.addEventListener('mouseout', function() {
                     title.style.color = '#00796b';
+                });
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var buttons = document.querySelectorAll('a[style*="background: linear-gradient"]');
+            buttons.forEach(function(button) {
+                button.addEventListener('mouseover', function() {
+                    button.style.background = 'linear-gradient(45deg, #004d40, #00796b)';
+                    var arrow = button.querySelector('span');
+                    arrow.style.transform = 'translateX(4px)';
+                });
+                button.addEventListener('mouseout', function() {
+                    button.style.background = 'linear-gradient(45deg, #00796b, #004d40)';
+                    var arrow = button.querySelector('span');
+                    arrow.style.transform = 'translateX(0)';
                 });
             });
         });
