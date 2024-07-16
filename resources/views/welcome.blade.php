@@ -523,7 +523,7 @@
                                     <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #6A1B9A;">
                                         <a href="{{url('hotel/'.$hotel->id)}}" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{$hotel->Hotel}}</a>
                                     </div>
-                                    <div class="trending_price" style="font-size: 1.1em; color: #FFD600; margin-top: 10px;">
+                                    <div class="trending_price" style="font-size: 1.1em; color: #a78b00; margin-top: 10px;">
                                         From ₹.{{$hotel->Price}}/-
                                     </div>
                                 </div>
