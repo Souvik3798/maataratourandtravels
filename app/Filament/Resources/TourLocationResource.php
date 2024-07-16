@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\TextInput;
-use Filament\Forms\Components\TextArea;
+use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\ImageColumn;
 use Filament\Tables\Columns\TextareaColumn;
 use Illuminate\Support\Facades\Storage;
@@ -40,7 +40,7 @@ class TourLocationResource extends Resource
                 ->required(),
                 TextInput::make('Location')
                 ->required(),
-                TextArea::make('Description')
+                Textarea::make('Description')
                 ->required()
                 ->rows(10)
                 ->cols(20),
