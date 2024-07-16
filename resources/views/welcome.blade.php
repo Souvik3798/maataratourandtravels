@@ -513,8 +513,8 @@
                 @endphp
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
-                    <div class="col s12 m6 l3" style="flex: 1 1 22%; max-width: 22%; margin: 10px; box-sizing: border-box;">
-                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff;">
+                    <div class="col s12 m6 l3" style="flex: 1 1 22%; max-width: 22%; margin: 10px; box-sizing: border-box; display: flex;">
+                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
                             <div class="card-image" style="overflow: hidden;">
                                 <img src="{{('storage/'.$hotel->Image)}}" alt="" style="width: 100%; height: auto; transition: transform 0.3s ease; border-radius: 10px 10px 0 0;">
                             </div>
@@ -536,6 +536,7 @@
             </div>
         </div>
     </div>
+
 
 
 	<div class="contact">
