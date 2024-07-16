@@ -1,48 +1,7 @@
 <x-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
 
-    <style>
-        .trending_item {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .trending_item:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        }
-        .trending_image img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-            transition: transform 0.3s ease;
-        }
-        .trending_image:hover img {
-            transform: scale(1.05);
-        }
-        .trending_content {
-            text-align: center;
-            padding: 15px;
-        }
-        .trending_title a {
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #00796b;
-            transition: color 0.3s ease;
-        }
-        .trending_title a:hover {
-            color: #004d40;
-        }
-        .trending_price {
-            font-size: 1.1em;
-            color: #ff6f00;
-            margin-top: 10px;
-        }
-        .trending_location {
-            font-size: 0.9em;
-            color: #757575;
-            margin-top: 5px;
-        }
-    </style>
+
 
     <!-- Home -->
 
@@ -555,17 +514,21 @@
                 @endphp
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
-                    <div class="container">
-                        <div class="row">
-                            <div class="col s12 m6 l3">
-                                <div class="card trending_item">
-                                    <div class="card-image trending_image">
-                                        <img src="{{('storage/'.$hotel->Image)}}" alt="">
+                    <div class="container" style="margin-top: 20px; display: flex; flex-wrap: wrap;">
+                        <div class="col s12 m6 l3" style="flex: 1 1 25%; max-width: 25%; padding: 10px; box-sizing: border-box;">
+                            <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff;">
+                                <div class="card-image" style="overflow: hidden;">
+                                    <img src="{{('storage/'.$hotel->Image)}}" alt="" style="width: 100%; height: auto; transition: transform 0.3s ease; border-radius: 10px 10px 0 0;">
+                                </div>
+                                <div class="card-content" style="text-align: center; padding: 15px;">
+                                    <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #00796b;">
+                                        <a href="{{url('hotel/'.$hotel->id)}}" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{$hotel->Hotel}}</a>
                                     </div>
-                                    <div class="card-content trending_content">
-                                        <div class="trending_title"><a href="{{url('hotel/'.$hotel->id)}}">{{$hotel->Hotel}}</a></div>
-                                        <div class="trending_price">From ₹.{{$hotel->Price}}/-</div>
-                                        <div class="trending_location">{{$hotel->Location}}</div>
+                                    <div class="trending_price" style="font-size: 1.1em; color: #ff6f00; margin-top: 10px;">
+                                        From ₹.{{$hotel->Price}}/-
+                                    </div>
+                                    <div class="trending_location" style="font-size: 0.9em; color: #757575; margin-top: 5px;">
+                                        {{$hotel->Location}}
                                     </div>
                                 </div>
                             </div>
@@ -612,7 +575,7 @@
 	</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const successMessage = "{{ session('success') }}";
@@ -620,6 +583,42 @@
                 // Display the SweetAlert dialog with the message
                 swal("Thank You!", successMessage + "    Will Contact You Soon", "success");
             }
+        });
+    </script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var cards = document.querySelectorAll('.card');
+            cards.forEach(function(card) {
+                card.addEventListener('mouseover', function() {
+                    card.style.transform = 'translateY(-10px)';
+                    card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+                });
+                card.addEventListener('mouseout', function() {
+                    card.style.transform = 'translateY(0)';
+                    card.style.boxShadow = 'none';
+                });
+            });
+
+            var images = document.querySelectorAll('.card-image img');
+            images.forEach(function(img) {
+                img.addEventListener('mouseover', function() {
+                    img.style.transform = 'scale(1.05)';
+                });
+                img.addEventListener('mouseout', function() {
+                    img.style.transform = 'scale(1)';
+                });
+            });
+
+            var titles = document.querySelectorAll('.trending_title a');
+            titles.forEach(function(title) {
+                title.addEventListener('mouseover', function() {
+                    title.style.color = '#004d40';
+                });
+                title.addEventListener('mouseout', function() {
+                    title.style.color = '#00796b';
+                });
+            });
         });
     </script>
 </x-layout>
