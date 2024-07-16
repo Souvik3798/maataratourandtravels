@@ -599,11 +599,11 @@
             cards.forEach(function(card) {
                 card.addEventListener('mouseover', function() {
                     card.style.transform = 'translateY(-10px)';
-                    card.style.boxShadow = '0 10px 20px rgba(0, 0, 0, 0.2)';
+                    card.style.boxShadow = '0 10px 20px rgba(106, 27, 154, 0.5)';
                 });
                 card.addEventListener('mouseout', function() {
                     card.style.transform = 'translateY(0)';
-                    card.style.boxShadow = 'none';
+                    card.style.boxShadow = '0 2px 5px rgba(106, 27, 154, 0.3)';
                 });
             });
 
