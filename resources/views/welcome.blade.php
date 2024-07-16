@@ -158,7 +158,7 @@
                         $locations = \App\Models\TourLocation::all();
                     @endphp
                     @foreach ($locations as $location)
-                        <div class="col-lg-4 intro_col">
+                        <div class="col-lg-4 intro_col" style="padding-bottom: 10px">
                             <div class="intro_item">
                                 <div class="intro_item_overlay"></div>
                                 <div class="intro_item_background" style="background-image:url({{asset('storage/'.$location->image_path)}})"></div>
