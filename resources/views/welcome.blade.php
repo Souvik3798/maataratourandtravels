@@ -530,6 +530,9 @@
                                 <div class="trending_location" style="font-size: 0.9em; color: #757575; margin-top: 5px;">
                                     {{$hotel->Location}}
                                 </div>
+                                <div style="margin-top: 10px;">
+                                    <a href="{{url('hotel/'.$hotel->id)}}" style="display: inline-block; padding: 10px 20px; background-color: #00796b; color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em;">More</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -538,6 +541,7 @@
             </div>
         </div>
     </div>
+
 
 
 
