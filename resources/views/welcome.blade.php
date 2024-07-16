@@ -514,8 +514,8 @@
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
                     <div class="col s12 m6 l3" style="flex: 1 1 22%; max-width: 22%; margin: 10px; box-sizing: border-box; display: flex;">
-                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 100%;">
-                            <div class="card-image" style="overflow: hidden; height: 200px; display: flex; align-items: center; justify-content: center;">
+                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%; height: 350px;">
+                            <div class="card-image" style="overflow: hidden; height: 50%; display: flex; align-items: center; justify-content: center;">
                                 <img src="{{('storage/'.$hotel->Image)}}" alt="" style="max-width: 100%; max-height: 100%; transition: transform 0.3s ease; border-radius: 10px 10px 0 0; object-fit: cover;">
                             </div>
                             <div class="card-content" style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
@@ -538,9 +538,6 @@
             </div>
         </div>
     </div>
-
-
-
 
 	<div class="contact">
 		<div class="contact_background" style="background-image:url(images/contact.png)"></div>
