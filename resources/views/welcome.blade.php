@@ -1,5 +1,48 @@
 <x-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" rel="stylesheet">
+
+    <style>
+        .trending_item {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .trending_item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+        .trending_image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+        .trending_image:hover img {
+            transform: scale(1.05);
+        }
+        .trending_content {
+            text-align: center;
+            padding: 15px;
+        }
+        .trending_title a {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #00796b;
+            transition: color 0.3s ease;
+        }
+        .trending_title a:hover {
+            color: #004d40;
+        }
+        .trending_price {
+            font-size: 1.1em;
+            color: #ff6f00;
+            margin-top: 10px;
+        }
+        .trending_location {
+            font-size: 0.9em;
+            color: #757575;
+            margin-top: 5px;
+        }
+    </style>
 
     <!-- Home -->
 
@@ -512,13 +555,19 @@
                 @endphp
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
-                    <div class="col-lg-3 col-sm-6">
-                        <div class="trending_item clearfix">
-                            <div class="trending_image"><img src="{{('storage/'.$hotel->Image)}}" alt=""></div>
-                            <div class="trending_content">
-                                <div class="trending_title"><a href="{{url('hotel/'.$hotel->id)}}">{{$hotel->Hotel}}</a></div>
-                                <div class="trending_price">From ₹.{{$hotel->Price}}/-</div>
-                                <div class="trending_location">{{$hotel->Location}}</div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col s12 m6 l3">
+                                <div class="card trending_item">
+                                    <div class="card-image trending_image">
+                                        <img src="{{('storage/'.$hotel->Image)}}" alt="">
+                                    </div>
+                                    <div class="card-content trending_content">
+                                        <div class="trending_title"><a href="{{url('hotel/'.$hotel->id)}}">{{$hotel->Hotel}}</a></div>
+                                        <div class="trending_price">From ₹.{{$hotel->Price}}/-</div>
+                                        <div class="trending_location">{{$hotel->Location}}</div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -563,6 +612,7 @@
 	</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             const successMessage = "{{ session('success') }}";
