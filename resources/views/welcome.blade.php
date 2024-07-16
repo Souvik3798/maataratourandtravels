@@ -514,13 +514,13 @@
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
                     <div class="col s12 m6 l3" style="flex: 1 1 22%; max-width: 22%; margin: 10px; box-sizing: border-box; display: flex;">
-                        <div class="card" style="box-shadow: 0 2px 5px rgba(106, 27, 154, 0.3); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: linear-gradient(45deg, #6A1B9A, #FF6F61); display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
+                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
                             <div class="card-image" style="overflow: hidden; height: 150px; display: flex; align-items: center; justify-content: center;">
                                 <img src="{{('storage/'.$hotel->Image)}}" alt="" style="width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;">
                             </div>
                             <div class="card-content" style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; font-family: 'TheWorldFont', sans-serif;">
                                 <div style="flex-grow: 1;">
-                                    <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #ffffff;">
+                                    <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #6A1B9A;">
                                         <a href="{{url('hotel/'.$hotel->id)}}" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{$hotel->Hotel}}</a>
                                     </div>
                                     <div class="trending_price" style="font-size: 1.1em; color: #FFB300; margin-top: 10px;">
@@ -544,6 +544,10 @@
             </div>
         </div>
     </div>
+
+
+
+
 
 	<div class="contact">
 		<div class="contact_background" style="background-image:url(images/contact.png)"></div>
