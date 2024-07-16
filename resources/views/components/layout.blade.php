@@ -194,7 +194,7 @@
 						<div class="footer_content footer_blog">
 
                             @php
-                                  $locations = \App\Models\TourLocation::all();
+                                 $locations = \App\Models\TourLocation::inRandomOrder()->take(5)->get();
                             @endphp
                             @foreach ($locations as $location)
                                 <!-- Footer blog item -->
