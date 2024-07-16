@@ -518,12 +518,12 @@
                             <div class="card-image" style="overflow: hidden; height: 150px; display: flex; align-items: center; justify-content: center;">
                                 <img src="{{('storage/'.$hotel->Image)}}" alt="" style="width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;">
                             </div>
-                            <div class="card-content" style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
+                            <div class="card-content" style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; font-family: 'TheWorldFont', sans-serif;">
                                 <div style="flex-grow: 1;">
                                     <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #6A1B9A;">
                                         <a href="{{url('hotel/'.$hotel->id)}}" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{$hotel->Hotel}}</a>
                                     </div>
-                                    <div class="trending_price" style="font-size: 1.1em; color: #ffd500; margin-top: 10px;">
+                                    <div class="trending_price" style="font-size: 1.1em; color: #FFB300; margin-top: 10px;">
                                         From ₹.{{$hotel->Price}}/-
                                     </div>
                                 </div>
