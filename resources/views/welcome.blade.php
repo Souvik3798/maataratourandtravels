@@ -623,7 +623,7 @@
                     title.style.color = '#004d40';
                 });
                 title.addEventListener('mouseout', function() {
-                    title.style.color = '#00796b';
+                    title.style.color = '#6A1B9A';
                 });
             });
         });
