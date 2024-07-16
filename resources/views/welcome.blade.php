@@ -504,7 +504,7 @@
         <div class="container">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section_title">Luxurious Accommodations at Our Partner Hotels</h2>
+                    <h2 class="section_title" style="color: #6A1B9A;">Luxurious Accommodations at Our Partner Hotels</h2>
                 </div>
             </div>
             <div class="row trending_container" style="display: flex; flex-wrap: wrap; justify-content: space-between;">
@@ -520,18 +520,18 @@
                             </div>
                             <div class="card-content" style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between;">
                                 <div style="flex-grow: 1;">
-                                    <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #00796b;">
+                                    <div class="trending_title" style="font-size: 1.2em; font-weight: bold; color: #6A1B9A;">
                                         <a href="{{url('hotel/'.$hotel->id)}}" style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{$hotel->Hotel}}</a>
                                     </div>
-                                    <div class="trending_price" style="font-size: 1.1em; color: #ff6f00; margin-top: 10px;">
+                                    <div class="trending_price" style="font-size: 1.1em; color: #FFD600; margin-top: 10px;">
                                         From ₹.{{$hotel->Price}}/-
                                     </div>
                                 </div>
-                                <div class="trending_location" style="font-size: 0.9em; color: #757575; margin-top: 5px;">
+                                <div class="trending_location" style="font-size: 0.9em; color: #9575CD; margin-top: 5px;">
                                     {{$hotel->Location}}
                                 </div>
                                 <div style="margin-top: 10px;">
-                                    <a href="{{url('hotel/'.$hotel->id)}}" style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #00796b, #004d40); color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em; position: relative; transition: background 0.3s ease;">
+                                    <a href="{{url('hotel/'.$hotel->id)}}" style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #6A1B9A, #8E24AA); color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em; position: relative; transition: background 0.3s ease;">
                                         More
                                         <span style="display: inline-block; margin-left: 8px; transition: transform 0.3s ease;">&rarr;</span>
                                     </a>
