@@ -33,6 +33,7 @@
 
         .test_slider_container {
             margin-top: 30px;
+            position: relative;
         }
 
         .test_item {
@@ -45,19 +46,32 @@
             flex-direction: column;
             justify-content: space-between;
             height: 100%;
+            position: relative;
         }
 
         .test_image img {
             width: 100%;
-            height: 200px; /* Adjust this value to control the height of the image */
+            height: 200px;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
 
-        .test_icon img {
+        .test_icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: #ffa500;
+            border-radius: 50%;
+            padding: 10px;
             width: 50px;
-            margin: 15px auto;
-            display: block;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test_icon img {
+            width: 24px;
         }
 
         .test_content_container {
@@ -121,13 +135,14 @@
 
         @media (max-width: 768px) {
             .test_image img {
-                height: 150px; /* Adjust this value for smaller screens */
+                height: 150px;
             }
 
             .test_name, .test_quote_title a, .test_quote_text {
                 font-size: 0.9em;
             }
         }
+
 
     </style>
 
@@ -625,6 +640,7 @@
 
         </div>
     </div>
+
 
 
 	<div class="trending">
