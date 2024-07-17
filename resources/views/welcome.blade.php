@@ -706,7 +706,7 @@
                                     </ul>
                                 </div>
                                 <div class="offers_link" style="margin-top: 15px;">
-                                    <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #0066cc; font-weight: bold;">Read More</a>
+                                    <a href="{{ url('package/'.$package->id) }}">Read More</a>
                                 </div>
                             </div>
                         </div>
