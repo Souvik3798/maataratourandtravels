@@ -446,6 +446,7 @@
 					<li class="home_slider_custom_dot active"><div></div>01.</li>
 					<li class="home_slider_custom_dot"><div></div>02.</li>
 					<li class="home_slider_custom_dot"><div></div>03.</li>
+                    <li class="home_slider_custom_dot"><div></div>04.</li>
 				</ul>
 			</div>
 
