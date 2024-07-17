@@ -275,6 +275,22 @@
             transform: translateY(-5px); /* Lift text slightly */
         }
 
+        .offers_link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0066cc; /* Background color */
+            color: white; /* Text color */
+            border-radius: 5px; /* Rounded corners */
+            text-decoration: none; /* Remove underline */
+            transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+            font-weight: bold;
+        }
+
+        .offers_link a:hover {
+            background-color: #004999; /* Darker background on hover */
+            transform: translateY(-5px); /* Slight lift on hover */
+        }
+
         @media (max-width: 768px) {
             .offers_col {
                 width: 100%;
