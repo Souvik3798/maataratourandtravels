@@ -218,7 +218,7 @@
             bottom: 10px;
             background: rgba(255, 166, 0, 0.73);
             padding: 5px 10px;
-            border-radius: 5px;
+            border-radius: 0 5px 5px 0;
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
