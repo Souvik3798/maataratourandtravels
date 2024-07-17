@@ -574,7 +574,7 @@
                                 <div class="col-lg-6" style="padding: 0; height: 100%;">
                                     <div class="offers_image_container" style="position: relative; height: 100%;">
                                         <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}'); background-size: cover; background-position: center; height: 100%;"></div>
-                                        <div class="offer_name" style="position: absolute; bottom: 10px; left: 10px; background: rgba(255, 255, 255, 0.7); padding: 5px 10px; border-radius: 5px;">
+                                        <div class="offer_name" style="position: absolute; bottom: 10px; left: 10px; background: rgba(255, 255, 255, 0.7); padding: 5px 10px; border-radius: 5px; z-index: 1;">
                                             <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #333; font-weight: bold;">{{ $package->Name }}</a>
                                         </div>
                                     </div>
@@ -612,6 +612,7 @@
             </div>
         </div>
     </div>
+
 
 
 	<!-- Testimonials -->
