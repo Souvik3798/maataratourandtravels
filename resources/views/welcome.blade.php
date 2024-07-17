@@ -554,13 +554,13 @@
 	<!-- Offers -->
 
 	<div class="offers">
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<h2 class="section_title">the best Packages</h2>
-				</div>
-			</div>
-			<div class="row offers_items">
+        <div class="container" style="max-width: 1200px; margin: auto;">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">The Best Packages</h2>
+                </div>
+            </div>
+            <div class="row offers_items">
 
                 @php
                     $packages = \App\Models\Package::all();
@@ -568,50 +568,51 @@
 
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
-                    <div class="col-lg-6 offers_col">
-                        <div class="offers_item">
+                    <div class="col-lg-6 offers_col" style="margin-bottom: 20px;">
+                        <div class="offers_item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
                             <div class="row">
-                                <div class="col-lg-6">
-                                    <div class="offers_image_container">
-                                        <div class="offers_image_background" style="background-image:url({{('storage/'.$package->Image)}})"></div>
-                                        <div class="offer_name"><a href="{{url('package/'.$package->id)}}">{{$package->Name}}</a></div>
+                                <div class="col-lg-6" style="padding: 0;">
+                                    <div class="offers_image_container" style="position: relative;">
+                                        <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}'); background-size: cover; background-position: center; height: 100%; min-height: 250px;"></div>
+                                        <div class="offer_name" style="position: absolute; bottom: 10px; left: 10px; background: rgba(255, 255, 255, 0.7); padding: 5px 10px; border-radius: 5px;">
+                                            <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #333; font-weight: bold;">{{ $package->Name }}</a>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6">
+                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px;">
                                     <div class="offers_content">
-                                        <div class="offers_price">₹.{{$package->Price}}/-</div>
-                                        <div class="rating_r rating_r_4 offers_rating">
-                                            <i></i>
-                                            <i></i>
-                                            <i></i>
-                                            <i></i>
-                                            <i></i>
+                                        <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
+                                        <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
+                                            @for ($i = 0; $i < 5; $i++)
+                                                @if ($i < 4)
+                                                    <i class="fas fa-star"></i>
+                                                @else
+                                                    <i class="far fa-star"></i>
+                                                @endif
+                                            @endfor
                                         </div>
-                                        <p class="offers_text" style="text-align: justify">{{$package->Description}}.</p>
+                                        <p class="offers_text" style="text-align: justify; margin: 15px 0;">{{ $package->Description }}.</p>
                                         <div class="offers_icons">
-                                            <ul class="offers_icons_list">
-                                                <li class="offers_icons_item"><img src="{{asset('images/post.png')}}" alt=""></li>
-                                                <li class="offers_icons_item"><img src="{{asset('images/compass.png')}}" alt=""></li>
-                                                <li class="offers_icons_item"><img src="{{asset('images/bicycle.png')}}" alt=""></li>
-                                                <li class="offers_icons_item"><img src="{{asset('images/sailboat.png')}}" alt=""></li>
+                                            <ul class="offers_icons_list" style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
+                                                <li class="offers_icons_item"><img src="{{ asset('images/post.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                                <li class="offers_icons_item"><img src="{{ asset('images/compass.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                                <li class="offers_icons_item"><img src="{{ asset('images/bicycle.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                                <li class="offers_icons_item"><img src="{{ asset('images/sailboat.png') }}" alt="" style="width: 24px; height: 24px;"></li>
                                             </ul>
                                         </div>
-                                        <div class="offers_link"><a href="{{url('package/'.$package->id)}}">read more</a></div>
+                                        <div class="offers_link" style="margin-top: 15px;">
+                                            <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #0066cc; font-weight: bold;">Read More</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 @endforeach
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-
-			</div>
-		</div>
-	</div>
 
 	<!-- Testimonials -->
 
