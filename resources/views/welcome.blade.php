@@ -217,11 +217,11 @@
             position: absolute;
             bottom: 10px;
             left: 10px;
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(255, 166, 0, 0.73);
             padding: 5px 10px;
             border-radius: 5px;
             z-index: 10;
-            color: #333;
+            color: #fffbfb;
             font-weight: bold;
             display: block;
             transition: background 0.3s, transform 0.3s; /* Add transition for smooth background and transform change */
