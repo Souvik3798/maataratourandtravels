@@ -632,40 +632,34 @@
                     <!-- Offers Item -->
                     <div class="col-lg-6 offers_col">
                         <div class="offers_item">
-                            <div class="row" style="flex: 1;">
-                                <div class="col-lg-6" style="padding: 0; height: 100%;">
-                                    <div class="offers_image_container">
-                                        <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}');"></div>
-                                        <div class="offer_name">
-                                            <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: inherit;">{{ $package->Name }}</a>
-                                        </div>
-                                    </div>
+                            <div class="offers_image_container">
+                                <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}');"></div>
+                                <div class="offer_name">
+                                    <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: inherit;">{{ $package->Name }}</a>
                                 </div>
-                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px;">
-                                    <div class="offers_content">
-                                        <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
-                                        <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
-                                            @for ($i = 0; $i < 5; $i++)
-                                                @if ($i < 4)
-                                                    <i class="fas fa-star"></i>
-                                                @else
-                                                    <i class="far fa-star"></i>
-                                                @endif
-                                            @endfor
-                                        </div>
-                                        <p class="offers_text" style="text-align: justify; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;">{{ $package->Description }}.</p>
-                                        <div class="offers_icons">
-                                            <ul class="offers_icons_list" style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
-                                                <li class="offers_icons_item"><img src="{{ asset('images/post.png') }}" alt="" style="width: 24px; height: 24px;"></li>
-                                                <li class="offers_icons_item"><img src="{{ asset('images/compass.png') }}" alt="" style="width: 24px; height: 24px;"></li>
-                                                <li class="offers_icons_item"><img src="{{ asset('images/bicycle.png') }}" alt="" style="width: 24px; height: 24px;"></li>
-                                                <li class="offers_icons_item"><img src="{{ asset('images/sailboat.png') }}" alt="" style="width: 24px; height: 24px;"></li>
-                                            </ul>
-                                        </div>
-                                        <div class="offers_link" style="margin-top: 15px;">
-                                            <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #0066cc; font-weight: bold;">Read More</a>
-                                        </div>
-                                    </div>
+                            </div>
+                            <div class="offers_content">
+                                <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
+                                <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
+                                    @for ($i = 0; $i < 5; $i++)
+                                        @if ($i < 4)
+                                            <i class="fas fa-star"></i>
+                                        @else
+                                            <i class="far fa-star"></i>
+                                        @endif
+                                    @endfor
+                                </div>
+                                <p class="offers_text" style="text-align: justify; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;">{{ $package->Description }}</p>
+                                <div class="offers_icons">
+                                    <ul class="offers_icons_list" style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
+                                        <li class="offers_icons_item"><img src="{{ asset('images/post.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/compass.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/bicycle.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/sailboat.png') }}" alt="" style="width: 24px; height: 24px;"></li>
+                                    </ul>
+                                </div>
+                                <div class="offers_link" style="margin-top: 15px;">
+                                    <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #0066cc; font-weight: bold;">Read More</a>
                                 </div>
                             </div>
                         </div>
