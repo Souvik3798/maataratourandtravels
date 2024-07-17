@@ -392,164 +392,178 @@
 	<!-- CTA -->
 
 	<div class="cta">
-		<!-- Image by https://unsplash.com/@thanni -->
-		<div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+        <!-- Image by https://unsplash.com/@thanni -->
+        <div class="cta_background" style="background-image:url('images/cta.jpg'); background-size: cover; background-position: center;"></div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col">
+        <div class="container" style="position: relative; z-index: 1;">
+            <div class="row">
+                <div class="col">
 
-					<!-- CTA Slider -->
+                    <!-- CTA Slider -->
 
-					<div class="cta_slider_container">
-						<div class="owl-carousel owl-theme cta_slider">
+                    <div class="cta_slider_container">
+                        <div class="owl-carousel owl-theme cta_slider">
 
-							<!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">Havelock Island</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">Havelock Island</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #E0E0E0;">☆</i>
                                 </div>
-                                <p class="cta_text">I had an amazing experience with Andaman Blue Ocean on my recent trip to Havelock Island. The team was incredibly professional and ensured we had the best possible time. The scuba diving session was a highlight, with crystal clear waters and vibrant marine life. The accommodations were top-notch, and every detail was taken care of. Highly recommend them for anyone looking to explore the Andamans!</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">I had an amazing experience with Andaman Blue Ocean on my recent trip to Havelock Island. The team was incredibly professional and ensured we had the best possible time. The scuba diving session was a highlight, with crystal clear waters and vibrant marine life. The accommodations were top-notch, and every detail was taken care of. Highly recommend them for anyone looking to explore the Andamans!</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">Neil Island</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">Neil Island</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #E0E0E0;">☆</i>
                                 </div>
-                                <p class="cta_text">Andaman Blue Ocean organized a fantastic trip for us to Neil Island. The coral reefs were stunning, and the snorkeling trip was well-organized with excellent guides. The only downside was the ferry ride, which was a bit crowded. However, the beautiful beaches and friendly service made up for it. Overall, a wonderful experience!</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
-                                </div>
-                            </div>
-
-                            <!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">Port Blair</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                                <p class="cta_text">Our family vacation to Port Blair was made memorable thanks to Andaman Blue Ocean. They arranged a perfect itinerary that included visits to the Cellular Jail, Ross Island, and Corbyn's Cove Beach. The local guides were knowledgeable and very accommodating. We especially appreciated the attention to detail and the seamless transportation arrangements.</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">Andaman Blue Ocean organized a fantastic trip for us to Neil Island. The coral reefs were stunning, and the snorkeling trip was well-organized with excellent guides. The only downside was the ferry ride, which was a bit crowded. However, the beautiful beaches and friendly service made up for it. Overall, a wonderful experience!</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">Baratang Island</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">Port Blair</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
                                 </div>
-                                <p class="cta_text">Exploring the limestone caves and the mangrove creeks at Baratang Island was an unforgettable experience, thanks to Andaman Blue Ocean. The tour was well-planned, and our guide was excellent in explaining the unique geological formations. The only minor issue was the early morning start, but it was worth it for the breathtaking views. Highly recommend this company!</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
-                                </div>
-                            </div>
-
-                            <!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">North Bay Island</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                </div>
-                                <p class="cta_text">Andaman Blue Ocean provided an outstanding trip to North Bay Island. The underwater sea walk was a surreal experience, and the vibrant coral reefs were a sight to behold. The staff was extremely helpful and ensured our safety throughout. The picnic lunch on the beach was delicious and well-organized. I can't wait to book my next adventure with them!</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">Our family vacation to Port Blair was made memorable thanks to Andaman Blue Ocean. They arranged a perfect itinerary that included visits to the Cellular Jail, Ross Island, and Corbyn's Cove Beach. The local guides were knowledgeable and very accommodating. We especially appreciated the attention to detail and the seamless transportation arrangements.</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
                                 </div>
                             </div>
 
                             <!-- CTA Slider Item -->
-                            <div class="owl-item cta_item text-center">
-                                <div class="cta_title">Radhanagar Beach</div>
-                                <div class="rating_r rating_r_4">
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
-                                    <i></i>
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">Baratang Island</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #E0E0E0;">☆</i>
                                 </div>
-                                <p class="cta_text">Our day trip to Radhanagar Beach with Andaman Blue Ocean was absolutely perfect. Known as one of the best beaches in Asia, it lived up to its reputation. The clear blue waters and soft white sand were heavenly. The company arranged a comfortable cabana for us to relax and enjoy the view. The highlight was the sunset – truly a mesmerizing experience. I highly recommend their services for a hassle-free and enjoyable vacation.</p>
-                                <div class="button cta_button">
-                                    <div class="button_bcg"></div>
-                                    <a href="#">book now<span></span><span></span><span></span></a>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">Exploring the limestone caves and the mangrove creeks at Baratang Island was an unforgettable experience, thanks to Andaman Blue Ocean. The tour was well-planned, and our guide was excellent in explaining the unique geological formations. The only minor issue was the early morning start, but it was worth it for the breathtaking views. Highly recommend this company!</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
                                 </div>
                             </div>
 
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">North Bay Island</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                </div>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">Andaman Blue Ocean provided an outstanding trip to North Bay Island. The underwater sea walk was a surreal experience, and the vibrant coral reefs were a sight to behold. The staff was extremely helpful and ensured our safety throughout. The picnic lunch on the beach was delicious and well-organized. I can't wait to book my next adventure with them!</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
+                                </div>
+                            </div>
 
-						</div>
+                            <!-- CTA Slider Item -->
+                            <div class="owl-item cta_item text-center" style="background: rgba(255, 255, 255, 0.8); padding: 20px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+                                <div class="cta_title" style="font-size: 2em; font-weight: bold; margin-bottom: 10px;">Radhanagar Beach</div>
+                                <div class="rating_r rating_r_4" style="display: flex; justify-content: center; margin-bottom: 15px;">
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                    <i style="color: #FFD700;">★</i>
+                                </div>
+                                <p class="cta_text" style="font-size: 1em; color: #333;">Our day trip to Radhanagar Beach with Andaman Blue Ocean was absolutely perfect. Known as one of the best beaches in Asia, it lived up to its reputation. The clear blue waters and soft white sand were heavenly. The company arranged a comfortable cabana for us to relax and enjoy the view. The highlight was the sunset – truly a mesmerizing experience. I highly recommend their services for a hassle-free and enjoyable vacation.</p>
+                                <div class="button cta_button" style="margin-top: 15px;">
+                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                        book now
+                                        <span style="display: inline-block; margin-left: 5px;">→</span>
+                                    </a>
+                                </div>
+                            </div>
 
-						<!-- CTA Slider Nav - Prev -->
-						<div class="cta_slider_nav cta_slider_prev">
-							<svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-								<defs>
-									<linearGradient id='cta_grad_prev'>
-										<stop offset='0%' stop-color='#fa9e1b'/>
-										<stop offset='100%' stop-color='#8d4fff'/>
-									</linearGradient>
-								</defs>
-								<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z"/>
-								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-								11.042,18.219 "/>
-							</svg>
-						</div>
+                        </div>
 
-						<!-- CTA Slider Nav - Next -->
-						<div class="cta_slider_nav cta_slider_next">
-							<svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-								<defs>
-									<linearGradient id='cta_grad_next'>
-										<stop offset='0%' stop-color='#fa9e1b'/>
-										<stop offset='100%' stop-color='#8d4fff'/>
-									</linearGradient>
-								</defs>
-							<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z"/>
-							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-							17.046,15.554 "/>
-							</svg>
-						</div>
+                        <!-- CTA Slider Nav - Prev -->
+                        <div class="cta_slider_nav cta_slider_prev" style="position: absolute; top: 50%; left: -30px; transform: translateY(-50%); cursor: pointer; z-index: 1000;">
+                            <svg version="1.1" id="Layer_4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+                                <defs>
+                                    <linearGradient id='cta_grad_prev'>
+                                        <stop offset='0%' stop-color='#fa9e1b'/>
+                                        <stop offset='100%' stop-color='#8d4fff'/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                    C22.545,2,26,5.541,26,9.909V23.091z"/>
+                                <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
+                                    11.042,18.219 "/>
+                            </svg>
+                        </div>
 
-					</div>
+                        <!-- CTA Slider Nav - Next -->
+                        <div class="cta_slider_nav cta_slider_next" style="position: absolute; top: 50%; right: -30px; transform: translateY(-50%); cursor: pointer; z-index: 1000;">
+                            <svg version="1.1" id="Layer_5" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+                                <defs>
+                                    <linearGradient id='cta_grad_next'>
+                                        <stop offset='0%' stop-color='#fa9e1b'/>
+                                        <stop offset='100%' stop-color='#8d4fff'/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                    C22.545,2,26,5.541,26,9.909V23.091z"/>
+                                <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
+                                    17.046,15.554 "/>
+                            </svg>
+                        </div>
 
-				</div>
-			</div>
-		</div>
+                    </div>
 
-	</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
 
 	<!-- Offers -->
 
