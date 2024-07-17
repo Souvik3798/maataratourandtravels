@@ -92,12 +92,12 @@
 								<div class="col-lg-3 col-1680-4">
 									<div class="offers_image_container">
 										<div class="offers_image_background" style="background-image:url({{asset('storage/'.$service->Image)}})"></div>
-										<div class="offer_name"><a href="{{url('service-details/'.$service->id)}}">{{$service->Service }}</a></div>
+										<div class="offer_name"><a href="{{url('service-details/'.$service->id)}}">Price On Demand</a></div>
 									</div>
 								</div>
 								<div class="col-lg-8">
 									<div class="offers_content">
-										<div class="offers_price">Price<span>On Demand</span></div>
+										<div class="offers_price">{{$service->Service }}</div>
 										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
 											<i></i>
 											<i></i>
