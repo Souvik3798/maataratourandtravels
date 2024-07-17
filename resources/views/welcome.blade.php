@@ -216,6 +216,7 @@
         .offer_name {
             position: absolute;
             bottom: 10px;
+            font-size: 20px
             left: 10px;
             background: rgba(255, 166, 0, 0.73);
             padding: 5px 10px;
