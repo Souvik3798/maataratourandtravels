@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 400px; /* Increased height */
+    height: 500px; /* Increased height */
     position: relative;
 }
 
@@ -99,9 +99,13 @@
     font-size: 1.2em;
     color: #fff; /* Changed to white for better contrast */
     font-weight: bold;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(0, 0, 0, 0.7); /* Changed background for better readability */
     padding: 5px 10px;
     border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 .test_quote_title a {
@@ -162,6 +166,7 @@
         font-size: 0.9em;
     }
 }
+
     </style>
 
 
