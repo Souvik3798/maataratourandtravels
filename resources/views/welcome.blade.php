@@ -209,8 +209,7 @@
         .offers_image_container {
             position: relative;
             width: 100%;
-            padding-top: 100%; /* Aspect ratio of 1:1 for square shape */
-            overflow: hidden; /* Ensure the image doesn't overflow */
+            height: 200px; /* Fixed height for consistency */
         }
 
         .offer_name {
@@ -227,21 +226,16 @@
         }
 
         .offers_image_background {
-            position: absolute;
-            top: 0;
-            left: 0;
+            background-size: cover;
+            background-position: center;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Adjust to cover the entire container */
         }
 
         .offers_col {
             margin-bottom: 20px;
             display: flex;
             width: 100%;
-            flex-basis: calc(50% - 20px);
-            margin-right: 10px;
-            margin-left: 10px;
         }
 
         .offers_item {
@@ -252,7 +246,8 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            height: 100%; /* Ensure height to fit content */
+            height: auto; /* Changed to auto */
+            min-height: 400px; /* Ensure a minimum height */
         }
 
         .offers_content {
@@ -264,8 +259,6 @@
         @media (max-width: 768px) {
             .offers_col {
                 width: 100%;
-                margin-right: 0;
-                margin-left: 0;
             }
 
             .offers_item {
@@ -281,6 +274,7 @@
             .offers_col {
                 flex: 1 0 45%; /* Adjust the width for desktop view */
                 max-width: 45%;
+                margin: 2.5%;
             }
         }
     </style>
