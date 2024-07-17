@@ -99,11 +99,13 @@
             font-size: 1.5em;
             color: #fff;
             font-weight: bold;
-            background: rgba(179, 178, 178, 0.8);
+            background: rgba(255, 255, 255, 0.8);
             padding: 10px 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
+            z-index: 11; /* Ensure it stays above other elements */
+            position: relative;
         }
 
         /* Hover effect for price section */
@@ -176,6 +178,7 @@
                 font-size: 0.9em;
             }
         }
+
     </style>
 
 
