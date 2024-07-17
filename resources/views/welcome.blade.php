@@ -1,6 +1,33 @@
 <x-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
 
+    <style>
+        .trending_item {
+            flex: 1 1 22%;
+            max-width: 22%;
+        }
+
+        @media (max-width: 1200px) {
+            .trending_item {
+                flex: 1 1 30%;
+                max-width: 30%;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .trending_item {
+                flex: 1 1 45%;
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .trending_item {
+                flex: 1 1 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
 
 
     <!-- Home -->
@@ -544,38 +571,6 @@
             </div>
         </div>
     </div>
-
-    <style>
-        .trending_item {
-            flex: 1 1 22%;
-            max-width: 22%;
-        }
-
-        @media (max-width: 1200px) {
-            .trending_item {
-                flex: 1 1 30%;
-                max-width: 30%;
-            }
-        }
-
-        @media (max-width: 992px) {
-            .trending_item {
-                flex: 1 1 45%;
-                max-width: 45%;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .trending_item {
-                flex: 1 1 100%;
-                max-width: 100%;
-            }
-        }
-    </style>
-
-
-
-
 
 	<div class="contact">
 		<div class="contact_background" style="background-image:url(images/contact.png)"></div>
