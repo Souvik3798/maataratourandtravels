@@ -27,6 +27,108 @@
                 max-width: 100%;
             }
         }
+
+
+        /* activities */
+
+        .test_slider_container {
+            margin-top: 30px;
+        }
+
+        .test_item {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .test_image img {
+            width: 100%;
+            height: 200px; /* Adjust this value to control the height of the image */
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .test_icon img {
+            width: 50px;
+            margin: 15px auto;
+            display: block;
+        }
+
+        .test_content_container {
+            padding: 15px;
+        }
+
+        .test_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .test_item_info {
+            margin-bottom: 15px;
+        }
+
+        .test_name {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .test_quote_title a {
+            font-size: 1.4em;
+            color: #6A1B9A;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .test_quote_title a:hover {
+            color: #FFB300;
+        }
+
+        .test_quote_text {
+            font-size: 1em;
+            color: #666;
+            margin-top: 10px;
+        }
+
+        .owl-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test_slider_nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .test_slider_prev {
+            left: 0;
+        }
+
+        .test_slider_next {
+            right: 0;
+        }
+
+        @media (max-width: 768px) {
+            .test_image img {
+                height: 150px; /* Adjust this value for smaller screens */
+            }
+
+            .test_name, .test_quote_title a, .test_quote_text {
+                font-size: 0.9em;
+            }
+        }
+
     </style>
 
 
@@ -440,21 +542,20 @@
 	<!-- Testimonials -->
 
 	<div class="testimonials">
-		<div class="test_border"></div>
-		<div class="container">
-			<div class="row">
-				<div class="col text-center">
-					<h2 class="section_title">Explore Our Range of Activities</h2>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col">
+        <div class="test_border"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="section_title">Explore Our Range of Activities</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
 
-					<!-- Testimonials Slider -->
+                    <!-- Testimonials Slider -->
 
-					<div class="test_slider_container">
-						<div class="owl-carousel owl-theme test_slider">
-
+                    <div class="test_slider_container">
+                        <div class="owl-carousel owl-theme test_slider">
 
                             @php
                                 $activities = \App\Models\Activity::all();
@@ -469,7 +570,6 @@
                                             <div class="test_content">
                                                 <div class="test_item_info">
                                                     <div class="test_name">₹.{{$activity->pricing}}/-</div>
-                                                    {{-- <div class="test_date"></div> --}}
                                                 </div>
                                                 <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}" style="color: white">{{$activity->title}}</a></div>
                                                 <p class="test_quote_text">{{$activity->description}}</p>
@@ -480,52 +580,52 @@
 
                             @endforeach
 
+                        </div>
 
-						</div>
+                        <!-- Testimonials Slider Nav - Prev -->
+                        <div class="test_slider_nav test_slider_prev">
+                            <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+                                <defs>
+                                    <linearGradient id='test_grad_prev'>
+                                        <stop offset='0%' stop-color='#fa9e1b'/>
+                                        <stop offset='100%' stop-color='#8d4fff'/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                    C22.545,2,26,5.541,26,9.909V23.091z"/>
+                                <polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
+                                    11.042,18.219 "/>
+                            </svg>
+                        </div>
 
-						<!-- Testimonials Slider Nav - Prev -->
-						<div class="test_slider_nav test_slider_prev">
-							<svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-								width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-								<defs>
-									<linearGradient id='test_grad_prev'>
-										<stop offset='0%' stop-color='#fa9e1b'/>
-										<stop offset='100%' stop-color='#8d4fff'/>
-									</linearGradient>
-								</defs>
-								<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-								M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-								C22.545,2,26,5.541,26,9.909V23.091z"/>
-								<polygon class="nav_arrow" fill="#F3F6F9" points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-								11.042,18.219 "/>
-							</svg>
-						</div>
+                        <!-- Testimonials Slider Nav - Next -->
+                        <div class="test_slider_nav test_slider_next">
+                            <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                 width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
+                                <defs>
+                                    <linearGradient id='test_grad_next'>
+                                        <stop offset='0%' stop-color='#fa9e1b'/>
+                                        <stop offset='100%' stop-color='#8d4fff'/>
+                                    </linearGradient>
+                                </defs>
+                                <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
+                                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                    C22.545,2,26,5.541,26,9.909V23.091z"/>
+                                <polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
+                                    17.046,15.554 "/>
+                            </svg>
+                        </div>
 
-						<!-- Testimonials Slider Nav - Next -->
-						<div class="test_slider_nav test_slider_next">
-							<svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-							width="28px" height="33px" viewBox="0 0 28 33" enable-background="new 0 0 28 33" xml:space="preserve">
-								<defs>
-									<linearGradient id='test_grad_next'>
-										<stop offset='0%' stop-color='#fa9e1b'/>
-										<stop offset='100%' stop-color='#8d4fff'/>
-									</linearGradient>
-								</defs>
-							<path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-							M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-							C22.545,2,26,5.541,26,9.909V23.091z"/>
-							<polygon class="nav_arrow" fill="#F3F6F9" points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-							17.046,15.554 "/>
-							</svg>
-						</div>
+                    </div>
 
-					</div>
+                </div>
+            </div>
 
-				</div>
-			</div>
+        </div>
+    </div>
 
-		</div>
-	</div>
 
 	<div class="trending">
         <div class="container">
