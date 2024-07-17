@@ -206,7 +206,8 @@
 
         .offers_image_container {
             position: relative;
-            height: 100%;
+            width: 100%;
+            height: 200px; /* Fixed height for consistency */
         }
 
         .offer_name {
@@ -219,13 +220,14 @@
             z-index: 10;
             color: #333;
             font-weight: bold;
+            display: block;
         }
 
         .offers_image_background {
             background-size: cover;
             background-position: center;
-            height: 100%;
             width: 100%;
+            height: 100%;
         }
 
         .offers_col {
@@ -242,7 +244,6 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            height: 400px;
         }
 
         .offers_content {
