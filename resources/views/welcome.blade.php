@@ -788,4 +788,27 @@
             });
         });
     </script>
+    <script>
+        $(document).ready(function(){
+            $(".test_slider").owlCarousel({
+                items: 3, // Number of items to display
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [$('.test_slider_prev'),$('.test_slider_next')],
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 2
+                    },
+                    1000: {
+                        items: 3
+                    }
+                }
+            });
+        });
+    </script>
+
 </x-layout>
