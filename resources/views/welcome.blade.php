@@ -569,17 +569,17 @@
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
                     <div class="col-lg-6 offers_col" style="margin-bottom: 20px; display: flex;">
-                        <div class="offers_item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column;">
+                        <div class="offers_item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column; height: 400px;">
                             <div class="row" style="flex: 1;">
-                                <div class="col-lg-6" style="padding: 0;">
+                                <div class="col-lg-6" style="padding: 0; height: 100%;">
                                     <div class="offers_image_container" style="position: relative; height: 100%;">
-                                        <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}'); background-size: cover; background-position: center; height: 100%; min-height: 250px;"></div>
+                                        <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}'); background-size: cover; background-position: center; height: 100%;"></div>
                                         <div class="offer_name" style="position: absolute; bottom: 10px; left: 10px; background: rgba(255, 255, 255, 0.7); padding: 5px 10px; border-radius: 5px;">
                                             <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: #333; font-weight: bold;">{{ $package->Name }}</a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px;">
+                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px; overflow: hidden;">
                                     <div class="offers_content" style="flex: 1;">
                                         <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
                                         <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
@@ -591,7 +591,7 @@
                                                 @endif
                                             @endfor
                                         </div>
-                                        <p class="offers_text" style="text-align: justify; margin: 15px 0;">{{ $package->Description }}.</p>
+                                        <p class="offers_text" style="text-align: justify; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;">{{ $package->Description }}.</p>
                                         <div class="offers_icons">
                                             <ul class="offers_icons_list" style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
                                                 <li class="offers_icons_item"><img src="{{ asset('images/post.png') }}" alt="" style="width: 24px; height: 24px;"></li>
@@ -612,6 +612,7 @@
             </div>
         </div>
     </div>
+
 
 	<!-- Testimonials -->
 
