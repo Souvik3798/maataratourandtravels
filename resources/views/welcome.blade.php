@@ -273,7 +273,8 @@
         }
 
         .offers_image_container:hover .offer_name {
-            background: rgba(255, 255, 255, 1); /* Opaque background */
+            background: rgb(158, 119, 0); /* Opaque background */
+            color: white;
             transform: translateY(-5px); /* Lift text slightly */
         }
 
