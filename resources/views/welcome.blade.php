@@ -209,7 +209,7 @@
         .offers_image_container {
             position: relative;
             width: 100%;
-            height: 200px; /* Fixed height for consistency */
+            height: 400px; /* Fixed height for consistency */
         }
 
         .offer_name {
