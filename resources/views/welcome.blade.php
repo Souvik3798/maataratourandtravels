@@ -717,7 +717,7 @@
                             <div class="offers_image_container">
                                 <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}');"></div>
                                 <div class="offer_name">
-                                    ₹.{{ $package->Price }}/-
+                                    ₹.{{ number($package->Price) }}/-
                                 </div>
                             </div>
                             <div class="offers_content">
