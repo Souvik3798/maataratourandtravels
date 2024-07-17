@@ -617,7 +617,7 @@
                                             <div class="test_content">
                                                 <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
                                                 <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
-                                                <p class="test_quote_text">{{$activity->description}}</p>
+                                                <p class="test_quote_text">{{ Str::limit($activity->description, 20, '...') }}</p>
                                             </div>
                                         </div>
                                     </div>
