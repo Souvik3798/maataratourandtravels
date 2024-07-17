@@ -596,7 +596,7 @@
                             @foreach ($activities as $activity)
 
                                 <div class="owl-item">
-                                    <div class="test_item" style="background-image: url('{{asset('storage/'.$activity->image)}}'); width:100%">
+                                    <div class="test_item" style="background-image: url('{{asset('storage/'.$activity->image)}}'); width:100%; background-position: center; background-size: cover;">
                                         <div class="test_image"></div>
                                         <div class="test_icon"><img src="{{asset('images/backpack.png')}}" alt=""></div>
                                         <div class="test_content_container">
