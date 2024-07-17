@@ -290,7 +290,8 @@
         }
 
         .offers_link a:hover {
-            background-color: #004999; /* Darker background on hover */
+            background-color: #ffffff; /* Darker background on hover */
+            color: #0066cc
             transform: translateY(-3px); /* Slight lift on hover */
         }
 
