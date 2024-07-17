@@ -204,6 +204,8 @@
             }
         }
 
+        /* Offer */
+
         .offers_image_container {
             position: relative;
             width: 100%;
@@ -244,7 +246,8 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            height: 400px; /* Ensure height to fit content */
+            height: auto; /* Changed to auto */
+            min-height: 400px; /* Ensure a minimum height */
         }
 
         .offers_content {
@@ -264,6 +267,14 @@
 
             .offers_image_background {
                 height: 200px; /* Adjust height for mobile view */
+            }
+        }
+
+        @media (min-width: 769px) {
+            .offers_col {
+                flex: 1 0 45%; /* Adjust the width for desktop view */
+                max-width: 45%;
+                margin: 2.5%;
             }
         }
     </style>
