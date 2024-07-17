@@ -203,6 +203,38 @@
                 font-size: 0.9em;
             }
         }
+
+        .offers_image_container {
+            position: relative;
+            height: 100%;
+        }
+        .offer_name {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.7);
+            padding: 5px 10px;
+            border-radius: 5px;
+            z-index: 1;
+        }
+        @media (max-width: 768px) {
+            .offers_col {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+            .offers_item {
+                flex-direction: column;
+                height: auto;
+            }
+            .offers_image_background {
+                background-size: cover;
+                background-position: center;
+                height: 200px; /* Adjust as needed */
+            }
+            .offers_content {
+                padding: 15px;
+            }
+        }
     </style>
 
 
