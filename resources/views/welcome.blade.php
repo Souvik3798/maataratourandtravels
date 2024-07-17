@@ -137,6 +137,32 @@
             text-align: center;
         }
 
+        .read_more {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+            padding: 8px 12px;
+            background-color: #ffa500;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1em;
+            transition: background-color 0.3s ease;
+        }
+
+        .read_more:hover {
+            background-color: #ff8c00;
+        }
+
+        .read_more svg {
+            margin-left: 5px;
+            transition: transform 0.3s ease;
+        }
+
+        .read_more:hover svg {
+            transform: translateX(3px);
+        }
+
         .owl-item {
             display: flex;
             justify-content: center;
@@ -618,6 +644,7 @@
                                                 <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
                                                 <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
                                                 <p class="test_quote_text">{{ Str::limit($activity->description, 50, '...') }}</p>
+                                                <a href="{{url('activity/'.$activity->id)}}" class="read_more">
                                             </div>
                                         </div>
                                     </div>
