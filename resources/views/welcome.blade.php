@@ -291,7 +291,7 @@
 
         .offers_link a:hover {
             background-color: #ffffff; /* Darker background on hover */
-            color: #0066cc
+            color: #0066cc;
             transform: translateY(-3px); /* Slight lift on hover */
         }
 
