@@ -703,11 +703,11 @@
                             <div class="offers_image_container">
                                 <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}');"></div>
                                 <div class="offer_name">
-                                    <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: inherit;">{{ $package->Name }}</a>
+                                    <a href="{{ url('package/'.$package->id) }}" style="text-decoration: none; color: inherit;">₹.{{ $package->Price }}/-</a>
                                 </div>
                             </div>
                             <div class="offers_content">
-                                <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
+                                <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">{{ $package->Name }}</div>
                                 <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
                                     @for ($i = 0; $i < 5; $i++)
                                         @if ($i < 4)
