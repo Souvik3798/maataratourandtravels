@@ -284,11 +284,25 @@
             text-decoration: none; /* Remove underline */
             transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
             font-weight: bold;
+            position: absolute; /* Position the button absolutely */
+            bottom: 15px; /* Distance from the bottom */
+            right: 15px; /* Distance from the right */
         }
 
         .offers_link a:hover {
             background-color: #004999; /* Darker background on hover */
-            transform: translateY(-5px); /* Slight lift on hover */
+            transform: translateY(-3px); /* Slight lift on hover */
+        }
+
+        .offers_link a::after {
+            content: ' \2192'; /* Unicode for the arrow */
+            display: inline-block;
+            margin-left: 10px; /* Space between text and arrow */
+            transition: transform 0.3s; /* Smooth transition for arrow movement */
+        }
+
+        .offers_link a:hover::after {
+            transform: translateX(5px); /* Move arrow to the right on hover */
         }
 
         @media (max-width: 768px) {
