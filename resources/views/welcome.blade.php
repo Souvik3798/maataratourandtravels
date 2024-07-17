@@ -219,7 +219,6 @@
             z-index: 10;
             color: #333;
             font-weight: bold;
-            display: block; /* Ensures it is displayed */
         }
 
         .offers_image_background {
