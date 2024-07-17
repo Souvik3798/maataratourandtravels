@@ -210,6 +210,7 @@
             position: relative;
             width: 100%;
             height: 200px; /* Fixed height for consistency */
+            overflow: hidden; /* Ensure the image doesn't overflow */
         }
 
         .offer_name {
@@ -226,8 +227,9 @@
         }
 
         .offers_image_background {
-            background-size: cover;
-            background-position: center;
+            background-size: contain; /* Change to contain to fit the image */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Ensure the image doesn't repeat */
             width: 100%;
             height: 100%;
         }
