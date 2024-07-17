@@ -266,7 +266,7 @@
             }
 
             .offers_image_background {
-                height: 200px; /* Adjust height for mobile view */
+                height: 400px; /* Adjust height for mobile view */
             }
         }
 
