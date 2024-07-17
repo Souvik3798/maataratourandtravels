@@ -472,7 +472,7 @@
                                                     {{-- <div class="test_date"></div> --}}
                                                 </div>
                                                 <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}" style="color: white">{{$activity->title}}</a></div>
-                                                {{-- <p class="test_quote_text">{{$activity->description}}</p> --}}
+                                                <p class="test_quote_text">{{$activity->description}}</p>
                                             </div>
                                         </div>
                                     </div>
