@@ -37,9 +37,7 @@
 }
 
 .test_item {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background: #fff;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -47,8 +45,21 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 500px; /* Adjust height as needed */
+    height: 400px; /* Increased height */
     position: relative;
+}
+
+.test_image {
+    width: 100%;
+    height: 70%; /* Adjust this value to control the height of the image */
+    overflow: hidden;
+}
+
+.test_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
 .test_icon {
@@ -88,13 +99,9 @@
     font-size: 1.2em;
     color: #fff; /* Changed to white for better contrast */
     font-weight: bold;
-    background: rgba(0, 0, 0, 0.7); /* Changed background for better readability */
+    background: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
     border-radius: 5px;
-    position: absolute;
-    top: 10px;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
 .test_quote_title a {
@@ -143,6 +150,10 @@
         height: 300px; /* Adjust this value for smaller screens */
     }
 
+    .test_image {
+        height: 60%;
+    }
+
     .test_content {
         height: 40%;
     }
@@ -151,9 +162,6 @@
         font-size: 0.9em;
     }
 }
-
-
-
     </style>
 
 
@@ -576,27 +584,35 @@
             </div>
             <div class="row">
                 <div class="col">
+
                     <!-- Testimonials Slider -->
+
                     <div class="test_slider_container">
                         <div class="owl-carousel owl-theme test_slider">
+
                             @php
                                 $activities = \App\Models\Activity::all();
                             @endphp
                             @foreach ($activities as $activity)
+
                                 <div class="owl-item">
-                                    <div class="test_item" style="background-image: url('{{ asset('storage/' . $activity->image) }}');">
-                                        <div class="test_icon"><img src="{{ asset('images/backpack.png') }}" alt=""></div>
+                                    <div class="test_item">
+                                        <div class="test_image"><img src="{{asset('storage/'.$activity->image)}}" alt=""></div>
+                                        <div class="test_icon"><img src="{{asset('images/backpack.png')}}" alt=""></div>
                                         <div class="test_content_container">
                                             <div class="test_content">
-                                                <div class="test_item_info">₹.{{ $activity->pricing }}/-</div>
-                                                <div class="test_quote_title"><a href="{{ url('activity/' . $activity->id) }}">{{ $activity->title }}</a></div>
-                                                <p class="test_quote_text">{{ $activity->description }}</p>
+                                                <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
+                                                <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
+                                                <p class="test_quote_text">{{$activity->description}}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             @endforeach
+
                         </div>
+
                         <!-- Testimonials Slider Nav - Prev -->
                         <div class="test_slider_nav test_slider_prev">
                             <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -614,6 +630,7 @@
                                     11.042,18.219 "/>
                             </svg>
                         </div>
+
                         <!-- Testimonials Slider Nav - Next -->
                         <div class="test_slider_nav test_slider_next">
                             <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -631,11 +648,18 @@
                                     17.046,15.554 "/>
                             </svg>
                         </div>
+
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+
+
+
+
 
 
 	<div class="trending">
@@ -779,27 +803,4 @@
             });
         });
     </script>
-    <script>
-        $(document).ready(function(){
-            $(".test_slider").owlCarousel({
-                items: 3, // Number of items to display
-                loop: true,
-                margin: 10,
-                nav: true,
-                navText: [$('.test_slider_prev'),$('.test_slider_next')],
-                responsive: {
-                    0: {
-                        items: 1
-                    },
-                    600: {
-                        items: 2
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            });
-        });
-    </script>
-
 </x-layout>
