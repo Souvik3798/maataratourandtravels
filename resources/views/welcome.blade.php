@@ -253,12 +253,14 @@
             height: auto; /* Changed to auto */
             min-height: 400px; /* Ensure a minimum height */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for scaling and shadow effect */
+            position: relative; /* Add relative positioning for the button */
         }
 
         .offers_content {
             padding: 15px;
             overflow: hidden;
             flex: 1;
+            position: relative; /* Ensure child elements are positioned relative to this container */
         }
 
         /* Hover effects */
@@ -275,6 +277,12 @@
             transform: translateY(-5px); /* Lift text slightly */
         }
 
+        .offers_link {
+            position: absolute; /* Position the container absolutely */
+            bottom: 15px; /* Distance from the bottom */
+            right: 15px; /* Distance from the right */
+        }
+
         .offers_link a {
             display: inline-block;
             padding: 10px 20px;
@@ -284,9 +292,6 @@
             text-decoration: none; /* Remove underline */
             transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
             font-weight: bold;
-            position: absolute; /* Position the button absolutely */
-            bottom: 15px; /* Distance from the bottom */
-            right: 15px; /* Distance from the right */
         }
 
         .offers_link a:hover {
@@ -304,7 +309,6 @@
         .offers_link a:hover::after {
             transform: translateX(5px); /* Move arrow to the right on hover */
         }
-
 
         @media (max-width: 768px) {
             .offers_col {
@@ -327,6 +331,7 @@
                 margin: 2.5%;
             }
         }
+
 
     </style>
 
