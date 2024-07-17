@@ -99,7 +99,7 @@
             font-size: 1.5em;
             color: #fff;
             font-weight: bold;
-            background: rgba(255, 255, 255, 0.8);
+            background: rgba(179, 178, 178, 0.8);
             padding: 10px 15px;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
