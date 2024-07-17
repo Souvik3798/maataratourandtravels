@@ -31,137 +31,142 @@
 
         /* activities */
 
-        .test_slider_container {
-    margin-top: 30px;
-    position: relative;
-}
+        .test_content_container {
+            padding: 10px; /* Reduced padding for more text space */
+            background: rgba(0, 0, 0, 0.6); /* Adjusted for better readability */
+            display: flex;
+            flex-direction: column;
+            justify-content: center; /* Center content vertically */
+            height: 100%; /* Use full height of the parent container */
+            overflow: hidden; /* Hide overflow */
+        }
 
-.test_item {
-    background: #fff;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    height: 400px; /* Increased height */
-    position: relative;
-}
+        .test_quote_title a {
+            font-size: 1.2em; /* Adjust font size for better fit */
+            color: #fff;
+            text-decoration: none;
+            white-space: nowrap; /* Prevent wrapping of title text */
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Add ellipsis if text is too long */
+            display: block; /* Make sure the link takes the full width */
+        }
 
-.test_image {
-    width: 100%;
-    height: 70%; /* Adjust this value to control the height of the image */
-    overflow: hidden;
-}
+        .test_quote_text {
+            font-size: 0.9em; /* Smaller text for descriptions */
+            color: #fff;
+            text-align: center;
+            overflow: hidden; /* Hide overflow */
+            text-overflow: ellipsis; /* Add ellipsis if text is too long */
+            display: -webkit-box;
+            -webkit-line-clamp: 3; /* Limit to three lines */
+            -webkit-box-orient: vertical;
+            line-height: 1.2; /* Adjust line height for better readability */
+            height: 3.6em; /* Based on font size and line count */
+            margin-top: 5px;
+        }
 
-.test_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
-}
+        /* Ensure icons do not overlap text */
+        .test_icon {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: #ffa500;
+            border-radius: 50%;
+            padding: 10px;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 10;
+        }
 
-.test_icon {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    background: #ffa500;
-    border-radius: 50%;
-    padding: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10;
-}
 
-.test_icon img {
-    width: 24px;
-}
+        .test_icon img {
+            width: 24px;
+        }
 
-.test_content_container {
-    padding: 15px;
-    background: rgba(0, 0, 0, 0.5); /* Added background to content for better readability */
-}
+        .test_content_container {
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.5); /* Added background to content for better readability */
+        }
 
-.test_content {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    height: 30%; /* Adjust this value to control the content height */
-}
+        .test_content {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 30%; /* Adjust this value to control the content height */
+        }
 
-.test_item_info {
-    margin-bottom: 5px;
-    font-size: 1.2em;
-    color: #fff; /* Changed to white for better contrast */
-    font-weight: bold;
-    background: rgba(255, 255, 255, 0.8);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
+        .test_item_info {
+            margin-bottom: 5px;
+            font-size: 1.2em;
+            color: #fff; /* Changed to white for better contrast */
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
 
-.test_quote_title a {
-    font-size: 1.4em;
-    color: #fff; /* Changed to white for better contrast */
-    text-decoration: none;
-    transition: color 0.3s ease;
-    margin-top: 5px;
-}
+        .test_quote_title a {
+            font-size: 1.4em;
+            color: #fff; /* Changed to white for better contrast */
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin-top: 5px;
+        }
 
-.test_quote_title a:hover {
-    color: #FFB300;
-}
+        .test_quote_title a:hover {
+            color: #FFB300;
+        }
 
-.test_quote_text {
-    font-size: 1em;
-    color: #fff; /* Changed to white for better contrast */
-    margin-top: 5px;
-    text-align: center;
-}
+        .test_quote_text {
+            font-size: 1em;
+            color: #fff; /* Changed to white for better contrast */
+            margin-top: 5px;
+            text-align: center;
+        }
 
-.owl-item {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+        .owl-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-.test_slider_nav {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    cursor: pointer;
-    z-index: 1000;
-}
+        .test_slider_nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1000;
+        }
 
-.test_slider_prev {
-    left: 0;
-}
+        .test_slider_prev {
+            left: 0;
+        }
 
-.test_slider_next {
-    right: 0;
-}
+        .test_slider_next {
+            right: 0;
+        }
 
-@media (max-width: 768px) {
-    .test_item {
-        height: 300px; /* Adjust this value for smaller screens */
-    }
+        @media (max-width: 768px) {
+            .test_item {
+                height: 300px; /* Adjust this value for smaller screens */
+            }
 
-    .test_image {
-        height: 60%;
-    }
+            .test_image {
+                height: 60%;
+            }
 
-    .test_content {
-        height: 40%;
-    }
+            .test_content {
+                height: 40%;
+            }
 
-    .test_name, .test_quote_title a, .test_quote_text {
-        font-size: 0.9em;
-    }
-}
+            .test_name, .test_quote_title a, .test_quote_text {
+                font-size: 0.9em;
+            }
+        }
     </style>
 
 
