@@ -726,7 +726,7 @@
                                         <li class="offers_icons_item"><img src="{{ asset('images/sailboat.png') }}" alt="" style="width: 24px; height: 24px;"></li>
                                     </ul>
                                 </div>
-                                <div class="offers_link" style="margin-top: 60px;margin-bottom: -10px">
+                                <div class="offers_link" style="margin-top: 40px;margin-bottom: -10px">
                                     <a href="{{ url('package/'.$package->id) }}">Read More</a>
                                 </div>
                             </div>
