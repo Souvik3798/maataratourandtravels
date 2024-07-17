@@ -244,6 +244,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
+            height: 400px; /* Ensure height to fit content */
         }
 
         .offers_content {
@@ -668,8 +669,6 @@
             </div>
         </div>
     </div>
-
-
 
 	<!-- Testimonials -->
 
