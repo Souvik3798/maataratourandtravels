@@ -73,12 +73,12 @@
 						<div class="phone">+91-9933250564</div>
 						<div class="social">
 							<ul class="social_list">
-								<li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+								{{-- <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
 								<li class="social_list_item"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
 								<li class="social_list_item"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
 								<li class="social_list_item"><a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a></li>
 								<li class="social_list_item"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
-								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+								<li class="social_list_item"><a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li> --}}
 							</ul>
 						</div>
 						<div class="user_box ml-auto">
@@ -181,11 +181,11 @@
 							</div>
 							<p class="footer_about_text" style="padding-top: 20px; text-align: justify">Discover the beauty of the Andaman and Nicobar Islands with Andaman Blue Ocean, your trusted travel partner since 2006. Based in Port Blair, we specialize in creating unforgettable journeys for both domestic and international travelers. Experience genuine hospitality and explore one of the world's most pristine destinations.</p>
 							<ul class="footer_social_list">
-								<li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+								{{-- <li class="footer_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
 								<li class="footer_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
 								<li class="footer_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
 								<li class="footer_social_item"><a href="#"><i class="fa fa-dribbble"></i></a></li>
-								<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li>
+								<li class="footer_social_item"><a href="#"><i class="fa fa-behance"></i></a></li> --}}
 							</ul>
 						</div>
 					</div>
