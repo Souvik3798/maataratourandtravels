@@ -206,7 +206,7 @@
                                     <div class="footer_blog_image"><img src={{asset('storage/'.$location->image_path)}} class="rounded"></div>
                                     <div class="footer_blog_content">
                                         <div class="footer_blog_title"><a href="{{url('location/'.$location->id)}}">{{$location->Place}}</a></div>
-                                        <div class="footer_blog_date" style="width:50px">{{$location->Location}}</div>
+                                        <div class="footer_blog_date" >{{$location->Location}}</div>
                                     </div>
                                 </div>
                             @endforeach
@@ -227,7 +227,7 @@
                                 $service = \App\Models\Service::all();
                             @endphp
                             @foreach ($service as $service)
-								<li class="tag_item"><a href="{{url('service-details/'.$service->id)}}">{{$service->Service}}</a></li>
+								<li class="tag_item" style="width: 100%"><a href="{{url('service-details/'.$service->id)}}">{{$service->Service}}</a></li>
                             @endforeach
 							</ul>
 						</div>
