@@ -12,7 +12,7 @@ class Contact extends Controller
     {
         $data = $request->only('name', 'email', 'subject', 'message', 'phone');
 
-        Mail::to('andamanblueocean@gmail.com')->send(new TestEmail($data));
+        Mail::to('andamanblueoceantravel@gmail.com')->send(new TestEmail($data));
 
         // Mail::send('emails.contact', ['data' => $request], function ($m) use ($request) {
         //     $m->from(env('MAIL_FROM_ADDRESS'), env('MAIL_FROM_NAME'));

@@ -92,7 +92,7 @@
 							</li>
 							<li class="contact_info_item d-flex flex-row">
 								<div><div class="contact_info_icon"><img src="images/message.svg" alt=""></div></div>
-								<div class="contact_info_text"><a href="mailto:andamanblueocean@gmail.com?Subject=Hello" target="_top">andamanblueocean@gmail.com</a></div>
+								<div class="contact_info_text"><a href="mailto:andamanblueoceantravel@gmail.com?Subject=Hello" target="_top">andamanblueoceantravel@gmail.com</a></div>
 							</li>
 							<li class="contact_info_item d-flex flex-row">
 								<div><div class="contact_info_icon"><img src="{{asset('images/whstapp.png')}}" alt=""></div></div>
