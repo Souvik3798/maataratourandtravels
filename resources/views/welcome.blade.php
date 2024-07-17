@@ -246,7 +246,7 @@
             border: 1px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(255, 165, 0, 0.1); /* Initial orange shadow */
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -264,7 +264,7 @@
         /* Hover effects */
         .offers_col:hover .offers_item {
             transform: translateY(-10px); /* Slight lift effect */
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+            box-shadow: 0 10px 20px rgba(255, 165, 0, 0.3); /* Deeper orange shadow */
         }
 
         .offers_image_container:hover .offers_image_background {
@@ -297,6 +297,7 @@
                 margin: 2.5%;
             }
         }
+
 
     </style>
 
