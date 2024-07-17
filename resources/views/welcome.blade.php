@@ -32,135 +32,136 @@
         /* activities */
 
         .test_slider_container {
-            margin-top: 30px;
-            position: relative;
-        }
+    margin-top: 30px;
+    position: relative;
+}
 
-        .test_item {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            height: 300px; /* Adjust this value as needed */
-            position: relative;
-        }
+.test_item {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px; /* Increased height */
+    position: relative;
+}
 
-        .test_image {
-            width: 100%;
-            height: 60%; /* Adjust this value to control the height of the image */
-            overflow: hidden;
-        }
+.test_image {
+    width: 100%;
+    height: 70%; /* Adjust this value to control the height of the image */
+    overflow: hidden;
+}
 
-        .test_image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.3s ease;
-        }
+.test_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
 
-        .test_icon {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            background: #ffa500;
-            border-radius: 50%;
-            padding: 10px;
-            width: 50px;
-            height: 50px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            z-index: 10;
-        }
+.test_icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffa500;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
 
-        .test_icon img {
-            width: 24px;
-        }
+.test_icon img {
+    width: 24px;
+}
 
-        .test_content_container {
-            padding: 15px;
-        }
+.test_content_container {
+    padding: 15px;
+}
 
-        .test_content {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            height: 40%; /* Adjust this value to control the content height */
-        }
+.test_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 30%; /* Adjust this value to control the content height */
+}
 
-        .test_item_info {
-            margin-bottom: 5px;
-            font-size: 1.2em;
-            color: #333;
-            font-weight: bold;
-            background: rgba(255, 255, 255, 0.8);
-            padding: 5px 10px;
-            border-radius: 5px;
-        }
+.test_item_info {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+    color: #333;
+    font-weight: bold;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
 
-        .test_quote_title a {
-            font-size: 1.4em;
-            color: #6A1B9A;
-            text-decoration: none;
-            transition: color 0.3s ease;
-            margin-top: 5px;
-        }
+.test_quote_title a {
+    font-size: 1.4em;
+    color: #6A1B9A;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    margin-top: 5px;
+}
 
-        .test_quote_title a:hover {
-            color: #FFB300;
-        }
+.test_quote_title a:hover {
+    color: #FFB300;
+}
 
-        .test_quote_text {
-            font-size: 1em;
-            color: #666;
-            margin-top: 5px;
-            text-align: center;
-        }
+.test_quote_text {
+    font-size: 1em;
+    color: #666;
+    margin-top: 5px;
+    text-align: center;
+}
 
-        .owl-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+.owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-        .test_slider_nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            z-index: 1000;
-        }
+.test_slider_nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 1000;
+}
 
-        .test_slider_prev {
-            left: 0;
-        }
+.test_slider_prev {
+    left: 0;
+}
 
-        .test_slider_next {
-            right: 0;
-        }
+.test_slider_next {
+    right: 0;
+}
 
-        @media (max-width: 768px) {
-            .test_item {
-                height: 250px; /* Adjust this value for smaller screens */
-            }
+@media (max-width: 768px) {
+    .test_item {
+        height: 400px; /* Adjust this value for smaller screens */
+    }
 
-            .test_image {
-                height: 50%;
-            }
+    .test_image {
+        height: 60%;
+    }
 
-            .test_content {
-                height: 50%;
-            }
+    .test_content {
+        height: 40%;
+    }
 
-            .test_name, .test_quote_title a, .test_quote_text {
-                font-size: 0.9em;
-            }
-        }
+    .test_name, .test_quote_title a, .test_quote_text {
+        font-size: 0.9em;
+    }
+}
+
 
 
 
@@ -603,10 +604,8 @@
                                         <div class="test_icon"><img src="{{asset('images/backpack.png')}}" alt=""></div>
                                         <div class="test_content_container">
                                             <div class="test_content">
-                                                <div class="test_item_info">
-                                                    <div class="test_name">₹.{{$activity->pricing}}/-</div>
-                                                </div>
-                                                <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}" style="color: white">{{$activity->title}}</a></div>
+                                                <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
+                                                <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
                                                 <p class="test_quote_text">{{$activity->description}}</p>
                                             </div>
                                         </div>
@@ -660,6 +659,8 @@
 
         </div>
     </div>
+
+
 
 
 
