@@ -420,7 +420,7 @@
                                                 <li class="offers_icons_item"><img src="{{asset('images/sailboat.png')}}" alt=""></li>
                                             </ul>
                                         </div>
-                                        <div class="offers_link"><a href="offers.html">read more</a></div>
+                                        <div class="offers_link"><a href="{{url('package/'.$package->id)}}">read more</a></div>
                                     </div>
                                 </div>
                             </div>
