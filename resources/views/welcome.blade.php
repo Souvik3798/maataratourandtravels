@@ -173,7 +173,8 @@
         }
 
         .read_more:hover {
-            background-color: #ff8c00;
+            color: #ff8c00;
+            background-color: #fff;
         }
 
         .read_more svg {
