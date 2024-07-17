@@ -222,7 +222,7 @@
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
-            font-size: 10px;
+            font-size: 50px;
             display: block;
             transition: background 0.3s, transform 0.3s; /* Add transition for smooth background and transform change */
         }
