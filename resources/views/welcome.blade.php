@@ -96,12 +96,26 @@
 
         .test_item_info {
             margin-bottom: 5px;
-            font-size: 1.2em;
-            color: #fff; /* Changed to white for better contrast */
+            font-size: 1.5em;
+            color: #fff;
             font-weight: bold;
             background: rgba(255, 255, 255, 0.8);
-            padding: 5px 10px;
-            border-radius: 5px;
+            padding: 10px 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        /* Hover effect for price section */
+        .test_item_info:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Optional: Add hover effect for the entire card */
+        .test_item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
         }
 
         .test_quote_title a {
@@ -656,10 +670,6 @@
 
         </div>
     </div>
-
-
-
-
 
 
 	<div class="trending">
