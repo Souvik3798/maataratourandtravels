@@ -220,7 +220,7 @@
             background: rgba(255, 166, 0, 0.73);
             padding: 5px 10px;
             border-radius: 5px;
-            z-index: 10;
+            z-index: 6;
             color: #fffbfb;
             font-weight: bold;
             display: block;
