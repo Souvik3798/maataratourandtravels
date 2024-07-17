@@ -101,7 +101,7 @@
 											{{-- <div class="room_price">$99/night</div> --}}
                                             @foreach ($package->Inclusions as $Inclusion)
 											    <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
-                                                        <li>{{$Inclusion['Inclusion']}}</li>
+                                                        <li>{{ucfirst($Inclusion['Inclusion'])}}</li>
                                                 </ul>
                                             @endforeach
 											{{-- <div class="room_extra">Breakfast $7.50</div> --}}
@@ -132,7 +132,7 @@
 											{{-- <div class="room_price">$99/night</div> --}}
                                             @foreach ($package->Exclusions as $Exclusion)
 											    <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
-                                                        <li>{{$Exclusion['Exclusion']}}</li>
+                                                        <li>{{ucfirst($Exclusion['Exclusion'])}}</li>
                                                 </ul>
                                             @endforeach
 											{{-- <div class="room_extra">Breakfast $7.50</div> --}}
