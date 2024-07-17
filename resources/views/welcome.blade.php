@@ -210,6 +210,7 @@
             position: relative;
             width: 100%;
             height: 400px; /* Fixed height for consistency */
+            overflow: hidden; /* To prevent overflow when image scales */
         }
 
         .offer_name {
@@ -223,6 +224,7 @@
             color: #333;
             font-weight: bold;
             display: block;
+            transition: background 0.3s, transform 0.3s; /* Add transition for smooth background and transform change */
         }
 
         .offers_image_background {
@@ -230,12 +232,14 @@
             background-position: center;
             width: 100%;
             height: 100%;
+            transition: transform 0.3s ease-in-out; /* Add transition for image scaling */
         }
 
         .offers_col {
             margin-bottom: 20px;
             display: flex;
             width: 100%;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for scaling and shadow effect */
         }
 
         .offers_item {
@@ -248,12 +252,28 @@
             flex-direction: column;
             height: auto; /* Changed to auto */
             min-height: 400px; /* Ensure a minimum height */
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Add transition for scaling and shadow effect */
         }
 
         .offers_content {
             padding: 15px;
             overflow: hidden;
             flex: 1;
+        }
+
+        /* Hover effects */
+        .offers_col:hover .offers_item {
+            transform: translateY(-10px); /* Slight lift effect */
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+        }
+
+        .offers_image_container:hover .offers_image_background {
+            transform: scale(1.1); /* Slight zoom-in effect */
+        }
+
+        .offers_image_container:hover .offer_name {
+            background: rgba(255, 255, 255, 1); /* Opaque background */
+            transform: translateY(-5px); /* Lift text slightly */
         }
 
         @media (max-width: 768px) {
@@ -277,6 +297,7 @@
                 margin: 2.5%;
             }
         }
+
     </style>
 
 
