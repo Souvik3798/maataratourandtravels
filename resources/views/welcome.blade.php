@@ -727,9 +727,9 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="offers_link" style="margin-top: 15px;">
-                                <a href="{{ url('package/'.$package->id) }}">Read More</a>
-                            </div>
+                        </div>
+                        <div class="offers_link" style="margin-top: 15px;">
+                            <a href="{{ url('package/'.$package->id) }}">Read More</a>
                         </div>
                     </div>
                 @endforeach
