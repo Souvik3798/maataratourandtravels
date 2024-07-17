@@ -650,7 +650,7 @@
                                                         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 0-.5-.5H4a.5.5 0 0 0 0 1h7.5a.5.5 0 0 0 .5-.5z"/>
                                                     </svg>
                                                 </a>
-                                                <p class="test_quote_text">{{ Str::limit($activity->description, 50, '...') }}</p>
+                                                {{-- <p class="test_quote_text">{{ Str::limit($activity->description, 50, '...') }}</p> --}}
                                             </div>
                                         </div>
                                     </div>
