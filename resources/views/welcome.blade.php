@@ -137,6 +137,28 @@
             text-align: center;
         }
 
+        .owl-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .test_slider_nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .test_slider_prev {
+            left: 0;
+        }
+
+        .test_slider_next {
+            right: 0;
+        }
+
         .read_more {
             display: flex;
             align-items: center;
@@ -161,28 +183,6 @@
 
         .read_more:hover svg {
             transform: translateX(3px);
-        }
-
-        .owl-item {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .test_slider_nav {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            cursor: pointer;
-            z-index: 1000;
-        }
-
-        .test_slider_prev {
-            left: 0;
-        }
-
-        .test_slider_next {
-            right: 0;
         }
 
         @media (max-width: 768px) {
