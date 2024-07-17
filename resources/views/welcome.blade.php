@@ -416,10 +416,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">I had an amazing experience with Andaman Blue Ocean on my recent trip to Havelock Island. The team was incredibly professional and ensured we had the best possible time. The scuba diving session was a highlight, with crystal clear waters and vibrant marine life. The accommodations were top-notch, and every detail was taken care of. Highly recommend them for anyone looking to explore the Andamans!</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
@@ -435,10 +435,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">Andaman Blue Ocean organized a fantastic trip for us to Neil Island. The coral reefs were stunning, and the snorkeling trip was well-organized with excellent guides. The only downside was the ferry ride, which was a bit crowded. However, the beautiful beaches and friendly service made up for it. Overall, a wonderful experience!</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
@@ -454,10 +454,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">Our family vacation to Port Blair was made memorable thanks to Andaman Blue Ocean. They arranged a perfect itinerary that included visits to the Cellular Jail, Ross Island, and Corbyn's Cove Beach. The local guides were knowledgeable and very accommodating. We especially appreciated the attention to detail and the seamless transportation arrangements.</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
@@ -473,10 +473,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">Exploring the limestone caves and the mangrove creeks at Baratang Island was an unforgettable experience, thanks to Andaman Blue Ocean. The tour was well-planned, and our guide was excellent in explaining the unique geological formations. The only minor issue was the early morning start, but it was worth it for the breathtaking views. Highly recommend this company!</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
@@ -492,10 +492,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">Andaman Blue Ocean provided an outstanding trip to North Bay Island. The underwater sea walk was a surreal experience, and the vibrant coral reefs were a sight to behold. The staff was extremely helpful and ensured our safety throughout. The picnic lunch on the beach was delicious and well-organized. I can't wait to book my next adventure with them!</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
