@@ -290,8 +290,7 @@
         }
 
         .offers_link a:hover {
-            background-color: #ffffff; /* Darker background on hover */
-            color: #0066cc;
+            background-color: #004999; /* Darker background on hover */
             transform: translateY(-3px); /* Slight lift on hover */
         }
 
@@ -305,6 +304,7 @@
         .offers_link a:hover::after {
             transform: translateX(5px); /* Move arrow to the right on hover */
         }
+
 
         @media (max-width: 768px) {
             .offers_col {
