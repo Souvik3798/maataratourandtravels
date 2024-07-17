@@ -511,10 +511,10 @@
                                 </div>
                                 <p class="cta_text" style="font-size: 1em; color: #333;">Our day trip to Radhanagar Beach with Andaman Blue Ocean was absolutely perfect. Known as one of the best beaches in Asia, it lived up to its reputation. The clear blue waters and soft white sand were heavenly. The company arranged a comfortable cabana for us to relax and enjoy the view. The highlight was the sunset – truly a mesmerizing experience. I highly recommend their services for a hassle-free and enjoyable vacation.</p>
                                 <div class="button cta_button" style="margin-top: 15px;">
-                                    <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
+                                    {{-- <a href="#" style="display: inline-block; padding: 10px 20px; background-color: #FF8C00; color: #fff; text-decoration: none; border-radius: 5px; transition: background-color 0.3s ease;">
                                         book now
                                         <span style="display: inline-block; margin-left: 5px;">→</span>
-                                    </a>
+                                    </a> --}}
                                 </div>
                             </div>
 
