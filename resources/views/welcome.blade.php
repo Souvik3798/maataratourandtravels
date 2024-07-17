@@ -44,14 +44,20 @@
             transition: transform 0.3s ease, box-shadow 0.3s ease;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+            justify-content: flex-end;
+            height: 300px; /* Adjust this value as needed */
             position: relative;
+        }
+
+        .test_image {
+            width: 100%;
+            height: 60%; /* Adjust this value to control the height of the image */
+            overflow: hidden;
         }
 
         .test_image img {
             width: 100%;
-            height: 200px;
+            height: 100%;
             object-fit: cover;
             transition: transform 0.3s ease;
         }
@@ -59,7 +65,7 @@
         .test_icon {
             position: absolute;
             top: 10px;
-            right: 10px;
+            left: 10px;
             background: #ffa500;
             border-radius: 50%;
             padding: 10px;
@@ -68,6 +74,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            z-index: 10;
         }
 
         .test_icon img {
@@ -81,17 +88,19 @@
         .test_content {
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
-            height: 100%;
+            justify-content: flex-start;
+            align-items: center;
+            height: 40%; /* Adjust this value to control the content height */
         }
 
         .test_item_info {
-            margin-bottom: 15px;
-        }
-
-        .test_name {
+            margin-bottom: 5px;
             font-size: 1.2em;
             color: #333;
+            font-weight: bold;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
         }
 
         .test_quote_title a {
@@ -99,6 +108,7 @@
             color: #6A1B9A;
             text-decoration: none;
             transition: color 0.3s ease;
+            margin-top: 5px;
         }
 
         .test_quote_title a:hover {
@@ -108,7 +118,8 @@
         .test_quote_text {
             font-size: 1em;
             color: #666;
-            margin-top: 10px;
+            margin-top: 5px;
+            text-align: center;
         }
 
         .owl-item {
@@ -134,14 +145,23 @@
         }
 
         @media (max-width: 768px) {
-            .test_image img {
-                height: 150px;
+            .test_item {
+                height: 250px; /* Adjust this value for smaller screens */
+            }
+
+            .test_image {
+                height: 50%;
+            }
+
+            .test_content {
+                height: 50%;
             }
 
             .test_name, .test_quote_title a, .test_quote_text {
                 font-size: 0.9em;
             }
         }
+
 
 
     </style>
