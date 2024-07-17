@@ -45,21 +45,10 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 500px; /* Increased height */
+    height: 500px; /* Adjust height as needed */
     position: relative;
-}
-
-.test_image {
-    width: 100%;
-    height: 70%; /* Adjust this value to control the height of the image */
-    overflow: hidden;
-}
-
-.test_image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s ease;
+    background-size: cover;
+    background-position: center;
 }
 
 .test_icon {
@@ -154,10 +143,6 @@
         height: 300px; /* Adjust this value for smaller screens */
     }
 
-    .test_image {
-        height: 60%;
-    }
-
     .test_content {
         height: 40%;
     }
@@ -166,6 +151,7 @@
         font-size: 0.9em;
     }
 }
+
 
     </style>
 
@@ -601,8 +587,7 @@
                             @foreach ($activities as $activity)
 
                                 <div class="owl-item">
-                                    <div class="test_item">
-                                        <div class="test_image"><img src="{{asset('storage/'.$activity->image)}}" alt=""></div>
+                                    <div class="test_item" style="background-image: url('{{asset('storage/'.$activity->image)}}');">
                                         <div class="test_icon"><img src="{{asset('images/backpack.png')}}" alt=""></div>
                                         <div class="test_content_container">
                                             <div class="test_content">
@@ -661,11 +646,6 @@
 
         </div>
     </div>
-
-
-
-
-
 
 	<div class="trending">
         <div class="container">
