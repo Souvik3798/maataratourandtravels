@@ -45,7 +45,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 500px; /* Increased height */
+    height: 400px; /* Increased height */
     position: relative;
 }
 
@@ -83,6 +83,7 @@
 
 .test_content_container {
     padding: 15px;
+    background: rgba(0, 0, 0, 0.5); /* Added background to content for better readability */
 }
 
 .test_content {
@@ -96,7 +97,7 @@
 .test_item_info {
     margin-bottom: 5px;
     font-size: 1.2em;
-    color: #333;
+    color: #fff; /* Changed to white for better contrast */
     font-weight: bold;
     background: rgba(255, 255, 255, 0.8);
     padding: 5px 10px;
@@ -105,7 +106,7 @@
 
 .test_quote_title a {
     font-size: 1.4em;
-    color: #6A1B9A;
+    color: #fff; /* Changed to white for better contrast */
     text-decoration: none;
     transition: color 0.3s ease;
     margin-top: 5px;
@@ -117,7 +118,7 @@
 
 .test_quote_text {
     font-size: 1em;
-    color: #666;
+    color: #fff; /* Changed to white for better contrast */
     margin-top: 5px;
     text-align: center;
 }
@@ -146,7 +147,7 @@
 
 @media (max-width: 768px) {
     .test_item {
-        height: 400px; /* Adjust this value for smaller screens */
+        height: 300px; /* Adjust this value for smaller screens */
     }
 
     .test_image {
@@ -161,10 +162,6 @@
         font-size: 0.9em;
     }
 }
-
-
-
-
     </style>
 
 
