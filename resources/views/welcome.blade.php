@@ -218,7 +218,7 @@
             bottom: 10px;
             left: 10px;
             background: rgba(255, 166, 0, 0.73);
-            padding: 5px 10px;
+            padding: 10px 5px;
             border-radius: 5px;
             z-index: 6;
             color: #fffbfb;
