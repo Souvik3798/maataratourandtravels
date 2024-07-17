@@ -643,7 +643,6 @@
                                             <div class="test_content">
                                                 <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
                                                 <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
-                                                <p class="test_quote_text">{{ Str::limit($activity->description, 50, '...') }}</p>
                                                 <a href="{{url('activity/'.$activity->id)}}" class="read_more">
                                                     Read More
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
@@ -651,6 +650,7 @@
                                                         <path fill-rule="evenodd" d="M12 8a.5.5 0 0 0-.5-.5H4a.5.5 0 0 0 0 1h7.5a.5.5 0 0 0 .5-.5z"/>
                                                     </svg>
                                                 </a>
+                                                <p class="test_quote_text">{{ Str::limit($activity->description, 50, '...') }}</p>
                                             </div>
                                         </div>
                                     </div>
