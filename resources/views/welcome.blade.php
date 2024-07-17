@@ -215,16 +215,18 @@
 
         .offer_name {
             position: absolute;
-            bottom: 10px;
-            left: 10px;
+            bottom: 50%;
+            left: 50%;
+            transform: translate(-50%, 50%);
             background: rgba(255, 166, 0, 0.73);
-            padding: 10px 5px;
+            padding: 10px 20px; /* Increased padding for larger size */
             border-radius: 5px;
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
             font-size: 1.5em; /* Increased font size */
             display: block;
+            text-align: center; /* Center the text */
             transition: background 0.3s, transform 0.3s; /* Add transition for smooth background and transform change */
         }
 
