@@ -246,7 +246,7 @@
             border: 1px solid #ddd;
             border-radius: 10px;
             overflow: hidden;
-            box-shadow: 0 0 10px rgba(255, 165, 0, 0.1); /* Initial orange shadow */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Initial shadow */
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -264,7 +264,6 @@
         /* Hover effects */
         .offers_col:hover .offers_item {
             transform: translateY(-10px); /* Slight lift effect */
-            box-shadow: 0 10px 20px rgba(255, 165, 0, 0.3); /* Deeper orange shadow */
         }
 
         .offers_image_container:hover .offers_image_background {
@@ -297,7 +296,6 @@
                 margin: 2.5%;
             }
         }
-
 
     </style>
 
@@ -657,7 +655,6 @@
                 </div>
             </div>
             <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
-
                 @php
                     $packages = \App\Models\Package::all();
                 @endphp
@@ -665,7 +662,7 @@
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
                     <div class="col-lg-6 offers_col">
-                        <div class="offers_item">
+                        <div class="offers_item" data-image-url="{{ asset('storage/'.$package->Image) }}">
                             <div class="offers_image_container">
                                 <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}');"></div>
                                 <div class="offer_name">
@@ -874,6 +871,7 @@
 	</div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/node-vibrant/dist/vibrant.min.js"></script>
 
     <script>
         document.addEventListener('DOMContentLoaded', function () {
@@ -935,6 +933,49 @@
                     arrow.style.transform = 'translateX(0)';
                 });
             });
+        });
+    </script>
+     <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Select all offer items
+            const offerItems = document.querySelectorAll('.offers_item');
+
+            offerItems.forEach(item => {
+                const imageUrl = item.getAttribute('data-image-url');
+
+                // Use Vibrant.js to get the primary color from the image
+                Vibrant.from(imageUrl).getPalette()
+                    .then(palette => {
+                        // Get the primary color
+                        const primaryColor = palette.Vibrant.getHex();
+
+                        // Convert hex to rgba
+                        const rgbaColor = hexToRgba(primaryColor, 0.3); // Adjust the alpha value as needed
+
+                        // Apply the box shadow with the primary color
+                        item.style.boxShadow = `0 0 10px ${rgbaColor}`;
+
+                        // Add hover effect
+                        item.addEventListener('mouseenter', () => {
+                            item.style.boxShadow = `0 10px 20px ${rgbaColor}`;
+                        });
+
+                        item.addEventListener('mouseleave', () => {
+                            item.style.boxShadow = `0 0 10px ${rgbaColor}`;
+                        });
+                    })
+                    .catch(err => console.error(err));
+            });
+
+            // Function to convert hex to rgba
+            function hexToRgba(hex, alpha) {
+                const bigint = parseInt(hex.slice(1), 16);
+                const r = (bigint >> 16) & 255;
+                const g = (bigint >> 8) & 255;
+                const b = bigint & 255;
+
+                return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+            }
         });
     </script>
 </x-layout>
