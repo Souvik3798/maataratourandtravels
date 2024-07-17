@@ -227,7 +227,7 @@
 
         .offers_image_background {
             background-size: cover;
-            background-position: top;
+            background-position: center;
             width: 100%;
             height: 100%;
         }
