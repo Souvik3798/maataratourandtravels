@@ -216,7 +216,6 @@
         .offer_name {
             position: absolute;
             bottom: 10px;
-            font-size: 20px
             left: 10px;
             background: rgba(255, 166, 0, 0.73);
             padding: 5px 10px;
@@ -224,6 +223,7 @@
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
+            font-size: 1.5em; /* Increased font size */
             display: block;
             transition: background 0.3s, transform 0.3s; /* Add transition for smooth background and transform change */
         }
