@@ -570,7 +570,7 @@
                     <!-- Offers Item -->
                     <div class="col-lg-6 offers_col" style="margin-bottom: 20px; display: flex;">
                         <div class="offers_item" style="border: 1px solid #ddd; border-radius: 10px; overflow: hidden; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); flex: 1; display: flex; flex-direction: column; height: 400px;">
-                            <div class="row" style="flex: 1;">
+                            <div class="row" style="flex: 1; margin: 0;">
                                 <div class="col-lg-6" style="padding: 0; height: 100%;">
                                     <div class="offers_image_container" style="position: relative; height: 100%;">
                                         <div class="offers_image_background" style="background-image:url('{{ asset('storage/'.$package->Image) }}'); background-size: cover; background-position: center; height: 100%;"></div>
@@ -579,7 +579,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px; overflow: hidden;">
+                                <div class="col-lg-6" style="display: flex; flex-direction: column; justify-content: space-between; padding: 15px; background: rgba(255, 255, 255, 0.8);">
                                     <div class="offers_content" style="flex: 1;">
                                         <div class="offers_price" style="font-size: 1.5em; color: #f60; font-weight: bold;">₹.{{ $package->Price }}/-</div>
                                         <div class="rating_r rating_r_4 offers_rating" style="color: #ffd700; font-size: 1.2em;">
@@ -612,7 +612,6 @@
             </div>
         </div>
     </div>
-
 
 	<!-- Testimonials -->
 
