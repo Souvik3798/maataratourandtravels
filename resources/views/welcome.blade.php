@@ -807,7 +807,7 @@
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
                     <div class="col s12 m6 l3 trending_item" style="margin: 10px; box-sizing: border-box; display: flex;">
-                        <div class="card" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
+                        <div class="card Hotels" style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
                             <div class="card-image" style="overflow: hidden; height: 150px; display: flex; align-items: center; justify-content: center;">
                                 <img src="{{('storage/'.$hotel->Image)}}" alt="" style="width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;">
                             </div>
@@ -939,6 +939,51 @@
         document.addEventListener("DOMContentLoaded", function() {
             // Select all offer items
             const offerItems = document.querySelectorAll('.offers_item');
+
+            offerItems.forEach(item => {
+                const imageUrl = item.getAttribute('data-image-url');
+
+                // Use Vibrant.js to get the primary color from the image
+                Vibrant.from(imageUrl).getPalette()
+                    .then(palette => {
+                        // Get the primary color
+                        const primaryColor = palette.Vibrant.getHex();
+
+                        // Convert hex to rgba
+                        const rgbaColor = hexToRgba(primaryColor, 0.3); // Adjust the alpha value as needed
+
+                        // Apply the box shadow with the primary color
+                        item.style.boxShadow = `0 0 10px ${rgbaColor}`;
+
+                        // Add hover effect
+                        item.addEventListener('mouseenter', () => {
+                            item.style.boxShadow = `0 10px 20px ${rgbaColor}`;
+                        });
+
+                        item.addEventListener('mouseleave', () => {
+                            item.style.boxShadow = `0 0 10px ${rgbaColor}`;
+                        });
+                    })
+                    .catch(err => console.error(err));
+            });
+
+            // Function to convert hex to rgba
+            function hexToRgba(hex, alpha) {
+                const bigint = parseInt(hex.slice(1), 16);
+                const r = (bigint >> 16) & 255;
+                const g = (bigint >> 8) & 255;
+                const b = bigint & 255;
+
+                return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+            }
+        });
+    </script>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Select all offer items
+            const offerItems = document.querySelectorAll('.Hotels');
 
             offerItems.forEach(item => {
                 const imageUrl = item.getAttribute('data-image-url');
