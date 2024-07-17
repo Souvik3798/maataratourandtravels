@@ -37,7 +37,9 @@
 }
 
 .test_item {
-    background: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
@@ -47,8 +49,6 @@
     justify-content: flex-end;
     height: 500px; /* Adjust height as needed */
     position: relative;
-    background-size: cover;
-    background-position: center;
 }
 
 .test_icon {
@@ -151,6 +151,7 @@
         font-size: 0.9em;
     }
 }
+
 
 
     </style>
@@ -575,34 +576,27 @@
             </div>
             <div class="row">
                 <div class="col">
-
                     <!-- Testimonials Slider -->
-
                     <div class="test_slider_container">
                         <div class="owl-carousel owl-theme test_slider">
-
                             @php
                                 $activities = \App\Models\Activity::all();
                             @endphp
                             @foreach ($activities as $activity)
-
                                 <div class="owl-item">
-                                    <div class="test_item" style="background-image: url('{{asset('storage/'.$activity->image)}}');">
-                                        <div class="test_icon"><img src="{{asset('images/backpack.png')}}" alt=""></div>
+                                    <div class="test_item" style="background-image: url('{{ asset('storage/' . $activity->image) }}');">
+                                        <div class="test_icon"><img src="{{ asset('images/backpack.png') }}" alt=""></div>
                                         <div class="test_content_container">
                                             <div class="test_content">
-                                                <div class="test_item_info">₹.{{$activity->pricing}}/-</div>
-                                                <div class="test_quote_title"><a href="{{url('activity/'.$activity->id)}}">{{$activity->title}}</a></div>
-                                                <p class="test_quote_text">{{$activity->description}}</p>
+                                                <div class="test_item_info">₹.{{ $activity->pricing }}/-</div>
+                                                <div class="test_quote_title"><a href="{{ url('activity/' . $activity->id) }}">{{ $activity->title }}</a></div>
+                                                <p class="test_quote_text">{{ $activity->description }}</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
                             @endforeach
-
                         </div>
-
                         <!-- Testimonials Slider Nav - Prev -->
                         <div class="test_slider_nav test_slider_prev">
                             <svg version="1.1" id="Layer_6" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -620,7 +614,6 @@
                                     11.042,18.219 "/>
                             </svg>
                         </div>
-
                         <!-- Testimonials Slider Nav - Next -->
                         <div class="test_slider_nav test_slider_next">
                             <svg version="1.1" id="Layer_7" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -638,14 +631,12 @@
                                     17.046,15.554 "/>
                             </svg>
                         </div>
-
                     </div>
-
                 </div>
             </div>
-
         </div>
     </div>
+
 
 	<div class="trending">
         <div class="container">
