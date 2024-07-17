@@ -236,6 +236,9 @@
             margin-bottom: 20px;
             display: flex;
             width: 100%;
+            flex-basis: calc(50% - 20px);
+            margin-right: 10px;
+            margin-left: 10px;
         }
 
         .offers_item {
@@ -246,8 +249,7 @@
             flex: 1;
             display: flex;
             flex-direction: column;
-            height: auto; /* Changed to auto */
-            min-height: 400px; /* Ensure a minimum height */
+            height: 100%; /* Ensure height to fit content */
         }
 
         .offers_content {
@@ -259,6 +261,8 @@
         @media (max-width: 768px) {
             .offers_col {
                 width: 100%;
+                margin-right: 0;
+                margin-left: 0;
             }
 
             .offers_item {
@@ -274,7 +278,6 @@
             .offers_col {
                 flex: 1 0 45%; /* Adjust the width for desktop view */
                 max-width: 45%;
-                margin: 2.5%;
             }
         }
     </style>
