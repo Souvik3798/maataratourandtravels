@@ -41,7 +41,7 @@
 										<i></i>
 										<i></i>
 									</div>
-									<div class="hotel_location"><strong>₹.{{$package->Price}}/-</strong> Per Person</div>
+									<div class="hotel_location"><strong>₹.{{$package->Price}}/-</strong></div>
 								</div>
 								<div class="hotel_title_button ml-lg-auto text-lg-right">
 

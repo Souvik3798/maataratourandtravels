@@ -64,7 +64,6 @@ class PackageResource extends Resource
                         TextInput::make('Exclusion')
                     ]),
                 TextInput::make('Price')
-                    ->label('Price Per Person')
                     ->prefix('₹.')
                     ->suffix('/-')
                     ->required()

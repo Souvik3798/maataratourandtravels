@@ -579,7 +579,7 @@
                                 </div>
                                 <div class="col-lg-6">
                                     <div class="offers_content">
-                                        <div class="offers_price">₹.{{$package->Price}}/-<span>per person</span></div>
+                                        <div class="offers_price">₹.{{$package->Price}}/-</div>
                                         <div class="rating_r rating_r_4 offers_rating">
                                             <i></i>
                                             <i></i>
