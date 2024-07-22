@@ -1186,7 +1186,7 @@
             </div>
 
             <div class="service-item">
-                <img src="hhttps://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
+                <img src="https://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
                     alt="Adventure Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
                 <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
