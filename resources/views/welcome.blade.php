@@ -1257,6 +1257,14 @@
                     honeymoon tour packages for the best price.</p>
             </div>
 
+            <div class="service-item">
+                <img src="https://image3.jdomni.in/library/27/A1/5F/C601C501D5166E5443AD394BBE_1496331665419_cropped_450X450.jpeg"
+                    alt="Tour Packages For Honeymoon">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
+                <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
+                    with best tour packages available with us.</p>
+            </div>
+
         </div>
     </div>
 
