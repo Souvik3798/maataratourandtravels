@@ -1149,6 +1149,98 @@
     </div>
 
 
+    <div style="font-family: Arial, sans-serif; text-align: center; padding: 20px;">
+        <h2 style="color: black;">Services We Offer</h2>
+        <p style="font-size: 16px; color: gray; margin-bottom: 30px;">The Company believes in the notion of extending
+            flawless travel services to clients to explore the beautiful destinations in Andaman.</p>
+
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="24 Hours Travel Agents"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">24 Hours Travel Agents</h3>
+                <p style="font-size: 14px; color: gray;">The ultimate and reliable solutions for all the travelers with
+                    attractive travel packages.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Adventure Tour Packages"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
+                <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
+                    with best tour packages available with us.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Air Ticketing Agents"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Air Ticketing Agents</h3>
+                <p style="font-size: 14px; color: gray;">Our company has the best air ticketing agents that help you to
+                    make the process of air ticket booking easy.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Car Hire"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car Hire</h3>
+                <p style="font-size: 14px; color: gray;">We provide cars on hire at extremely affordable rates and can
+                    be used to travel to various locations.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Car On Hire For Outstation-Xylo"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car On Hire For Outstation-Xylo</h3>
+                <p style="font-size: 14px; color: gray;">Hire a Xylo car which is specially designed for outstation
+                    travel & is comfortable & cosy all at once!</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Operators"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Operators</h3>
+                <p style="font-size: 14px; color: gray;">We excel in providing a wide range of domestic tour options to
+                    our clients as per their demands.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Packages"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Packages</h3>
+                <p style="font-size: 14px; color: gray;">We excel in providing exclusive packages to our clients. Our
+                    clients are the focal points of all our packages.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Travel Agents"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Travel Agents</h3>
+                <p style="font-size: 14px; color: gray;">Explore and get to know more about the rich heritage of your
+                    country with the best domestic travel agents.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Hotel Reservations"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Hotel Reservations</h3>
+                <p style="font-size: 14px; color: gray;">We offer reservation services to ensure all your needs &
+                    requirements are efficiently met.</p>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Tour Packages For Honeymoon"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Tour Packages For Honeymoon</h3>
+                <p style="font-size: 14px; color: gray;">We are trusted and verified agents providing romantic
+                    honeymoon tour packages for the best price.</p>
+            </div>
+
+        </div>
+    </div>
+
+
+
     <div class="trending">
         <div class="container">
             <div class="row">
