@@ -988,8 +988,8 @@
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
             <div style="text-align: center; margin: 10px; width: 200px;">
-                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
-                    style="width: 100%; height: auto; border-radius: 10px;">
+                <img src="https://image3.jdomni.in/banner/04102023/6F/88/55/FAFA6BF2FFEA63C45392ADF5CD_1696397584757.png?output-format=webp"
+                    alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Port Blair to Havelock Island</p>
                 <a href="{{ url('contact/') }}"
@@ -998,8 +998,8 @@
             </div>
 
             <div style="text-align: center; margin: 10px; width: 200px;">
-                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
-                    style="width: 100%; height: auto; border-radius: 10px;">
+                <img src="https://image3.jdomni.in/banner/04102023/DC/06/19/2D7D61D7D08660A46AF5320128_1696399563721.jpg?output-format=webp"
+                    alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Havelock Island to Neil Island</p>
                 <a href="{{ url('contact/') }}"
@@ -1008,8 +1008,8 @@
             </div>
 
             <div style="text-align: center; margin: 10px; width: 200px;">
-                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
-                    style="width: 100%; height: auto; border-radius: 10px;">
+                <img src="https://image2.jdomni.in/banner/04102023/CB/88/5B/559D60E782BB4C581506E7C603_1696399813097.jpg?output-format=webp"
+                    alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Neil Island to Port Blair</p>
                 <a href="{{ url('contact/') }}"
@@ -1018,8 +1018,8 @@
             </div>
 
             <div style="text-align: center; margin: 10px; width: 200px;">
-                <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
-                    style="width: 100%; height: auto; border-radius: 10px;">
+                <img src="https://image3.jdomni.in/banner/04102023/75/49/8B/C0F173813D499C99103F5B34F6_1696400724325.jpg?output-format=webp"
+                    alt="Flight Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Domestic Flight</p>
                 <a href="{{ url('contact/') }}"
@@ -1028,8 +1028,8 @@
             </div>
 
             <div style="text-align: center; margin: 10px; width: 200px;">
-                <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
-                    style="width: 100%; height: auto; border-radius: 10px;">
+                <img src="https://image2.jdomni.in/banner/04102023/C8/95/5E/36E33CFEE6A9AAF5A15E414220_1696400936113.jpg?output-format=webp"
+                    alt="Flight Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Andaman & Nicobar Islands</p>
                 <a href="{{ url('contact/') }}"
