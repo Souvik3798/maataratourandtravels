@@ -1178,70 +1178,80 @@
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="24 Hours Travel Agents">
+                <img src="https://image3.jdomni.in/library/FD/17/CF/8FB216B361B344F3155564D4DA_1496936555961_cropped_450X450.jpeg"
+                    alt="24 Hours Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">24 Hours Travel Agents</h3>
                 <p style="font-size: 14px; color: gray;">The ultimate and reliable solutions for all the travelers with
                     attractive travel packages.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Adventure Tour Packages">
+                <img src="hhttps://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
+                    alt="Adventure Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
                 <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
                     with best tour packages available with us.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Air Ticketing Agents">
+                <img src="https://image2.jdomni.in/library/C9/A5/CE/31F37E4418ABBD4D7C33DBF431_1496334323751_cropped_450X450.jpeg"
+                    alt="Air Ticketing Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Air Ticketing Agents</h3>
                 <p style="font-size: 14px; color: gray;">Our company has the best air ticketing agents that help you to
                     make the process of air ticket booking easy.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Car Hire">
+                <img src="https://image3.jdomni.in/library/B4/40/71/74900D3BDF1534CE61A91EEB38_1496333473729_cropped_450X450.jpeg"
+                    alt="Car Hire">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car Hire</h3>
                 <p style="font-size: 14px; color: gray;">We provide cars on hire at extremely affordable rates and can
                     be used to travel to various locations.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Car On Hire For Outstation-Xylo">
+                <img src="https://image1.jdomni.in/library/39/CE/2D/40B10C37EADABAB24F450E867B_1496331650841_cropped_450X450.jpeg"
+                    alt="Car On Hire For Outstation-Xylo">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car On Hire For Outstation-Xylo</h3>
                 <p style="font-size: 14px; color: gray;">Hire a Xylo car which is specially designed for outstation
                     travel & is comfortable & cosy all at once!</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Operators">
+                <img src="https://image2.jdomni.in/library/70/11/6B/DA60E66CEFF76A40DE35199DA5_1496269572424_cropped_450X450.jpeg"
+                    alt="Domestic Tour Operators">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Operators</h3>
                 <p style="font-size: 14px; color: gray;">We excel in providing a wide range of domestic tour options to
                     our clients as per their demands.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Packages">
+                <img src="https://image3.jdomni.in/library/1B/F1/8C/793EA679D44FC78AE24EFBC524_1496937988565_cropped_450X450.jpeg"
+                    alt="Domestic Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Packages</h3>
                 <p style="font-size: 14px; color: gray;">We excel in providing exclusive packages to our clients. Our
                     clients are the focal points of all our packages.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Domestic Travel Agents">
+                <img src="https://image2.jdomni.in/banner/30052019/30/04/2F/13E8B4401D04778386CB9B5850_1559159603474.jpg?output-format=webp"
+                    alt="Domestic Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Travel Agents</h3>
                 <p style="font-size: 14px; color: gray;">Explore and get to know more about the rich heritage of your
                     country with the best domestic travel agents.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Hotel Reservations">
+                <img src="https://image2.jdomni.in/banner/30052019/75/72/B3/C506855A217AAA561B7DF35A80_1559159405278.jpg?output-format=webp"
+                    alt="Hotel Reservations">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Hotel Reservations</h3>
                 <p style="font-size: 14px; color: gray;">We offer reservation services to ensure all your needs &
                     requirements are efficiently met.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://via.placeholder.com/200x150" alt="Tour Packages For Honeymoon">
+                <img src="https://image3.jdomni.in/library/E4/E3/DA/B932BBAD9EF9B3EB3A3B0115A0_1496252456466_cropped_450X450.jpeg"
+                    alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Tour Packages For Honeymoon</h3>
                 <p style="font-size: 14px; color: gray;">We are trusted and verified agents providing romantic
                     honeymoon tour packages for the best price.</p>
