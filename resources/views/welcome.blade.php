@@ -979,6 +979,67 @@
         </div>
     </div>
 
+
+
+    <div style="text-align: center; padding: 20px;">
+        <h2 style="font-size: 24px; margin-bottom: 10px;">Ship & Flight Ticket</h2>
+        <p style="font-size: 16px; color: gray; margin-bottom: 30px;">24/7 Service</p>
+
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <p style="font-size: 14px; color: gray;">Port Blair to Havelock Island</p>
+                <button
+                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                    Now</button>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <p style="font-size: 14px; color: gray;">Havelock Island to Neil Island</p>
+                <button
+                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                    Now</button>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <p style="font-size: 14px; color: gray;">Neil Island to Port Blair</p>
+                <button
+                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                    Now</button>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px;">Flight Ticket Service</h3>
+                <p style="font-size: 14px; color: gray;">Domestic Flight</p>
+                <button
+                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                    Now</button>
+            </div>
+
+            <div style="text-align: center; margin: 10px; width: 200px;">
+                <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
+                    style="width: 100%; height: auto; border-radius: 10px;">
+                <h3 style="font-size: 18px; margin-top: 10px;">Flight Ticket Service</h3>
+                <p style="font-size: 14px; color: gray;">Andaman & Nicobar Islands</p>
+                <button
+                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                    Now</button>
+            </div>
+
+        </div>
+    </div>
+
     <!-- Testimonials -->
 
 
