@@ -990,9 +990,9 @@
             <div style="text-align: center; margin: 10px; width: 200px;">
                 <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
                     style="width: 100%; height: auto; border-radius: 10px;">
-                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Port Blair to Havelock Island</p>
-                <a href="#"
+                <a href="{{ url('contact/') }}"
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
@@ -1000,9 +1000,9 @@
             <div style="text-align: center; margin: 10px; width: 200px;">
                 <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
                     style="width: 100%; height: auto; border-radius: 10px;">
-                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Havelock Island to Neil Island</p>
-                <a href="#"
+                <a href="{{ url('contact/') }}"
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
@@ -1010,9 +1010,9 @@
             <div style="text-align: center; margin: 10px; width: 200px;">
                 <img src="https://via.placeholder.com/200x150" alt="Ferry Ticket Service"
                     style="width: 100%; height: auto; border-radius: 10px;">
-                <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
+                <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Neil Island to Port Blair</p>
-                <a href="#"
+                <a href="{{ url('contact/') }}"
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
@@ -1020,9 +1020,9 @@
             <div style="text-align: center; margin: 10px; width: 200px;">
                 <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
                     style="width: 100%; height: auto; border-radius: 10px;">
-                <h3 style="font-size: 18px; margin-top: 10px;">Flight Ticket Service</h3>
+                <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Domestic Flight</p>
-                <a href="#"
+                <a href="{{ url('contact/') }}"
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
@@ -1030,9 +1030,9 @@
             <div style="text-align: center; margin: 10px; width: 200px;">
                 <img src="https://via.placeholder.com/200x150" alt="Flight Ticket Service"
                     style="width: 100%; height: auto; border-radius: 10px;">
-                <h3 style="font-size: 18px; margin-top: 10px;">Flight Ticket Service</h3>
+                <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Andaman & Nicobar Islands</p>
-                <a href="#"
+                <a href="{{ url('contact/') }}"
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
