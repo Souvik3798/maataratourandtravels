@@ -1,31 +1,32 @@
 <x-layout>
 
-    <link rel="stylesheet" type="text/css" href="{{asset('styles/offers_styles.css')}}">
-    <link rel="stylesheet" type="text/css" href="{{asset('styles/offers_responsive.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/offers_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('styles/offers_responsive.css') }}">
 
     <!-- Home -->
 
-	<div class="home">
-		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="{{asset('images/about_background.jpg')}}"></div>
-		<div class="home_content">
-			<div class="home_title">our services</div>
-		</div>
-	</div>
+    <div class="home">
+        <div class="home_background parallax-window" data-parallax="scroll"
+            data-image-src="{{ asset('images/about_background.jpg') }}"></div>
+        <div class="home_content">
+            <div class="home_title">our services</div>
+        </div>
+    </div>
 
-	<!-- Offers -->
+    <!-- Offers -->
 
-	<div class="offers">
+    <div class="offers">
 
 
 
-		<!-- Offers -->
+        <!-- Offers -->
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-1 temp_col"></div>
-				<div class="col-lg-11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-1 temp_col"></div>
+                <div class="col-lg-11">
 
-					{{-- <!-- Offers Sorting -->
+                    {{-- <!-- Offers Sorting -->
 					<div class="offers_sorting_container">
 						<ul class="offers_sorting">
 							<li>
@@ -75,66 +76,79 @@
 							</li>
 						</ul>
 					</div> --}}
-				</div>
+                </div>
 
-				<div class="col-lg-12">
-					<!-- Offers Grid -->
+                <div class="col-lg-12">
+                    <!-- Offers Grid -->
 
-					<div class="offers_grid">
+                    <div class="offers_grid">
 
 
-                    @foreach ($services as $service)
-                        <!-- Offers Item -->
+                        @foreach ($services as $service)
+                            <!-- Offers Item -->
 
-						<div class="offers_item rating_4">
-							<div class="row">
-								<div class="col-lg-1 temp_col"></div>
-								<div class="col-lg-3 col-1680-4">
-									<div class="offers_image_container">
-										<div class="offers_image_background" style="background-image:url({{asset('storage/'.$service->Image)}})"></div>
-										<div class="offer_name"><a href="{{url('service-details/'.$service->id)}}">Price On Demand</a></div>
-									</div>
-								</div>
-								<div class="col-lg-8">
-									<div class="offers_content">
-										<div class="offers_price">{{$service->Service }}</div>
-										<div class="rating_r rating_r_4 offers_rating" data-rating="4">
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-											<i></i>
-										</div>
-										<p class="offers_text">{{ Str::limit($service->Description, 400, '...') }}</p>
-										<div class="offers_icons">
-											<ul class="offers_icons_list">
-												<li class="offers_icons_item"><img src="images/post.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/compass.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/bicycle.png" alt=""></li>
-												<li class="offers_icons_item"><img src="images/sailboat.png" alt=""></li>
-											</ul>
-										</div>
-										<div class="button book_button"><a href="{{url('service-details/'.$service->id)}}">See More<span></span><span></span><span></span></a></div>
-										<div class="offer_reviews">
-											<div class="offer_reviews_content">
-												<div class="offer_reviews_title">very good</div>
-												<div class="offer_reviews_subtitle"></div>
-											</div>
-											<div class="offer_reviews_rating text-center">8.1</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-                    @endforeach
+                            <div class="offers_item rating_4">
+                                <div class="row">
+                                    <div class="col-lg-1 temp_col"></div>
+                                    <div class="col-lg-3 col-1680-4">
+                                        <div class="offers_image_container">
+                                            <div class="offers_image_background"
+                                                style="background-image:url({{ asset('storage/' . $service->Image) }})">
+                                            </div>
+                                            <div class="offer_name" style="background-color: rgb(73, 4, 73)"><a
+                                                    href="{{ url('service-details/' . $service->id) }}">Price On
+                                                    Demand</a></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <div class="offers_content">
+                                            <div class="offers_price" style="color:rgb(70, 1, 70)">
+                                                {{ $service->Service }}</div>
+                                            <div class="rating_r rating_r_4 offers_rating" data-rating="4">
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                                <i></i>
+                                            </div>
+                                            <p class="offers_text" style="color: black;font-size: 20px">
+                                                {{ Str::limit($service->Description, 400, '...') }}</p>
+                                            <div class="offers_icons">
+                                                <ul class="offers_icons_list">
+                                                    <li class="offers_icons_item"><img src="images/post.png"
+                                                            alt=""></li>
+                                                    <li class="offers_icons_item"><img src="images/compass.png"
+                                                            alt=""></li>
+                                                    <li class="offers_icons_item"><img src="images/bicycle.png"
+                                                            alt=""></li>
+                                                    <li class="offers_icons_item"><img src="images/sailboat.png"
+                                                            alt=""></li>
+                                                </ul>
+                                            </div>
+                                            <div class="button book_button"><a
+                                                    href="{{ url('service-details/' . $service->id) }}">See
+                                                    More<span></span><span></span><span></span></a></div>
+                                            <div class="offer_reviews">
+                                                <div class="offer_reviews_content">
+                                                    <div class="offer_reviews_title">very good</div>
+                                                    <div class="offer_reviews_subtitle"></div>
+                                                </div>
+                                                <div class="offer_reviews_rating text-center"
+                                                    style="background-color: rgb(102, 2, 102)">8.1</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        @endforeach
 
-					</div>
-				</div>
+                    </div>
+                </div>
 
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 
-    <script src="{{asset('plugins/Isotope/isotope.pkgd.min.js')}}"></script>
-    <script src="{{asset('js/offers_custom.js')}}"></script>
+    <script src="{{ asset('plugins/Isotope/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ asset('js/offers_custom.js') }}"></script>
 </x-layout>

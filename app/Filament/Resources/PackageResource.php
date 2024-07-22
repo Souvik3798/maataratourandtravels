@@ -42,15 +42,23 @@ class PackageResource extends Resource
                     ->required()
                     ->maxLength(255),
                 Select::make('Type')
-                ->label('Package Type')
-                ->options([
-                    'Family' => 'Family',
-                    'Solo' => 'Solo',
-                    'Honeymoon' => 'Honeymoon',
-                    'Group' => 'Group',
-                    'Luxury' => 'Luxury'
-                ])
-                ->required(),
+                    ->label('Package Type')
+                    ->options([
+                        'Family' => 'Family',
+                        'Solo' => 'Solo',
+                        'Honeymoon' => 'Honeymoon',
+                        'Group' => 'Group',
+                        'Luxury' => 'Luxury'
+                    ])
+                    ->required(),
+                TextInput::make('destination covered')
+                    ->placeholder('Port Blair, Swaraj Dweep, Shaheed Dweep.')
+                    ->required()
+                    ->maxLength(255),
+                TextInput::make('destination details')
+                    ->placeholder('2 Night at Port Blair, 2 Night at Swaraj Dweep, 1 Night at Shaheed Dweep')
+                    ->required()
+                    ->maxLength(255),
                 Textarea::make('Description')
                     ->required()
                     ->rows(10)
@@ -63,19 +71,25 @@ class PackageResource extends Resource
                     ->schema([
                         TextInput::make('Exclusion')
                     ]),
+                TextInput::make('Hotel')
+                    ->required()
+                    ->maxLength(255),
+                Repeater::make('Location')
+                    ->schema([
+                        TextInput::make('location')
+                            ->label('Exter the Location Covered')
+                            ->placeholder('eg:Port Blair - Hotel Shreesh / Hotel Kavitha Regent / Hotel The Innfinity / Hotel Royal Palace.')
+                            ->required()
+                            ->maxLength(255),
+                    ]),
                 TextInput::make('Price')
                     ->prefix('₹.')
                     ->suffix('/-')
                     ->required()
                     ->numeric()
                     ->maxLength(255),
-                 Repeater::make('Itinerary')
+                Repeater::make('Itinerary')
                     ->schema([
-                        Select::make('Days')
-                            ->label('Day Number')
-                            ->placeholder('Day')
-                            ->required()
-                            ->options(['1'=>'1','2'=>'2','3'=>'3','4'=>'4','5'=>'5','6'=>'6','7'=>'7','8'=>'8','9'=>'9','10'=>'10','11'=>'11','12'=>'12','13'=>'13','14'=>'14','15'=>'15','16'=>'16','17'=>'17','18'=>'18','19'=>'19','20'=>'20']),
                         TextInput::make('Title')
                             ->label('Title')
                             ->placeholder('Title of the day')
@@ -83,7 +97,7 @@ class PackageResource extends Resource
                         Textarea::make('Description')
                             ->placeholder('Elaborate the Day planning')
                             ->required()
-                ]),
+                    ]),
             ]);
     }
 
@@ -92,7 +106,7 @@ class PackageResource extends Resource
         return $table
             ->columns([
                 ImageColumn::make('Image')
-                    ->url(fn ($record) => Storage::url('storage/'.$record->image_path)) // Optional: If you want to make the image clickable
+                    ->url(fn ($record) => Storage::url('storage/' . $record->image_path)) // Optional: If you want to make the image clickable
                     ->height(100) // Optional: Set the height of the image
                     ->width(100) // Optional: Set the width of the image
                     ->rounded(), // Optional: Set the image to be rounded
