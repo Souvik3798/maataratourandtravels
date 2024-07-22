@@ -32,7 +32,9 @@
             }
         }
 
+
         /* activities */
+
         .test_slider_container {
             margin-top: 30px;
             position: relative;
@@ -216,6 +218,7 @@
         }
 
         /* Offer */
+
         .offers_image_container {
             position: relative;
             width: 100%;
@@ -434,49 +437,61 @@
             }
         }
 
-        .service-item,
-        .intro_col,
-        .offers_item,
-        .test_item,
-        .trending_item {
-            opacity: 0;
-            transition: transform 0.3s, box-shadow 0.3s, opacity 0.3s;
+        .service-item {
+            text-align: center;
+            margin: 10px;
+            width: 200px;
+            transition: transform 0.3s, box-shadow 0.3s;
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.6s ease-out;
         }
 
-        .service-item.show,
-        .intro_col.show,
-        .offers_item.show,
-        .test_item.show,
-        .trending_item.show {
-            animation: slideIn 0.6s ease-out forwards;
+        .service-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
         }
     </style>
+
 
     <!-- Home -->
 
     <div class="home">
+
         <!-- Home Slider -->
+
         <div class="home_slider_container">
+
             <div class="owl-carousel owl-theme home_slider">
+
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
+                    <!-- Image by https://unsplash.com/@anikindimitry -->
                     <div class="home_slider_background"
                         style="background-image:url({{ asset('images/Banner/Ross-Island-Port-Blair-Andaman.webp') }})">
                     </div>
+
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
                             <h1>Welcome To</h1>
                             <h1>Andaman Blue Ocean Travels</h1>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#contact">Enquiry Now</a>
                             </div>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#Hotels">Hotel Bookings</a>
                             </div>
                         </div>
@@ -484,20 +499,24 @@
                 </div>
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
+                    <!-- Image by https://unsplash.com/@anikindimitry -->
                     <div class="home_slider_background"
                         style="background-image:url({{ asset('images/Banner/062a9651-city-25275-16a4f932894.jpg') }})">
                     </div>
+
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
                             <h1>Welcome To</h1>
                             <h1>Andaman Blue Ocean Travels</h1>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#contact">Enquiry Now</a>
                             </div>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#Hotels">Hotel Bookings</a>
                             </div>
                         </div>
@@ -508,17 +527,20 @@
                 <div class="owl-item home_slider_item">
                     <div class="home_slider_background"
                         style="background-image:url({{ asset('images/Banner/havelock-338536_1920.jpg') }})"></div>
+
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
                             <h1>Welcome To</h1>
                             <h1>Andaman Blue Ocean Travels</h1>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#contact">Enquiry Now</a>
                             </div>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#Hotels">Hotel Bookings</a>
                             </div>
                         </div>
@@ -529,22 +551,26 @@
                 <div class="owl-item home_slider_item">
                     <div class="home_slider_background"
                         style="background-image:url({{ asset('images/Banner/jail-3988719_1920.jpg') }})"></div>
+
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
                             <h1>Welcome To</h1>
                             <h1>Andaman Blue Ocean Travels</h1>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#contact">Enquiry Now</a>
                             </div>
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg"></div>
+                                <div class="button_bcg">
+                                </div>
                                 <a href="#Hotels">Hotel Bookings</a>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <!-- Home Slider Nav - Prev -->
@@ -559,11 +585,11 @@
                         </linearGradient>
                     </defs>
                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                    C22.545,2,26,5.541,26,9.909V23.091z" />
+     M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+     C22.545,2,26,5.541,26,9.909V23.091z" />
                     <polygon class="nav_arrow" fill="#F3F6F9"
                         points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-                    11.042,18.219 " />
+					11.042,18.219 " />
                 </svg>
             </div>
 
@@ -579,15 +605,16 @@
                         </linearGradient>
                     </defs>
                     <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                    C22.545,2,26,5.541,26,9.909V23.091z" />
+    M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+    C22.545,2,26,5.541,26,9.909V23.091z" />
                     <polygon class="nav_arrow" fill="#F3F6F9"
                         points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-                    17.046,15.554 " />
+				17.046,15.554 " />
                 </svg>
             </div>
 
             <!-- Home Slider Dots -->
+
             <div class="home_slider_dots">
                 <ul id="home_slider_custom_dots" class="home_slider_custom_dots">
                     <li class="home_slider_custom_dot active">
@@ -604,16 +631,24 @@
                     </li>
                 </ul>
             </div>
+
         </div>
+
     </div>
 
     <!-- Search -->
+
     <div class="search">
+
+
         <!-- Search Contents -->
+
         <div class="container fill_height">
             <div class="row fill_height">
                 <div class="col fill_height">
+
                     <!-- Search Tabs -->
+
                     <div class="search_tabs_container">
                         <div
                             class="search_tabs d-flex flex-lg-row flex-column align-items-lg-center align-items-start justify-content-lg-between justify-content-start">
@@ -643,12 +678,15 @@
                             </div>
                         </div>
                     </div>
+
+
                 </div>
             </div>
         </div>
     </div>
 
     <!-- Intro -->
+
     <div class="intro">
         <div class="container">
             <div class="row">
@@ -666,7 +704,10 @@
                 </div>
             </div>
             <div class="row intro_items">
+
                 <!-- Intro Item -->
+
+
                 @php
                     $locations = \App\Models\TourLocation::all();
                 @endphp
@@ -685,6 +726,7 @@
                                     <a href={{ url('location/' . $location->id) }}>see
                                         more<span></span><span></span><span></span></a>
                                 </div>
+
                                 <div class="intro_center text-center">
                                     <h1>{{ $location->Place }}</h1>
                                     <div class="rating rating_4">
@@ -699,19 +741,26 @@
                         </div>
                     </div>
                 @endforeach
+
             </div>
         </div>
     </div>
 
     <!-- CTA -->
+
     <div class="cta">
+        <!-- Image by https://unsplash.com/@thanni -->
         <div class="cta_background" style="background-image:url(images/cta.jpg)"></div>
+
         <div class="container">
             <div class="row">
                 <div class="col">
+
                     <!-- CTA Slider -->
+
                     <div class="cta_slider_container">
                         <div class="owl-carousel owl-theme cta_slider">
+
                             <!-- CTA Slider Item -->
                             <div class="owl-item cta_item text-center">
                                 <div class="cta_title">Havelock Island</div>
@@ -730,6 +779,7 @@
                                 </p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
 
@@ -749,6 +799,7 @@
                                     Overall, a wonderful experience!</p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
 
@@ -756,6 +807,7 @@
                             <div class="owl-item cta_item text-center">
                                 <div class="cta_title">Port Blair</div>
                                 <div class="rating_r rating_r_4">
+                                    <i></i>
                                     <i></i>
                                     <i></i>
                                     <i></i>
@@ -768,6 +820,7 @@
                                     detail and the seamless transportation arrangements.</p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
 
@@ -787,6 +840,7 @@
                                     for the breathtaking views. Highly recommend this company!</p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
 
@@ -794,6 +848,7 @@
                             <div class="owl-item cta_item text-center">
                                 <div class="cta_title">North Bay Island</div>
                                 <div class="rating_r rating_r_4">
+                                    <i></i>
                                     <i></i>
                                     <i></i>
                                     <i></i>
@@ -806,6 +861,7 @@
                                     wait to book my next adventure with them!</p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
 
@@ -813,6 +869,7 @@
                             <div class="owl-item cta_item text-center">
                                 <div class="cta_title">Radhanagar Beach</div>
                                 <div class="rating_r rating_r_4">
+                                    <i></i>
                                     <i></i>
                                     <i></i>
                                     <i></i>
@@ -826,8 +883,11 @@
                                     hassle-free and enjoyable vacation.</p>
                                 <div class="button cta_button">
                                     <div class="button_bcg"></div>
+                                    {{-- <a href="#">book now<span></span><span></span><span></span></a> --}}
                                 </div>
                             </div>
+
+
                         </div>
 
                         <!-- CTA Slider Nav - Prev -->
@@ -843,11 +903,11 @@
                                     </linearGradient>
                                 </defs>
                                 <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                            M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                            C22.545,2,26,5.541,26,9.909V23.091z" />
+        M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+        C22.545,2,26,5.541,26,9.909V23.091z" />
                                 <polygon class="nav_arrow" fill="#F3F6F9"
                                     points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-                            11.042,18.219 " />
+								11.042,18.219 " />
                             </svg>
                         </div>
 
@@ -864,20 +924,24 @@
                                     </linearGradient>
                                 </defs>
                                 <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                            M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                            C22.545,2,26,5.541,26,9.909V23.091z" />
+       M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+       C22.545,2,26,5.541,26,9.909V23.091z" />
                                 <polygon class="nav_arrow" fill="#F3F6F9"
                                     points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-                            17.046,15.554 " />
+							17.046,15.554 " />
                             </svg>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
+
     </div>
 
     <!-- Offers -->
+
     <div class="offers">
         <div class="container" style="max-width: 1200px; margin: auto;">
             <div class="row">
@@ -950,6 +1014,8 @@
         </div>
     </div>
 
+
+
     <div style="text-align: center; padding: 20px;">
         <h2 style="margin-bottom: 10px; color: black;">SHIP AND FLIGHT TICKETS</h2>
         <p style="font-size: 16px; color: gray; margin-bottom: 30px;">24/7 Service</p>
@@ -1005,10 +1071,13 @@
                     style="display: inline-block; padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; text-decoration: none; cursor: pointer;">Enquiry
                     Now</a>
             </div>
+
         </div>
     </div>
 
     <!-- Testimonials -->
+
+
     <div class="testimonials">
         <div class="test_border"></div>
         <div class="container">
@@ -1019,9 +1088,12 @@
             </div>
             <div class="row">
                 <div class="col">
+
                     <!-- Testimonials Slider -->
+
                     <div class="test_slider_container">
                         <div class="owl-carousel owl-theme test_slider">
+
                             @php
                                 $activities = \App\Models\Activity::all();
                             @endphp
@@ -1058,6 +1130,7 @@
                                     </div>
                                 </div>
                             @endforeach
+
                         </div>
 
                         <!-- Testimonials Slider Nav - Prev -->
@@ -1073,11 +1146,11 @@
                                     </linearGradient>
                                 </defs>
                                 <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                            M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                            C22.545,2,26,5.541,26,9.909V23.091z" />
+                                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                C22.545,2,26,5.541,26,9.909V23.091z" />
                                 <polygon class="nav_arrow" fill="#F3F6F9"
                                     points="15.044,22.222 16.377,20.888 12.374,16.885 16.377,12.882 15.044,11.55 9.708,16.885 11.04,18.219
-                            11.042,18.219 " />
+                                11.042,18.219 " />
                             </svg>
                         </div>
 
@@ -1094,18 +1167,22 @@
                                     </linearGradient>
                                 </defs>
                                 <path class="nav_path" fill="#F3F6F9" d="M19,0H9C4.029,0,0,4.029,0,9v15c0,4.971,4.029,9,9,9h10c4.97,0,9-4.029,9-9V9C28,4.029,23.97,0,19,0z
-                            M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
-                            C22.545,2,26,5.541,26,9.909V23.091z" />
+                                M26,23.091C26,27.459,22.545,31,18.285,31H9.714C5.454,31,2,27.459,2,23.091V9.909C2,5.541,5.454,2,9.714,2h8.571
+                                C22.545,2,26,5.541,26,9.909V23.091z" />
                                 <polygon class="nav_arrow" fill="#F3F6F9"
                                     points="13.044,11.551 11.71,12.885 15.714,16.888 11.71,20.891 13.044,22.224 18.379,16.888 17.048,15.554
-                            17.046,15.554 " />
+                                17.046,15.554 " />
                             </svg>
                         </div>
+
                     </div>
+
                 </div>
             </div>
+
         </div>
     </div>
+
 
     <div style="text-align: center; padding: 20px;">
         <h2 style="color: black;">Services We Offer</h2>
@@ -1113,6 +1190,7 @@
             flawless travel services to clients to explore the beautiful destinations in Andaman.</p>
 
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+
             <div class="service-item">
                 <img src="https://image3.jdomni.in/library/FD/17/CF/8FB216B361B344F3155564D4DA_1496936555961_cropped_450X450.jpeg"
                     alt="24 Hours Travel Agents">
@@ -1200,6 +1278,7 @@
                 <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
                     with best tour packages available with us.</p>
             </div>
+
         </div>
     </div>
 
@@ -1218,6 +1297,9 @@
             });
         });
     </script>
+
+
+
 
     <div class="trending">
         <div class="container">
@@ -1369,7 +1451,6 @@
             });
         });
     </script>
-
     <script>
         document.addEventListener('DOMContentLoaded', function() {
             var buttons = document.querySelectorAll('a[style*="background: linear-gradient"]');
@@ -1387,7 +1468,6 @@
             });
         });
     </script>
-
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             // Select all offer items
@@ -1444,4 +1524,7 @@
             });
         });
     </script>
+
+
+
 </x-layout>
