@@ -992,9 +992,9 @@
                     style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px;">Ferry Ticket Service</h3>
                 <p style="font-size: 14px; color: gray;">Port Blair to Havelock Island</p>
-                <button
-                    style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
-                    Now</button>
+                <a href="#"><button
+                        style="padding: 10px 20px; background-color: #A370F1; color: white; border: none; border-radius: 5px; cursor: pointer;">Enquiry
+                        Now</button></a>
             </div>
 
             <div style="text-align: center; margin: 10px; width: 200px;">
