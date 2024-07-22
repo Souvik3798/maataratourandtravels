@@ -445,7 +445,14 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            animation: slideIn 0.6s ease-out;
+            opacity: 0;
+            /* Initially hidden */
+        }
+
+        .service-item.show {
+            animation: slideIn 0.6s ease-out forwards;
+            opacity: 1;
+            /* Make it visible when the animation is triggered */
         }
 
         .service-item:hover {
@@ -457,7 +464,6 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-        }
         }
     </style>
 
@@ -1184,7 +1190,7 @@
     </div>
 
 
-    <div style="text-align: center; padding: 20px;">
+    <div id="services" style="text-align: center; padding: 20px;">
         <h2 style="color: black;">Services We Offer</h2>
         <p style="font-size: 16px; color: gray; margin-bottom: 30px;">The Company believes in the notion of extending
             flawless travel services to clients to explore the beautiful destinations in Andaman.</p>
@@ -1192,218 +1198,276 @@
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
             <div class="service-item">
-                <img src="https://image3.jdomni.in/library/FD/17/CF/8FB216B361B344F3155564D4DA_1496936555961_cropped_450X450.jpeg"
-                    alt="24 Hours Travel Agents">
+                <img src="https://via.placeholder.com/200x150" alt="24 Hours Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">24 Hours Travel Agents</h3>
                 <p style="font-size: 14px; color: gray;">The ultimate and reliable solutions for all the travelers with
                     attractive travel packages.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
-                    alt="Adventure Tour Packages">
+                <img src="https://via.placeholder.com/200x150" alt="Adventure Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
                 <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
                     with best tour packages available with us.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image2.jdomni.in/library/C9/A5/CE/31F37E4418ABBD4D7C33DBF431_1496334323751_cropped_450X450.jpeg"
-                    alt="Air Ticketing Agents">
+                <img src="https://via.placeholder.com/200x150" alt="Air Ticketing Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Air Ticketing Agents</h3>
                 <p style="font-size: 14px; color: gray;">Our company has the best air ticketing agents that help you to
                     make the process of air ticket booking easy.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image3.jdomni.in/library/B4/40/71/74900D3BDF1534CE61A91EEB38_1496333473729_cropped_450X450.jpeg"
-                    alt="Car Hire">
+                <img src="https://via.placeholder.com/200x150" alt="Car Hire">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car Hire</h3>
                 <p style="font-size: 14px; color: gray;">We provide cars on hire at extremely affordable rates and can
                     be used to travel to various locations.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image1.jdomni.in/library/39/CE/2D/40B10C37EADABAB24F450E867B_1496331650841_cropped_450X450.jpeg"
-                    alt="Car On Hire For Outstation-Xylo">
+                <img src="https://via.placeholder.com/200x150" alt="Car On Hire For Outstation-Xylo">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car On Hire For Outstation-Xylo</h3>
                 <p style="font-size: 14px; color: gray;">Hire a Xylo car which is specially designed for outstation
                     travel & is comfortable & cosy all at once!</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image2.jdomni.in/library/70/11/6B/DA60E66CEFF76A40DE35199DA5_1496269572424_cropped_450X450.jpeg"
-                    alt="Domestic Tour Operators">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Operators">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Operators</h3>
                 <p style="font-size: 14px; color: gray;">We excel in providing a wide range of domestic tour options to
                     our clients as per their demands.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image3.jdomni.in/library/1B/F1/8C/793EA679D44FC78AE24EFBC524_1496937988565_cropped_450X450.jpeg"
-                    alt="Domestic Tour Packages">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Packages</h3>
                 <p style="font-size: 14px; color: gray;">We excel in providing exclusive packages to our clients. Our
                     clients are the focal points of all our packages.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image2.jdomni.in/banner/30052019/30/04/2F/13E8B4401D04778386CB9B5850_1559159603474.jpg?output-format=webp"
-                    alt="Domestic Travel Agents">
+                <img src="https://via.placeholder.com/200x150" alt="Domestic Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Travel Agents</h3>
                 <p style="font-size: 14px; color: gray;">Explore and get to know more about the rich heritage of your
                     country with the best domestic travel agents.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image2.jdomni.in/banner/30052019/75/72/B3/C506855A217AAA561B7DF35A80_1559159405278.jpg?output-format=webp"
-                    alt="Hotel Reservations">
+                <img src="https://via.placeholder.com/200x150" alt="Hotel Reservations">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Hotel Reservations</h3>
                 <p style="font-size: 14px; color: gray;">We offer reservation services to ensure all your needs &
                     requirements are efficiently met.</p>
             </div>
 
             <div class="service-item">
-                <img src="https://image3.jdomni.in/library/E4/E3/DA/B932BBAD9EF9B3EB3A3B0115A0_1496252456466_cropped_450X450.jpeg"
-                    alt="Tour Packages For Honeymoon">
+                <img src="https://via.placeholder.com/200x150" alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Tour Packages For Honeymoon</h3>
                 <p style="font-size: 14px; color: gray;">We are trusted and verified agents providing romantic
                     honeymoon tour packages for the best price.</p>
-            </div>
-
-            <div class="service-item">
-                <img src="https://image3.jdomni.in/library/27/A1/5F/C601C501D5166E5443AD394BBE_1496331665419_cropped_450X450.jpeg"
-                    alt="Tour Packages For Honeymoon">
-                <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
-                <p style="font-size: 14px; color: gray;">Rejuvenate yourself by rewarding yourself an adventure tour
-                    with best tour packages available with us.</p>
             </div>
 
         </div>
     </div>
 
     <script>
-        const serviceItems = document.querySelectorAll('div[style*="margin: 10px; width: 200px;"]');
+        function isElementInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
 
-        serviceItems.forEach(item => {
-            item.addEventListener('mouseover', () => {
-                item.style.transform = 'scale(1.05)';
-                item.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+        function showServiceItems() {
+            var items = document.querySelectorAll('.service-item');
+            items.forEach(function(item) {
+                if (isElementInViewport(item) && !item.classList.contains('show')) {
+                    item.classList.add('show');
+                } else if (!isElementInViewport(item) && item.classList.contains('show')) {
+                    item.classList.remove('show');
+                }
             });
+        }
 
-            item.addEventListener('mouseout', () => {
-                item.style.transform = 'scale(1)';
-                item.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
-            });
-        });
+        window.addEventListener('scroll', showServiceItems);
+        window.addEventListener('resize', showServiceItems);
+        document.addEventListener('DOMContentLoaded', showServiceItems);
+
+
+
+
+        <
+        div class = "trending" >
+        <
+        div class = "container" >
+        <
+        div class = "row" >
+        <
+        div class = "col text-center"
+        id = "Hotels" >
+            <
+            h2 class = "section_title"
+        style = "color: #6A1B9A;" > Luxurious Accommodations at Our Partner Hotels <
+            /h2> <
+            /div> <
+            /div> <
+            div class = "row trending_container"
+        style = "display: flex; flex-wrap: wrap; justify-content: space-between;" >
+            @php
+                $hotels = \App\Models\Hotel::all();
+            @endphp
+        @foreach ($hotels as $hotel)
+            <
+            !--Trending Item-- >
+            <
+            div class = "col s12 m6 l3 trending_item"
+            style = "margin: 10px; box-sizing: border-box; display: flex;" >
+                <
+                div class = "card"
+            style =
+                "box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;" >
+                <
+                div class = "card-image"
+            style = "overflow: hidden; height: 150px; display: flex; align-items: center; justify-content: center;" >
+                <
+                img src = "{{ 'storage/' . $hotel->Image }}"
+            alt = ""
+            style = "width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;" >
+                <
+                /div> <
+                div class = "card-content"
+            style =
+                "text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; font-family: 'TheWorldFont', sans-serif;" >
+                <
+                div style = "flex-grow: 1;" >
+                <
+                div class = "trending_title"
+            style = "font-size: 1.2em; font-weight: bold; color: #6A1B9A;" >
+                <
+                a href = "{{ url('hotel/' . $hotel->id) }}"
+            style = "color: inherit; text-decoration: none; transition: color 0.3s ease;" > {{ $hotel->Hotel }} < /a> <
+                /div> <
+                div class = "trending_price"
+            style = "font-size: 1.1em; color: #FFB300; margin-top: 10px;" >
+                From₹.{{ $hotel->Price }} / -
+                <
+                /div> <
+                /div> <
+                div class = "trending_location"
+            style = "font-size: 0.9em; color: #9575CD; margin-top: 5px;" >
+                {{ $hotel->Location }} <
+                /div> <
+                div style = "margin-top: 10px;" >
+                <
+                a href = "{{ url('hotel/' . $hotel->id) }}"
+            style =
+                "display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #6A1B9A, #8E24AA); color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em; position: relative; transition: background 0.3s ease;" >
+                More <
+                span
+            style = "display: inline-block; margin-left: 8px; transition: transform 0.3s ease;" > & rarr; < /span> <
+            /a> <
+            /div> <
+            /div> <
+            /div> <
+            /div> <
+            !--End of Trending Item-- >
+        @endforeach <
+        /div> <
+        /div> <
+        /div>
+
+        <
+        div class = "contact" >
+        <
+        div class = "contact_background"
+        style = "background-image:url(images/contact.png)" > < /div>
+
+            <
+            div class = "container"
+        id = "contact" >
+            <
+            div class = "row" >
+            <
+            div class = "col-lg-5" >
+            <
+            div class = "contact_image" >
+            @if (session('success'))
+                <
+                div class = "alert alert-success"
+                id = "success-popup" >
+                    {{ session('success') }} <
+                    /div>
+            @endif <
+            /div> <
+            /div> <
+        div class = "col-lg-7" >
+        <
+        div class = "contact_form_container" >
+        <
+        div class = "contact_title" > get in touch < /div> <
+            form action = "{{ url('send/') }}"
+        method = "POST"
+        id = "contact_form"
+        class = "contact_form text-center" >
+        @csrf
+            <
+            input type = "text"
+        name = "name"
+        id = "contact_form_name"
+        class = "contact_form_name input_field"
+        placeholder = "Name"
+        required = "required"
+        data - error = "Name is required." >
+            <
+            input type = "email"
+        name = "email"
+        id = "contact_form_email"
+        class = "contact_form_email input_field"
+        placeholder = "E-mail"
+        required = "required"
+        data - error = "Email is required." >
+            <
+            input type = "text"
+        name = "subject"
+        id = "contact_form_subject"
+        class = "contact_form_subject input_field"
+        placeholder = "Subject"
+        required = "required"
+        data - error = "Subject is required." >
+            <
+            input type = "tel"
+        name = "phone"
+        id = "contact_form_phone"
+        class = "contact_form_phone input_field"
+        placeholder = "Phone Number"
+        required = "required"
+        data - error = "Phone number is required." >
+            <
+            textarea id = "contact_form_message"
+        name = "message"
+        class = "text_field contact_form_message"
+        rows = "4"
+        placeholder = "Message"
+        required = "required"
+        data - error = "Please, write us a message." > < /textarea> <
+            button type = "submit"
+        id = "form_submit_button"
+        class = "form_submit_button button trans_200" > send
+        message < span > < /span><span></span > < span > < /span></button >
+            <
+            /form> <
+            /div> <
+            /div> <
+            /div> <
+            /div> <
+            /div>
+
+            <
+            script src = "https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js" >
     </script>
-
-
-
-
-    <div class="trending">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center" id="Hotels">
-                    <h2 class="section_title" style="color: #6A1B9A;">Luxurious Accommodations at Our Partner Hotels
-                    </h2>
-                </div>
-            </div>
-            <div class="row trending_container"
-                style="display: flex; flex-wrap: wrap; justify-content: space-between;">
-                @php
-                    $hotels = \App\Models\Hotel::all();
-                @endphp
-                @foreach ($hotels as $hotel)
-                    <!-- Trending Item -->
-                    <div class="col s12 m6 l3 trending_item"
-                        style="margin: 10px; box-sizing: border-box; display: flex;">
-                        <div class="card"
-                            style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
-                            <div class="card-image"
-                                style="overflow: hidden; height: 150px; display: flex; align-items: center; justify-content: center;">
-                                <img src="{{ 'storage/' . $hotel->Image }}" alt=""
-                                    style="width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;">
-                            </div>
-                            <div class="card-content"
-                                style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; font-family: 'TheWorldFont', sans-serif;">
-                                <div style="flex-grow: 1;">
-                                    <div class="trending_title"
-                                        style="font-size: 1.2em; font-weight: bold; color: #6A1B9A;">
-                                        <a href="{{ url('hotel/' . $hotel->id) }}"
-                                            style="color: inherit; text-decoration: none; transition: color 0.3s ease;">{{ $hotel->Hotel }}</a>
-                                    </div>
-                                    <div class="trending_price"
-                                        style="font-size: 1.1em; color: #FFB300; margin-top: 10px;">
-                                        From ₹.{{ $hotel->Price }}/-
-                                    </div>
-                                </div>
-                                <div class="trending_location"
-                                    style="font-size: 0.9em; color: #9575CD; margin-top: 5px;">
-                                    {{ $hotel->Location }}
-                                </div>
-                                <div style="margin-top: 10px;">
-                                    <a href="{{ url('hotel/' . $hotel->id) }}"
-                                        style="display: inline-block; padding: 10px 20px; background: linear-gradient(45deg, #6A1B9A, #8E24AA); color: white; border-radius: 5px; text-decoration: none; font-size: 0.9em; position: relative; transition: background 0.3s ease;">
-                                        More
-                                        <span
-                                            style="display: inline-block; margin-left: 8px; transition: transform 0.3s ease;">&rarr;</span>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Trending Item -->
-                @endforeach
-            </div>
-        </div>
-    </div>
-
-    <div class="contact">
-        <div class="contact_background" style="background-image:url(images/contact.png)"></div>
-
-        <div class="container" id="contact">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="contact_image">
-                        @if (session('success'))
-                            <div class="alert alert-success" id="success-popup">
-                                {{ session('success') }}
-                            </div>
-                        @endif
-                    </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="contact_form_container">
-                        <div class="contact_title">get in touch</div>
-                        <form action="{{ url('send/') }}" method="POST" id="contact_form"
-                            class="contact_form text-center">
-                            @csrf
-                            <input type="text" name="name" id="contact_form_name"
-                                class="contact_form_name input_field" placeholder="Name" required="required"
-                                data-error="Name is required.">
-                            <input type="email" name="email" id="contact_form_email"
-                                class="contact_form_email input_field" placeholder="E-mail" required="required"
-                                data-error="Email is required.">
-                            <input type="text" name="subject" id="contact_form_subject"
-                                class="contact_form_subject input_field" placeholder="Subject" required="required"
-                                data-error="Subject is required.">
-                            <input type="tel" name="phone" id="contact_form_phone"
-                                class="contact_form_phone input_field" placeholder="Phone Number" required="required"
-                                data-error="Phone number is required.">
-                            <textarea id="contact_form_message" name="message" class="text_field contact_form_message" rows="4"
-                                placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                            <button type="submit" id="form_submit_button"
-                                class="form_submit_button button trans_200">send
-                                message<span></span><span></span><span></span></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/node-vibrant/dist/vibrant.min.js"></script>
 
     <script>
