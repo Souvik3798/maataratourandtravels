@@ -702,8 +702,6 @@ section {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    /* Remove or reduce opacity */
-    opacity: 0.8; /* Change this value to adjust transparency, or remove it for full visibility */
 }
 .home_slider_content {
     position: absolute;
