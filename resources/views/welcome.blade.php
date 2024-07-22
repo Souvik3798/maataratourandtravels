@@ -982,7 +982,7 @@
 
 
     <div style="text-align: center; padding: 20px;">
-        <h2 style="font-size: 24px; margin-bottom: 10px;">Ship & Flight Ticket</h2>
+        <h1 style="font-size: 24px; margin-bottom: 10px;">Ship & Flight Ticket</h1>
         <p style="font-size: 16px; color: gray; margin-bottom: 30px;">24/7 Service</p>
 
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
