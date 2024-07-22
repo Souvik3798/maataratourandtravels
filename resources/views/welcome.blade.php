@@ -425,6 +425,18 @@
             /* Adjust the icon's appearance if needed */
         }
 
+        @keyframes slideIn {
+            from {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
         .service-item {
             text-align: center;
             margin: 10px;
@@ -433,6 +445,7 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: slideIn 0.6s ease-out;
         }
 
         .service-item:hover {
@@ -444,6 +457,7 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
+        }
         }
     </style>
 
