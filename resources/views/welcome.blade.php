@@ -628,9 +628,27 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
 
-                                    <a href="{{ 'location/' . $location->id }}">
-                                        see
-                                        more<span></span><span></span><span></span></>
+                                    {{-- <a href="{{ 'location/' . $location->id }}"> --}}
+                                    <a
+                                        @if ($i == 1) href="{{ url('https://andamanblueocean.com/package/1') }}"
+                                        @elseif ($i == 2)
+                                             href="{{ url('https://andamanblueocean.com/package/3') }}"
+                                            @elseif ($i == 3)
+                                                 href="{{ url('https://andamanblueocean.com/package/4') }}"
+                                                @elseif ($i == 4)
+                                                     href="{{ url('https://andamanblueocean.com/package/2') }}"
+                                                    @elseif ($i == 5)
+                                                         href="{{ url('https://andamanblueocean.com/package/5') }}"
+                                                        @elseif ($i == 6)
+
+                                                                href="{{ url('https://andamanblueocean.com/package/8') }}"
+                                                            @elseif ($i == 7)
+
+                                                                    href="{{ url('https://andamanblueocean.com/package/6') }}"
+                                                                @elseif ($i == 8)
+
+                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}" @endif>
+                                        see more<span></span><span></span><span></span></>
                                 </div>
 
                                 <div class="intro_center text-center">
