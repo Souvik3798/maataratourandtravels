@@ -131,18 +131,6 @@
             /* Adjust as needed to avoid overlap with WhatsApp button */
             right: 20px;
         }
-
-        .main_nav .main_nav_list {
-            margin-left: 0;
-        }
-
-        .main_nav .main_nav_item {
-            margin-right: -1rem;
-        }
-
-        .logo_container {
-            margin-right: -1rem;
-        }
     </style>
 </head>
 
