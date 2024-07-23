@@ -56,7 +56,7 @@ class PackageResource extends Resource
                     ->required()
                     ->rows(10)
                     ->cols(10),
-                TextInput::make('people')
+                TextInput::make('peoples')
                     ->required()
                     ->label('Number of Peoples')
                     ->placeholder('Enter minimum number of peoples required'),
