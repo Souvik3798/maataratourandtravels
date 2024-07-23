@@ -610,8 +610,12 @@
 
                 @php
                     $locations = \App\Models\TourLocation::all();
+                    $i = 0;
                 @endphp
                 @foreach ($locations as $location)
+                    @php
+                        $i++;
+                    @endphp
                     <div class="col-lg-4 intro_col" style="margin-bottom: 10px">
                         <div class="intro_item">
                             <div class="intro_item_overlay"></div>
@@ -624,22 +628,22 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
                                     <a
-                                        @if ($location->id == 1) href="{{ url('https://andamanblueocean.com/package/1') }}"
-                                        @elseif ($location->id == 2)
+                                        @if ($i == 1) href="{{ url('https://andamanblueocean.com/package/1') }}"
+                                        @elseif ($i == 2)
                                              href="{{ url('https://andamanblueocean.com/package/3') }}"
-                                            @elseif ($location->id == 3)
+                                            @elseif ($i == 3)
                                                  href="{{ url('https://andamanblueocean.com/package/4') }}"
-                                                @elseif ($location->id == 4)
+                                                @elseif ($i == 4)
                                                      href="{{ url('https://andamanblueocean.com/package/2') }}"
-                                                    @elseif ($location->id == 5)
+                                                    @elseif ($i == 5)
                                                          href="{{ url('https://andamanblueocean.com/package/5') }}"
-                                                        @elseif ($location->id == 6)
+                                                        @elseif ($i == 6)
 
                                                                 href="{{ url('https://andamanblueocean.com/package/8') }}"
-                                                            @elseif ($location->id == 7)
+                                                            @elseif ($i == 7)
 
                                                                     href="{{ url('https://andamanblueocean.com/package/6') }}"
-                                                                @elseif ($location->id == 8)
+                                                                @elseif ($i == 8)
 
                                                                         href="{{ url('https://andamanblueocean.com/package/7') }}" @endif>see
                                         more<span></span><span></span><span></span></>
