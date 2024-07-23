@@ -486,12 +486,10 @@
 
         .chat-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 70px;
             right: 20px;
-            width: 30px;
-            /* Halved size */
-            height: 30px;
-            /* Halved size */
+            width: 40px;
+            height: 40px;
             background-color: white;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -503,19 +501,16 @@
         }
 
         .chat-button img {
-            width: 15px;
-            /* Halved size */
-            height: 15px;
-            /* Halved size */
+            width: 20px;
+            height: 20px;
         }
 
         .chat-modal {
             display: none;
             position: fixed;
-            bottom: 90px;
+            bottom: 160px;
             right: 20px;
-            width: 180px;
-            /* Further decreased size */
+            width: 300px;
             max-width: 90%;
             background-color: white;
             border-radius: 15px;
@@ -537,71 +532,52 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 10px;
-            /* Adjusted padding */
-            gap: 10px;
-            /* Adjusted gap */
+            padding: 20px;
         }
 
         .text-content {
             flex: 1;
-            display: flex;
-            flex-direction: column;
-            /* Ensure column layout */
-            justify-content: center;
+            padding-right: 20px;
         }
 
         .text-content h1 {
-            font-size: 12px;
-            /* Further decreased size */
-            margin: 0 0 5px;
-            /* Adjusted margin */
+            font-size: 36px;
+            margin: 0 0 10px;
             color: #5a3d2b;
         }
 
         .text-content p {
-            font-size: 7px;
-            /* Further decreased size */
-            margin: 0 0 10px;
-            /* Adjusted margin */
+            font-size: 16px;
+            margin: 0 0 20px;
             color: #5a3d2b;
+        }
+
+        .text-content p span {
+            font-weight: bold;
         }
 
         .text-content button {
             background-color: #5a3d2b;
             color: white;
             border: none;
-            padding: 5px 10px;
-            /* Adjusted padding */
+            padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 7px;
-            /* Further decreased size */
+            font-size: 16px;
             text-decoration: none;
             display: inline-block;
         }
 
-        .image-content {
-            flex-shrink: 0;
-            /* Prevents shrinking */
-            width: 40px;
-            /* Further decreased size */
-        }
-
         .image-content img {
-            width: 100%;
-            /* Ensures the image fits the container */
+            width: 200px;
             height: auto;
         }
 
         .close-btn {
             position: absolute;
-            top: 5px;
-            /* Adjusted position */
-            right: 5px;
-            /* Adjusted position */
-            font-size: 12px;
-            /* Adjusted size */
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
             cursor: pointer;
             color: #5a3d2b;
         }
