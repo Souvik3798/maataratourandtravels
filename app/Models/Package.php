@@ -15,7 +15,7 @@ class Package extends Model
         'Price',
         'Inclusions',
         'Exclusions',
-        'Hotel',
+        'location',
         'Type',
         'Itinerary',
     ];
