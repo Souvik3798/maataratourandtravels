@@ -579,7 +579,7 @@
     <!-- Chat Modal -->
     <div class="chat-modal" id="chatModal">
         <span class="close-btn" id="closeBtn">&times;</span>
-        <div class="modal-content">
+        {{-- <div class="modal-content">
             <div class="image-content">
                 <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
                     alt="Email Image">
@@ -600,7 +600,7 @@
                     </a>
                 </strong>
             </div>
-        </div>
+        </div> --}}
     </div>
 
 
