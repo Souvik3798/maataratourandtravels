@@ -561,7 +561,6 @@
 
         @media (max-width: 768px) {
 
-            .chat-button,
             .chat-modal {
                 display: none;
             }
@@ -610,20 +609,25 @@
         </div>
     </div>
 
-
     <script>
         document.getElementById('chatButton').addEventListener('click', function() {
-            var modal = document.getElementById('chatModal');
-            if (modal.classList.contains('show')) {
-                modal.classList.remove('show');
-                setTimeout(() => {
-                    modal.style.display = 'none';
-                }, 300);
+            if (window.innerWidth <= 768) {
+                // Open mail client on mobile devices
+                window.location.href = 'mailto:andamanblueoceantravel@gmail.com';
             } else {
-                modal.style.display = 'flex';
-                setTimeout(() => {
-                    modal.classList.add('show');
-                }, 10);
+                // Toggle modal visibility on larger screens
+                var modal = document.getElementById('chatModal');
+                if (modal.classList.contains('show')) {
+                    modal.classList.remove('show');
+                    setTimeout(() => {
+                        modal.style.display = 'none';
+                    }, 300);
+                } else {
+                    modal.style.display = 'flex';
+                    setTimeout(() => {
+                        modal.classList.add('show');
+                    }, 10);
+                }
             }
         });
 
