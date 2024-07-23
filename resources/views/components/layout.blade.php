@@ -134,10 +134,12 @@
 
         .chat-button {
             position: fixed;
-            bottom: 70px;
+            bottom: 20px;
             right: 20px;
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            /* Adjusted size */
+            height: 60px;
+            /* Adjusted size */
             background-color: white;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -149,16 +151,19 @@
         }
 
         .chat-button img {
-            width: 50px;
-            height: 50px;
+            width: 30px;
+            /* Adjusted size */
+            height: 30px;
+            /* Adjusted size */
         }
 
         .chat-modal {
             display: none;
             position: fixed;
-            bottom: 160px;
+            bottom: 90px;
             right: 20px;
-            width: 500px;
+            width: 400px;
+            /* Adjusted size */
             max-width: 90%;
             background-color: white;
             border-radius: 15px;
@@ -181,27 +186,26 @@
             justify-content: space-between;
             align-items: center;
             padding: 20px;
+            gap: 20px;
+            /* Added gap for spacing */
         }
 
         .text-content {
             flex: 1;
-            padding-right: 20px;
         }
 
         .text-content h1 {
-            font-size: 36px;
+            font-size: 24px;
+            /* Adjusted size */
             margin: 0 0 10px;
             color: #5a3d2b;
         }
 
         .text-content p {
-            font-size: 16px;
+            font-size: 14px;
+            /* Adjusted size */
             margin: 0 0 20px;
             color: #5a3d2b;
-        }
-
-        .text-content p span {
-            font-weight: bold;
         }
 
         .text-content button {
@@ -211,25 +215,29 @@
             padding: 10px 20px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 14px;
+            /* Adjusted size */
             text-decoration: none;
             display: inline-block;
         }
 
         .image-content img {
-            width: 200px;
+            width: 100px;
+            /* Adjusted size */
             height: auto;
         }
 
         .close-btn {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 24px;
+            top: 10px;
+            /* Adjusted position */
+            right: 10px;
+            /* Adjusted position */
+            font-size: 18px;
+            /* Adjusted size */
             cursor: pointer;
             color: #5a3d2b;
         }
-
     </style>
 </head>
 
@@ -680,7 +688,6 @@
             cursor: pointer;
             color: #5a3d2b;
         }
-
     </style>
 
     <div class="whatsapp_float">
@@ -693,6 +700,7 @@
                 class="callus_float_btn" alt="Call Us"></a>
     </div>
 
+    <!-- Chat Button -->
     <!-- Chat Button -->
     <div class="chat-button" id="chatButton">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
@@ -710,10 +718,12 @@
                 </a>
             </div>
             <div class="image-content">
-                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg" alt="Email Image"> <!-- Replace with your image path -->
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
+                    alt="Email Image">
             </div>
         </div>
     </div>
+
 
     <script>
         document.getElementById('chatButton').addEventListener('click', function() {
@@ -749,6 +759,7 @@
             }
         }
     </script>
+
 
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
