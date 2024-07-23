@@ -47,7 +47,8 @@
                             <div class="hotel_title_container d-flex flex-lg-row flex-column">
                                 <div class="hotel_title_content">
                                     <h1 class="hotel_title">{{ $package->Name }}</h1>
-                                    <p style="color: black;font-size: 18px">This Rate is Applicable More Than 5-7
+                                    <p style="color: black;font-size: 18px">This Rate is Applicable More Than
+                                        {{ $package->peoples }}
                                         Person.</p>
                                     <br><br>
                                     <p style="color: black;font-size: 18px">NOTE - Please check the package tour
