@@ -153,9 +153,9 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="room_content">
-                                            <div class="room_title">Inclusions</div>
+                                            <div class="room_title">Hotels</div>
                                             {{-- <div class="room_price">$99/night</div> --}}
-                                            <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
+                                            <ul class="room_text" style="list-style-type: square; padding-left: 10px">
                                                 @foreach ($package->location as $location)
                                                     <li>
                                                         {{ $location['location'] }}
