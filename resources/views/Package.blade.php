@@ -95,10 +95,14 @@
 
                             <div class="hotel_info_tags">
                                 <ul class="hotel_icons_list">
-                                    <li class="hotel_icons_item"><img src="images/post.png" alt=""></li>
-                                    <li class="hotel_icons_item"><img src="images/compass.png" alt=""></li>
-                                    <li class="hotel_icons_item"><img src="images/bicycle.png" alt=""></li>
-                                    <li class="hotel_icons_item"><img src="images/sailboat.png" alt=""></li>
+                                    <li class="hotel_icons_item"><img src="{{ asset('images/post.png') }}"
+                                            alt=""></li>
+                                    <li class="hotel_icons_item"><img src="{{ asset('images/compass.png') }}"
+                                            alt=""></li>
+                                    <li class="hotel_icons_item"><img src="{{ asset('images/bicycle.png') }}"
+                                            alt=""></li>
+                                    <li class="hotel_icons_item"><img src="{{ asset('images/sailboat.png') }}"
+                                            alt=""></li>
                                 </ul>
                             </div>
 
