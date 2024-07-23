@@ -181,7 +181,7 @@
                                             us</a></li>
                                 </ul>
                             </div>
-                            <div class="logo_container" style="margin-right: -1px">
+                            <div class="logo_container" style="margin-right: -10px">
                                 <div class="logo"><a href="{{ url('/') }}"><img
                                             src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
                                 </div>
