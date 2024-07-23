@@ -49,7 +49,7 @@ class PackageResource extends Resource
                         'Honeymoon' => 'Honeymoon',
                         'Group' => 'Group',
                         'Luxury' => 'Luxury',
-                        'Holiday' => 'Holiday'
+                        'Custom' => 'Custom'
                     ])
                     ->required(),
                 Textarea::make('Description')

@@ -919,7 +919,7 @@
         <div class="container" style="max-width: 1200px; margin: auto;">
             <div class="row">
                 <div class="col text-center">
-                    <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Best Holiday Tour Package For
+                    <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Best Tour Package For
                         Andaman</h2>
                     <p>Port Blair, Havelock Island, Neil Island, Rose Island, North Bay Island, Baratang Island,
                         Mayabunder, Rangat, Diglipur.
@@ -931,7 +931,78 @@
             </div>
             <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
                 @php
-                    $packages = \App\Models\Package::where('Type', '!=', 'Holiday')->get();
+                    $packages = \App\Models\Package::where('Type', '!=', 'Custom')->get();
+                @endphp
+
+                @foreach ($packages as $package)
+                    <!-- Offers Item -->
+                    <div class="col-lg-6 offers_col">
+                        <div class="offers_item" data-image-url="{{ asset('storage/' . $package->Image) }}">
+                            <div class="offers_image_container">
+                                <div class="offers_image_background"
+                                    style="background-image:url('{{ asset('storage/' . $package->Image) }}');"></div>
+                                <div class="offer_name">
+                                    ₹.{{ number_format($package->Price, 2) }}/-
+                                </div>
+                            </div>
+                            <div class="offers_content">
+                                <div class="offers_price"
+                                    style="font-size: 1.5em; color: rgb(46, 1, 104); font-weight: bold;"><a
+                                        href="{{ url('package/' . $package->id) }}"
+                                        style="text-decoration: none; color: inherit;">{{ $package->Name }}</a></div>
+                                <div class="rating_r rating_r_4 offers_rating"
+                                    style="color: #ffd700; font-size: 1.2em;">
+                                    @for ($i = 0; $i < 5; $i++)
+                                        @if ($i < 4)
+                                            <i class="fas fa-star"></i>
+                                        @else
+                                            <i class="far fa-star"></i>
+                                        @endif
+                                    @endfor
+                                </div>
+                                <p class="offers_text"
+                                    style="text-align: justify; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;color:black;font-size: 15px">
+                                </p>
+                                <div class="offers_icons">
+                                    <ul class="offers_icons_list"
+                                        style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
+                                        <li class="offers_icons_item"><img src="{{ asset('images/post.png') }}"
+                                                alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/compass.png') }}"
+                                                alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/bicycle.png') }}"
+                                                alt="" style="width: 24px; height: 24px;"></li>
+                                        <li class="offers_icons_item"><img src="{{ asset('images/sailboat.png') }}"
+                                                alt="" style="width: 24px; height: 24px;"></li>
+                                    </ul>
+                                </div>
+                                <div class="offers_link" style="margin-top: 40px;margin-bottom: -10px">
+                                    <a href="{{ url('package/' . $package->id) }}">Read More</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="offers">
+        <div class="container" style="max-width: 1200px; margin: auto;">
+            <div class="row">
+                <div class="col text-center">
+                    <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Holiday Tour Package</h2>
+                    <p>Listed here are some of the exclusive tour packages that we have customized for our valuable
+                        clients..
+                    </p>
+                </div>
+            </div>
+            <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
+                @php
+                    $packages = \App\Models\Package::where('Type', '==', 'Custom')->get();
                 @endphp
 
                 @foreach ($packages as $package)
