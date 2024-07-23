@@ -61,7 +61,7 @@
 
                             <!-- Listing Image -->
 
-                            <div class="hotel_image">
+                            <div class="hotel_image" style="max-height: 30px">
                                 <img src="{{ asset('storage/' . $package->Image) }}" alt="">
                                 {{-- <div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
 									<div class="hotel_review">
