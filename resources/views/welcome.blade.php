@@ -628,9 +628,9 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
 
-                                    <a href="{{ 'location/' . $location->id }}"></a>
-                                    see
-                                    more<span></span><span></span><span></span></>
+                                    <a href="{{ 'location/' . $location->id }}">
+                                        see
+                                        more<span></span><span></span><span></span></>
                                 </div>
 
                                 <div class="intro_center text-center">
