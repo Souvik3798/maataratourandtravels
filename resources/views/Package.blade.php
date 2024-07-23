@@ -97,7 +97,7 @@
                             <!-- Hotel Info Text -->
 
                             <div class="hotel_info_text">
-                                <p>{{ $package->Description }}</p>
+                                <p style="color: black;font-size: 18px">{{ $package->Description }}</p>
                             </div>
 
                             <!-- Hotel Info Tags -->
@@ -144,13 +144,40 @@
                             </div>
                         </div>
 
-                        <div>
+                        <div class="rooms">
+
+                            <!-- Room -->
+                            <div class="room">
+
+                                <!-- Room -->
+                                <div class="row">
+                                    <div class="col-lg-7">
+                                        <div class="room_content">
+                                            <div class="room_title">Inclusions</div>
+                                            {{-- <div class="room_price">$99/night</div> --}}
+                                            <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
+                                                @foreach ($package->location as $location)
+                                                    <li>
+                                                        {{ $location['location'] }}
+                                                    </li>
+                                                @endforeach
+                                            </ul>
+                                            {{-- <div class="room_extra">Breakfast $7.50</div> --}}
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-3 text-lg-right">
+                                        <div class="room_button">
+                                            {{-- <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div> --}}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div style="margin-top: 10px">
                             <ul>
-                                @foreach ($package->location as $location)
-                                    <li>
-                                        {{ $location['location'] }}
-                                    </li>
-                                @endforeach
+
                             </ul>
                         </div>
 
