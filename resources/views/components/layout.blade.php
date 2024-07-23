@@ -192,7 +192,6 @@
 
         .text-content {
             flex: 1;
-            padding-right: 20px;
         }
 
         .text-content h1 {
@@ -708,15 +707,6 @@
                 class="callus_float_btn" alt="Call Us"></a>
     </div>
 
-    <!-- Chat Button -->
-    <!-- Chat Button -->
-    <div class="chat-button" id="chatButton">
-        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
-    </div>
-
-
-
-
 
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
@@ -752,6 +742,7 @@
         </div>
     </div>
 
+
     <script>
         document.getElementById('chatButton').addEventListener('click', function() {
             var modal = document.getElementById('chatModal');
@@ -786,7 +777,6 @@
             }
         }
     </script>
-
 
 </body>
 
