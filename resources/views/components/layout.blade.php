@@ -600,7 +600,7 @@
     </div>
 
     <!-- Chat Modal -->
-    <div class="chat-modal" id="chatModal" style="font-family: Arial, Helvetica, sans-serif;">
+    <div class="chat-modal" id="chatModal">
         <span class="close-btn" id="closeBtn">&times;</span>
         <div class="modal-content">
             <div class="image-content">
@@ -609,8 +609,9 @@
             </div>
             <div class="text-content">
                 <strong>
-                    <h1>Contact Us</h1>
-                    <p>For any Customize Plan just mail us or call us.</p>
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;">Contact Us</h1>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">For any Customize Plan just mail us or call
+                        us.</p>
                     <a href="mailto:andamanblueoceantravel@gmail.com">
                         <button>Mail</button>
                     </a>
