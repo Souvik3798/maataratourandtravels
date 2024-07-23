@@ -173,15 +173,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-                            <div class="main_nav_container ml-auto">
-                                <ul class="main_nav_list">
+                            <div class="main_nav_container" style="margin-right: 10px;">
+                                <ul class="main_nav_list" style="margin-right: 0;">
                                     <li class="main_nav_item home-about-adjust"><a href="{{ url('/') }}">home</a>
                                     </li>
                                     <li class="main_nav_item home-about-adjust"><a href="{{ url('about/') }}">about
                                             us</a></li>
                                 </ul>
                             </div>
-                            <div class="logo_container" style="margin-right: -10px">
+                            <div class="logo_container">
                                 <div class="logo"><a href="{{ url('/') }}"><img
                                             src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
                                 </div>
@@ -199,9 +199,6 @@
                                     xml:space="preserve">
                                 </svg>
                             </div>
-
-
-
                             <div class="hamburger">
                                 <i class="fa fa-bars trans_200"></i>
                             </div>
@@ -209,6 +206,7 @@
                     </div>
                 </div>
             </nav>
+
 
         </header>
 
