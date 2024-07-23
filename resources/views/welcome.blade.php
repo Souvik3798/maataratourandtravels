@@ -648,7 +648,7 @@
                                                                 @elseif ($i == 8)
 
                                                                         href="{{ url('https://andamanblueocean.com/package/7') }}" @endif>
-                                        see more<span></span><span></span><span></span></>
+                                        see more<span></span><span></span><span></span></a>
                                 </div>
 
                                 <div class="intro_center text-center">
