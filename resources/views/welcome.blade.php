@@ -997,10 +997,15 @@
             <div class="row">
                 <div class="col text-center">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Holiday Tour Package</h2>
-                    <p style="color: black"><strong> here are some of the exclusive tour packages that we have
+                    <<<<<<< HEAD <p style="color: black"><strong> here are some of the exclusive tour packages that we
+                            have
                             customized for our valuable
-                            clients.</strong>
-                    </p>
+                            =======
+                            <p><strong> here are some of the exclusive tour packages that we have customized for our
+                                    valuable
+                                    >>>>>>> 24b643d3b6bdb6f72ace95caa335c40a66f1b38e
+                                    clients.</strong>
+                            </p>
                 </div>
             </div>
             <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
