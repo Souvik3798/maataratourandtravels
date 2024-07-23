@@ -921,11 +921,13 @@
                 <div class="col text-center">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Best Tour Package For
                         Andaman</h2>
-                    <p>Port Blair, Havelock Island, Neil Island, Rose Island, North Bay Island, Baratang Island,
-                        Mayabunder, Rangat, Diglipur.
+                    <p style="color: black"><strong> Blair, Havelock Island, Neil Island, Rose Island, North Bay
+                            Island, Baratang Island,
+                            Mayabunder, Rangat, Diglipur.
 
-                        <br><br>Note: Before Booking Other hotels options can also be provided, please call or mails us
-                        for any changes.
+                            <br><br>Note: Before Booking Other hotels options can also be provided, please call or mails
+                            us
+                            for any changes.</strong>
                     </p>
                 </div>
             </div>
@@ -995,8 +997,9 @@
             <div class="row">
                 <div class="col text-center">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Holiday Tour Package</h2>
-                    <p>Listed here are some of the exclusive tour packages that we have customized for our valuable
-                        clients..
+                    <p style="color: black"><strong> here are some of the exclusive tour packages that we have
+                            customized for our valuable
+                            clients.</strong>
                     </p>
                 </div>
             </div>
