@@ -497,15 +497,12 @@
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.3s ease, transform 0.3s ease;
-            pointer-events: none;
-            /* Prevents interaction when hidden */
         }
 
         .chat-modal.show {
+            display: flex;
             opacity: 1;
             transform: translateY(0);
-            pointer-events: all;
-            /* Allows interaction when visible */
         }
 
         .modal-content {
@@ -580,13 +577,8 @@
     </div>
 
     <!-- Chat Modal -->
-    <!-- Chat Button -->
-    <div id="chatButton" class="chat-button">
-        <img src="chat-icon.png" alt="Chat Icon" />
-    </div>
-
-    <!-- Chat Modal -->
-    <div id="chatModal" class="chat-modal">
+    <div class="chat-modal" id="chatModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
         <div class="modal-content">
             <div class="image-content">
                 <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
@@ -594,18 +586,24 @@
             </div>
             <div class="text-content">
                 <strong>
-                    <h1>Contact Us</h1>
-                    <p>For any Customize Plan just mail us or call us.<br>+91-9933250564</p>
+                    <h1 style="font-family: Arial, Helvetica, sans-serif;">Contact Us</h1>
+                    <p style="font-family: Arial, Helvetica, sans-serif;">For any Customize Plan just mail us or call
+                        us.
+
+                        <br>
+
+
+                        +91-9933250564
+                    </p>
                     <a href="mailto:andamanblueoceantravel@gmail.com">
                         <button>Mail</button>
                     </a>
                 </strong>
             </div>
-            <div id="closeBtn" class="close-btn">×</div>
         </div>
     </div>
 
-    <!-- JavaScript -->
+
     <script>
         document.getElementById('chatButton').addEventListener('click', function() {
             var modal = document.getElementById('chatModal');
@@ -640,7 +638,6 @@
             }
         }
     </script>
-
 
 
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
