@@ -72,19 +72,23 @@
                             </div>
 
                             <!-- Listing Image -->
+                            <center>
+                                <div class="hotel_image">
+                                    <img src="{{ asset('storage/' . $package->Image) }}" alt=""
+                                        class="responsive-image">
+                                    {{-- <div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
+                                        <div class="hotel_review">
+                                            <div class="hotel_review_content">
+                                                <div class="hotel_review_title">very good</div>
+                                            </div>
+                                            <div class="hotel_review_rating text-center">8.1</div>
+                                        </div>
+                                    </div> --}}
+                                </div>
 
-                            <div class="hotel_image">
-                                <img src="{{ asset('storage/' . $package->Image) }}" alt=""
-                                    class="responsive-image">
-                                {{-- <div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
-									<div class="hotel_review">
-										<div class="hotel_review_content">
-											<div class="hotel_review_title">very good</div>
-										</div>
-										<div class="hotel_review_rating text-center">8.1</div>
-									</div>
-								</div> --}}
-                            </div>
+                            </center>
+
+
 
                             <!-- Hotel Gallery -->
 
