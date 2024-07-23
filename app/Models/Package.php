@@ -14,7 +14,7 @@ class Package extends Model
         'Description',
         'Price',
         'Inclusions',
-        'people',
+        'peoples',
         'Exclusions',
         'location',
         'Type',
