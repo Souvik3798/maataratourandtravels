@@ -624,20 +624,20 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
                                     <a
-                                        href=@if ($loacation->id = 1) {{ url('https://andamanblueocean.com/package/1') }}
-                                        @elseif ($loacation->id = 2)
+                                        href=@if ($location->id = 1) {{ url('https://andamanblueocean.com/package/1') }}
+                                        @elseif ($location->id = 2)
                                             {{ url('https://andamanblueocean.com/package/3') }}
-                                        @elseif ($loacation->id = 3)
+                                        @elseif ($location->id = 3)
                                             {{ url('https://andamanblueocean.com/package/4') }}
-                                        @elseif ($loacation->id = 4)
+                                        @elseif ($location->id = 4)
                                             {{ url('https://andamanblueocean.com/package/2') }}
-                                        @elseif ($loacation->id = 5)
+                                        @elseif ($location->id = 5)
                                             {{ url('https://andamanblueocean.com/package/5') }}
-                                        @elseif ($loacation->id = 6)
+                                        @elseif ($location->id = 6)
                                             {{ url('https://andamanblueocean.com/package/8') }}
-                                        @elseif ($loacation->id = 7)
+                                        @elseif ($location->id = 7)
                                             {{ url('https://andamanblueocean.com/package/6') }}
-                                        @elseif ($loacation->id = 8)
+                                        @elseif ($location->id = 8)
                                             {{ url('https://andamanblueocean.com/package/7') }} @endif>see
                                         more<span></span><span></span><span></span></a>
                                 </div>
