@@ -160,8 +160,7 @@
                                 </ul>
                             </div>
                             <div class="user_box ml-auto">
-                                <div class="user_box_login user_box_link">Ponghi Kyaung,
-                                    Port Blair, 744101 | <a href="{{ url('/admin') }}">login</a></div>
+                                <div class="user_box_login user_box_link"><a href="{{ url('/admin') }}">login</a></div>
                             </div>
                         </div>
                     </div>
