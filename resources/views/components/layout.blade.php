@@ -506,7 +506,7 @@
         }
 
         .chat-modal {
-            display: none;
+            display: flex;
             position: fixed;
             bottom: 160px;
             right: 20px;
