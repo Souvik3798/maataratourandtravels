@@ -707,6 +707,11 @@
                 class="callus_float_btn" alt="Call Us"></a>
     </div>
 
+    <!-- Chat Button -->
+    <div class="chat-button" id="chatButton">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
+    </div>
+
     <!-- Chat Modal -->
     <div class="chat-modal" id="chatModal">
         <span class="close-btn" id="closeBtn">&times;</span>
@@ -773,10 +778,6 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
     <script src="{{ asset('js/single_listing_custom.js') }}"></script>
 
-    <!-- Chat Button -->
-    <div class="chat-button" id="chatButton">
-        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
-    </div>
 
 
 
