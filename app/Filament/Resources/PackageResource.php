@@ -71,7 +71,7 @@ class PackageResource extends Resource
                             ->placeholder('eg:Port Blair - Hotel Shreesh / Hotel Kavitha Regent / Hotel The Innfinity / Hotel Royal Palace.')
                             ->required()
                             ->maxLength(255),
-                    ]),
+                    ])->label('Hotel details'),
                 TextInput::make('Price')
                     ->prefix('₹.')
                     ->suffix('/-')
