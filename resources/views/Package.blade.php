@@ -2,6 +2,18 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/single_listing_styles.css') }}">
     <link rel="stylesheet" type="text/css" href="{{ asset('styles/single_listing_responsive.css') }}">
 
+
+    <style>
+        .responsive-image {
+            width: 100%;
+            /* Make the image take up the full width of its container */
+            max-width: 500px;
+            /* Set a maximum width for the image */
+            height: auto;
+            /* Maintain aspect ratio */
+        }
+    </style>
+
     <!-- Home -->
 
     <div class="home">
@@ -61,8 +73,9 @@
 
                             <!-- Listing Image -->
 
-                            <div class="hotel_image" style="max-height: 30px">
-                                <img src="{{ asset('storage/' . $package->Image) }}" alt="">
+                            <div class="hotel_image">
+                                <img src="{{ asset('storage/' . $package->Image) }}" alt=""
+                                    class="responsive-image">
                                 {{-- <div class="hotel_review_container d-flex flex-column align-items-center justify-content-center">
 									<div class="hotel_review">
 										<div class="hotel_review_content">
