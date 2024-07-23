@@ -144,17 +144,15 @@
             align-items: center;
             cursor: pointer;
             z-index: 1000;
-            width: 40px;
-            /* updated width */
-            height: 40px;
-            /* updated height */
         }
 
         .chat-button img {
-            width: 100%;
-            /* set width to 100% to scale with parent */
-            height: 100%;
-            /* set height to 100% to scale with parent */
+            width: 40px;
+            /* adjust the size here */
+            height: 40px;
+            /* adjust the size here */
+            object-fit: cover;
+            border-radius: 50%;
         }
 
         .chat-modal {
