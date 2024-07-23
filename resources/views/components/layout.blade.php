@@ -190,7 +190,7 @@
                                     <li class="main_nav_item"><a href="{{ url('contact/') }}">contact</a></li>
                                 </ul>
                             </div>
-                            <div class="hamburger" style="margin-left: 340px">
+                            <div class="hamburger" style="margin-left: 300px">
                                 <i class="fa fa-bars trans_200"></i>
                             </div>
                         </div>
