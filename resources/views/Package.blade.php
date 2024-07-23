@@ -236,7 +236,7 @@
                                                         <div class="review_rating">Day {{ $i }}</div>
                                                     </div>
                                                     <div class="review_text">
-                                                        <p style="color: black;font-size: 18px">
+                                                        <p style="color: black;font-size: 15px">
                                                             {{-- {{$Itinerary['Description']}} --}}
                                                             {!! nl2br(e($Itinerary['Description'])) !!}
                                                         </p>
