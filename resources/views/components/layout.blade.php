@@ -136,9 +136,9 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 60px;
+            width: 40px;
             /* Adjusted size */
-            height: 60px;
+            height: 40px;
             /* Adjusted size */
             background-color: white;
             border-radius: 50%;
