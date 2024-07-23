@@ -558,6 +558,13 @@
             cursor: pointer;
             color: #5a3d2b;
         }
+
+        @media (max-width: 768px) {
+
+            .chat-button,
+            .chat-modal {
+                display: none;
+            }
     </style>
 
     <div class="whatsapp_float">
