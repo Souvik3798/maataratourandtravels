@@ -428,7 +428,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-9 order-lg-2 order-1">s
+                    <div class="col-lg-9 order-lg-2 order-1">
                         <div class="footer_nav_container d-flex flex-row align-items-center justify-content-lg-end">
                             <div class="footer_nav">
                                 <ul class="footer_nav_list">
