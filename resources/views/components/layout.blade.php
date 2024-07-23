@@ -307,6 +307,27 @@
                         </div>
                     </div>
 
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
+                            <div class="footer_title">Activities</div>
+                            <div class="footer_content footer_tags">
+                                <ul class="tags_list clearfix">
+
+                                    @php
+                                        $service = \App\Models\Service::all();
+                                    @endphp
+                                    @foreach ($service as $service)
+                                        <li class="tag_item" style="width: 100%"><a
+                                                href="{{ url('service-details/' . $service->id) }}">{{ $service->Service }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+
+
                 </div>
             </div>
         </footer>
