@@ -569,7 +569,7 @@
         }
 
         .image-content img {
-            width: 200px;
+            width: 100px;
             height: auto;
         }
 
@@ -603,16 +603,16 @@
     <div class="chat-modal" id="chatModal">
         <span class="close-btn" id="closeBtn">&times;</span>
         <div class="modal-content">
+            <div class="image-content">
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
+                    alt="Email Image">
+            </div>
             <div class="text-content">
                 <h1>Contact Us</h1>
                 <p>For any Customization just mail us or call us.</p>
                 <a href="mailto:andamanblueoceantravel@gmail.com">
                     <button>Mail</button>
                 </a>
-            </div>
-            <div class="image-content">
-                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
-                    alt="Email Image">
             </div>
         </div>
     </div>
