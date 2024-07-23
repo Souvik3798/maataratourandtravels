@@ -626,22 +626,22 @@
                                     <a
                                         @if ($location->id == 1) href="{{ url('https://andamanblueocean.com/package/1') }}">
                                         @elseif ($location->id == 2)
-                                             href="{{ url('https://andamanblueocean.com/package/3') }}">
+                                             href="{{ url('https://andamanblueocean.com/package/3') }}"
                                             @elseif ($location->id == 3)
-                                                 href="{{ url('https://andamanblueocean.com/package/4') }}">
+                                                 href="{{ url('https://andamanblueocean.com/package/4') }}"
                                                 @elseif ($location->id == 4)
-                                                     href="{{ url('https://andamanblueocean.com/package/2') }}">
+                                                     href="{{ url('https://andamanblueocean.com/package/2') }}"
                                                     @elseif ($location->id == 5)
-                                                         href="{{ url('https://andamanblueocean.com/package/5') }}">
+                                                         href="{{ url('https://andamanblueocean.com/package/5') }}"
                                                         @elseif ($location->id == 6)
 
-                                                                href="{{ url('https://andamanblueocean.com/package/8') }}">
+                                                                href="{{ url('https://andamanblueocean.com/package/8') }}"
                                                             @elseif ($location->id == 7)
 
-                                                                    href="{{ url('https://andamanblueocean.com/package/6') }}">
+                                                                    href="{{ url('https://andamanblueocean.com/package/6') }}"
                                                                 @elseif ($location->id == 8)
 
-                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}"> @endif>see
+                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}" @endif>see
                                         more<span></span><span></span><span></span></>
                                 </div>
 
