@@ -131,124 +131,6 @@
             /* Adjust as needed to avoid overlap with WhatsApp button */
             right: 20px;
         }
-
-        .chat-button {
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            width: 30px;
-            /* Halved size */
-            height: 30px;
-            /* Halved size */
-            background-color: white;
-            border-radius: 50%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
-            z-index: 1000;
-        }
-
-        .chat-button img {
-            width: 15px;
-            /* Halved size */
-            height: 15px;
-            /* Halved size */
-        }
-
-        .chat-modal {
-            display: none;
-            position: fixed;
-            bottom: 90px;
-            right: 20px;
-            width: 200px;
-            /* Halved size */
-            max-width: 90%;
-            background-color: white;
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1001;
-            overflow: hidden;
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.3s ease, transform 0.3s ease;
-        }
-
-        .chat-modal.show {
-            display: flex;
-            opacity: 1;
-            transform: translateY(0);
-        }
-
-        .modal-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10px;
-            /* Adjusted padding */
-            gap: 10px;
-            /* Adjusted gap */
-        }
-
-        .text-content {
-            flex: 1;
-        }
-
-        .text-content h1 {
-            font-size: 12px;
-            /* Halved size */
-            margin: 0 0 5px;
-            /* Adjusted margin */
-            color: #5a3d2b;
-        }
-
-        .text-content p {
-            font-size: 7px;
-            /* Halved size */
-            margin: 0 0 10px;
-            /* Adjusted margin */
-            color: #5a3d2b;
-        }
-
-        .text-content button {
-            background-color: #5a3d2b;
-            color: white;
-            border: none;
-            padding: 5px 10px;
-            /* Adjusted padding */
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 7px;
-            /* Halved size */
-            text-decoration: none;
-            display: inline-block;
-        }
-
-        .image-content {
-            flex-shrink: 0;
-            /* Prevents shrinking */
-            width: 50px;
-            /* Halved size */
-        }
-
-        .image-content img {
-            width: 100%;
-            /* Ensures the image fits the container */
-            height: auto;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 5px;
-            /* Adjusted position */
-            right: 5px;
-            /* Adjusted position */
-            font-size: 12px;
-            /* Adjusted size */
-            cursor: pointer;
-            color: #5a3d2b;
-        }
     </style>
 </head>
 
@@ -623,12 +505,38 @@
             height: 50px;
         }
 
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 30px;
+            /* Halved size */
+            height: 30px;
+            /* Halved size */
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .chat-button img {
+            width: 15px;
+            /* Halved size */
+            height: 15px;
+            /* Halved size */
+        }
+
         .chat-modal {
             display: none;
             position: fixed;
-            bottom: 160px;
+            bottom: 90px;
             right: 20px;
-            width: 500px;
+            width: 200px;
+            /* Halved size */
             max-width: 90%;
             background-color: white;
             border-radius: 15px;
@@ -650,52 +558,67 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px;
+            padding: 10px;
+            /* Adjusted padding */
+            gap: 10px;
+            /* Adjusted gap */
         }
 
         .text-content {
             flex: 1;
-            padding-right: 20px;
         }
 
         .text-content h1 {
-            font-size: 36px;
-            margin: 0 0 10px;
+            font-size: 12px;
+            /* Halved size */
+            margin: 0 0 5px;
+            /* Adjusted margin */
             color: #5a3d2b;
         }
 
         .text-content p {
-            font-size: 16px;
-            margin: 0 0 20px;
+            font-size: 7px;
+            /* Halved size */
+            margin: 0 0 10px;
+            /* Adjusted margin */
             color: #5a3d2b;
-        }
-
-        .text-content p span {
-            font-weight: bold;
         }
 
         .text-content button {
             background-color: #5a3d2b;
             color: white;
             border: none;
-            padding: 10px 20px;
+            padding: 5px 10px;
+            /* Adjusted padding */
             border-radius: 5px;
             cursor: pointer;
-            font-size: 16px;
+            font-size: 7px;
+            /* Halved size */
             text-decoration: none;
             display: inline-block;
         }
 
+        .image-content {
+            flex-shrink: 0;
+            /* Prevents shrinking */
+            width: 50px;
+            /* Halved size */
+        }
+
         .image-content img {
-            width: 200px;
+            width: 100%;
+            /* Ensures the image fits the container */
             height: auto;
         }
 
         .close-btn {
             position: absolute;
-            top: 15px;
-            right: 15px;
-            font-size: 24px;
+            top: 5px;
+            /* Adjusted position */
+            right: 5px;
+            /* Adjusted position */
+            font-size: 12px;
+            /* Adjusted size */
             cursor: pointer;
             color: #5a3d2b;
         }
