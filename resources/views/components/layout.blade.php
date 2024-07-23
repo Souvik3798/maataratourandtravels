@@ -173,7 +173,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-                            <div class="main_nav_container ml-auto" style="margin-right: -1px">
+                            <div class="main_nav_container ml-auto" style="margin-right: -0.2px">
                                 <ul class="main_nav_list">
                                     <li class="main_nav_item home-about-adjust"><a href="{{ url('/') }}">home</a>
                                     </li>
