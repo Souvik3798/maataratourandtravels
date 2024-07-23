@@ -151,9 +151,9 @@
         }
 
         .chat-button img {
-            width: 30px;
+            width: 10px;
             /* Adjusted size */
-            height: 30px;
+            height: 10px;
             /* Adjusted size */
         }
 
