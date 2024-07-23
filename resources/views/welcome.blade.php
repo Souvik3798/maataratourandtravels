@@ -221,22 +221,22 @@
         .offers_image_container {
             position: relative;
             width: 100%;
-            height: 300px;
-            /* Reduced height */
+            height: 200px;
+            /* Further reduced height */
             overflow: hidden;
         }
 
         .offer_name {
             position: absolute;
-            bottom: 10px;
+            bottom: 5px;
             background: rgba(71, 0, 151, 0.916);
-            padding: 5px 10px;
+            padding: 3px 8px;
             border-radius: 0 5px 5px 0;
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
-            font-size: 18px;
-            /* Reduced font size */
+            font-size: 16px;
+            /* Further reduced font size */
             display: block;
             transition: background 0.3s, transform 0.3s;
         }
@@ -250,8 +250,8 @@
         }
 
         .offers_col {
-            margin-bottom: 15px;
-            /* Reduced margin */
+            margin-bottom: 10px;
+            /* Further reduced margin */
             display: flex;
             width: 100%;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -266,8 +266,8 @@
             display: flex;
             flex-direction: column;
             height: auto;
-            min-height: 350px;
-            /* Reduced minimum height */
+            min-height: 250px;
+            /* Further reduced minimum height */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             position: relative;
         }
@@ -282,20 +282,20 @@
 
         /* Hover effects */
         .offers_col:hover .offers_item {
-            transform: translateY(-5px);
+            transform: translateY(-3px);
             /* Reduced lift effect */
         }
 
         .offers_image_container:hover .offers_image_background {
             transform: scale(1.05);
-            /* Reduced zoom-in effect */
+            /* Slight zoom-in effect */
         }
 
         .offers_image_container:hover .offer_name {
             background: rgb(82, 0, 150);
             color: white;
             transform: translateY(-3px);
-            /* Reduced lift text */
+            /* Slight lift text */
         }
 
         .offers_link {
@@ -306,14 +306,16 @@
 
         .offers_link a {
             display: inline-block;
-            padding: 8px 15px;
-            /* Reduced padding */
+            padding: 5px 10px;
+            /* Further reduced padding */
             background-color: #550696;
             color: white;
             border-radius: 5px;
             text-decoration: none;
             transition: background-color 0.3s, transform 0.3s;
             font-weight: bold;
+            font-size: 14px;
+            /* Reduced font size */
         }
 
         .offers_link a:hover {
@@ -345,20 +347,22 @@
             }
 
             .offers_image_background {
-                height: 300px;
+                height: 200px;
                 /* Adjusted height for mobile view */
             }
         }
 
         @media (min-width: 769px) {
             .offers_col {
-                flex: 1 0 40%;
+                flex: 1 0 22%;
                 /* Adjust the width for desktop view */
-                max-width: 40%;
+                max-width: 22%;
                 /* Reduced max-width */
-                margin: 2.5%;
+                margin: 1.5%;
+                /* Reduced margin */
             }
         }
+
 
 
         .purple_button a {
