@@ -619,6 +619,7 @@
                                 style="background-image:url({{ asset('storage/' . $location->image_path) }})"></div>
                             <div
                                 class="intro_item_content d-flex flex-column align-items-center justify-content-center">
+
                                 <div class="intro_date" style="background-color: #470099">{{ $location->Location }}
                                 </div>
                                 <div class="button intro_button purple_button">
