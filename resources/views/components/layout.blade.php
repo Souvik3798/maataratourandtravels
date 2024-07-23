@@ -173,15 +173,15 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-                            <div class="main_nav_container" style="margin-right: 10px;">
-                                <ul class="main_nav_list" style="margin-right: 0;">
-                                    <li class="main_nav_item home-about-adjust"><a href="{{ url('/') }}">home</a>
-                                    </li>
-                                    <li class="main_nav_item home-about-adjust"><a href="{{ url('about/') }}">about
-                                            us</a></li>
+                            <div class="main_nav_container" style="margin-right: 0; padding-right: 0;">
+                                <ul class="main_nav_list" style="margin-right: 0; padding-right: 0;">
+                                    <li class="main_nav_item home-about-adjust" style="margin-right: 5px;"><a
+                                            href="{{ url('/') }}">home</a></li>
+                                    <li class="main_nav_item home-about-adjust" style="margin-right: 5px;"><a
+                                            href="{{ url('about/') }}">about us</a></li>
                                 </ul>
                             </div>
-                            <div class="logo_container">
+                            <div class="logo_container" style="margin-left: 0; padding-left: 0;">
                                 <div class="logo"><a href="{{ url('/') }}"><img
                                             src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
                                 </div>
@@ -206,6 +206,7 @@
                     </div>
                 </div>
             </nav>
+
 
 
         </header>
