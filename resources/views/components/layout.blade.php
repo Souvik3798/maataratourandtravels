@@ -714,7 +714,7 @@
     </div>
 
     <!-- Chat Modal -->
-    <div class="chat-modal" id="chatModal">
+    <div class="chat-modal" id="chatModal" style="height: 60px">
         <span class="close-btn" id="closeBtn">&times;</span>
         <div class="modal-content">
             <div class="text-content">
