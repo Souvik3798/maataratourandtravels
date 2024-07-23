@@ -218,14 +218,12 @@
         }
 
         /* Offer */
-
         .offers_image_container {
             position: relative;
             width: 100%;
-            height: 400px;
-            /* Fixed height for consistency */
+            height: 300px;
+            /* Reduced height */
             overflow: hidden;
-            /* To prevent overflow when image scales */
         }
 
         .offer_name {
@@ -237,10 +235,10 @@
             z-index: 6;
             color: #fffbfb;
             font-weight: bold;
-            font-size: 20px;
+            font-size: 18px;
+            /* Reduced font size */
             display: block;
             transition: background 0.3s, transform 0.3s;
-            /* Add transition for smooth background and transform change */
         }
 
         .offers_image_background {
@@ -249,15 +247,14 @@
             width: 100%;
             height: 100%;
             transition: transform 0.3s ease-in-out;
-            /* Add transition for image scaling */
         }
 
         .offers_col {
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            /* Reduced margin */
             display: flex;
             width: 100%;
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            /* Add transition for scaling and shadow effect */
         }
 
         .offers_item {
@@ -265,93 +262,77 @@
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            /* Initial shadow */
             flex: 1;
             display: flex;
             flex-direction: column;
             height: auto;
-            /* Changed to auto */
-            min-height: 200px;
-            /* Ensure a minimum height */
+            min-height: 350px;
+            /* Reduced minimum height */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            /* Add transition for scaling and shadow effect */
             position: relative;
-            /* Add relative positioning for the button */
         }
 
         .offers_content {
-            padding: 15px;
+            padding: 10px;
+            /* Reduced padding */
             overflow: hidden;
             flex: 1;
             position: relative;
-            /* Ensure child elements are positioned relative to this container */
         }
 
         /* Hover effects */
         .offers_col:hover .offers_item {
-            transform: translateY(-10px);
-            /* Slight lift effect */
+            transform: translateY(-5px);
+            /* Reduced lift effect */
         }
 
         .offers_image_container:hover .offers_image_background {
-            transform: scale(1.1);
-            /* Slight zoom-in effect */
+            transform: scale(1.05);
+            /* Reduced zoom-in effect */
         }
 
         .offers_image_container:hover .offer_name {
             background: rgb(82, 0, 150);
-            /* Opaque background */
             color: white;
-            transform: translateY(-5px);
-            /* Lift text slightly */
+            transform: translateY(-3px);
+            /* Reduced lift text */
         }
 
         .offers_link {
             position: absolute;
-            /* Position the container absolutely */
-            bottom: 15px;
-            /* Distance from the bottom */
-            right: 15px;
-            /* Distance from the right */
+            bottom: 10px;
+            right: 10px;
         }
 
         .offers_link a {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 8px 15px;
+            /* Reduced padding */
             background-color: #550696;
-            /* Background color */
             color: white;
-            /* Text color */
             border-radius: 5px;
-            /* Rounded corners */
             text-decoration: none;
-            /* Remove underline */
             transition: background-color 0.3s, transform 0.3s;
-            /* Smooth transition */
             font-weight: bold;
         }
 
         .offers_link a:hover {
             background-color: #ddd;
-            /* Darker background on hover */
             color: #3d0181;
             transform: translateY(-3px);
-            /* Slight lift on hover */
         }
 
         .offers_link a::after {
             content: ' \2192';
-            /* Unicode for the arrow */
             display: inline-block;
-            margin-left: 10px;
-            /* Space between text and arrow */
+            margin-left: 5px;
+            /* Reduced space */
             transition: transform 0.3s;
-            /* Smooth transition for arrow movement */
         }
 
         .offers_link a:hover::after {
-            transform: translateX(5px);
-            /* Move arrow to the right on hover */
+            transform: translateX(3px);
+            /* Reduced move arrow */
         }
 
         @media (max-width: 768px) {
@@ -364,19 +345,21 @@
             }
 
             .offers_image_background {
-                height: 400px;
-                /* Adjust height for mobile view */
+                height: 300px;
+                /* Adjusted height for mobile view */
             }
         }
 
         @media (min-width: 769px) {
             .offers_col {
-                flex: 1 0 45%;
+                flex: 1 0 40%;
                 /* Adjust the width for desktop view */
-                max-width: 45%;
+                max-width: 40%;
+                /* Reduced max-width */
                 margin: 2.5%;
             }
         }
+
 
         .purple_button a {
             background: #800080;
