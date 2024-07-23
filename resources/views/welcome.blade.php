@@ -624,7 +624,7 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
                                     <a
-                                        @if ($location->id == 1) href="{{ url('https://andamanblueocean.com/package/1') }}">
+                                        @if ($location->id == 1) href="{{ url('https://andamanblueocean.com/package/1') }}"
                                         @elseif ($location->id == 2)
                                              href="{{ url('https://andamanblueocean.com/package/3') }}"
                                             @elseif ($location->id == 3)
