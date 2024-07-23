@@ -625,7 +625,8 @@
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
                                     <a
-                                        href=@if ($location->id == 1) {{ url('https://andamanblueocean.com/package/1') }}
+                                        href="
+                                        @if ($location->id == 1) {{ url('https://andamanblueocean.com/package/1') }}
                                         @elseif ($location->id == 2)
                                             {{ url('https://andamanblueocean.com/package/3') }}
                                         @elseif ($location->id == 3)
@@ -639,9 +640,11 @@
                                         @elseif ($location->id == 7)
                                             {{ url('https://andamanblueocean.com/package/6') }}
                                         @elseif ($location->id == 8)
-                                            {{ url('https://andamanblueocean.com/package/7') }} @endif>see
+                                            {{ url('https://andamanblueocean.com/package/7') }} @endif
+                                    ">see
                                         more<span></span><span></span><span></span></a>
                                 </div>
+
 
                                 <div class="intro_center text-center">
                                     <h1>{{ $location->Place }}</h1>
