@@ -162,7 +162,7 @@
             position: fixed;
             bottom: 90px;
             right: 20px;
-            width: 400px;
+            width: 200px;
             /* Adjusted size */
             max-width: 90%;
             background-color: white;
@@ -195,14 +195,14 @@
         }
 
         .text-content h1 {
-            font-size: 24px;
+            font-size: 14px;
             /* Adjusted size */
             margin: 0 0 10px;
             color: #5a3d2b;
         }
 
         .text-content p {
-            font-size: 14px;
+            font-size: 8px;
             /* Adjusted size */
             margin: 0 0 20px;
             color: #5a3d2b;
@@ -714,7 +714,7 @@
     </div>
 
     <!-- Chat Modal -->
-    <div class="chat-modal" id="chatModal" style="height: 60px">
+    <div class="chat-modal" id="chatModal">
         <span class="close-btn" id="closeBtn">&times;</span>
         <div class="modal-content">
             <div class="text-content">
