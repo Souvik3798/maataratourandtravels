@@ -363,7 +363,7 @@
                     <!-- Footer Column -->
                     <div class="custom-footer-column">
                         <div class="custom-footer-col">
-                            <div class="custom-footer-title" style="color: white"><strong>Payments</strong></div>
+                            <div class="custom-footer-title" style="color: white"><strong>PAYMENTS</strong></div>
                             <div class="custom-footer-content">
                                 <ul class="custom-tags-list clearfix">
                                     <li class="custom-tag-item">
@@ -469,6 +469,106 @@
             /* Adjust as needed to avoid overlap with WhatsApp button */
             right: 20px;
         }
+
+        /* contact is */
+
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .chat-button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .chat-modal {
+            display: none;
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 500px;
+            max-width: 90%;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .chat-modal.show {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .modal-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 36px;
+            margin: 0 0 10px;
+            color: #5a3d2b;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            margin: 0 0 20px;
+            color: #5a3d2b;
+        }
+
+        .text-content p span {
+            font-weight: bold;
+        }
+
+        .text-content button {
+            background-color: #5a3d2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image-content img {
+            width: 200px;
+            height: auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #5a3d2b;
+        }
     </style>
 
     <div class="whatsapp_float">
@@ -480,6 +580,63 @@
         <a href="tel:9933250564"><img src="{{ asset('images/callus.png') }}" width="40px"
                 class="callus_float_btn" alt="Call Us"></a>
     </div>
+
+    <div class="chat-button" id="chatButton">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
+    </div>
+
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="modal-content">
+            <div class="text-content">
+                <h1>Contact Us</h1>
+                <p>For any <strong>Customize Plan</strong> just mail us or call us.</p>
+                <a href="mailto:andamanblueoceantravel@gmail.com">
+                    <button>Mail</button>
+                </a>
+            </div>
+            <div class="image-content">
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
+                    alt="Email Image"> <!-- Replace with your image path -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('chatButton').addEventListener('click', function() {
+            var modal = document.getElementById('chatModal');
+            if (modal.classList.contains('show')) {
+                modal.classList.remove('show');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            } else {
+                modal.style.display = 'flex';
+                setTimeout(() => {
+                    modal.classList.add('show');
+                }, 10);
+            }
+        });
+
+        document.getElementById('closeBtn').addEventListener('click', function() {
+            var modal = document.getElementById('chatModal');
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 300);
+        });
+
+        window.onclick = function(event) {
+            var modal = document.getElementById('chatModal');
+            if (event.target === modal) {
+                modal.classList.remove('show');
+                setTimeout(() => {
+                    modal.style.display = 'none';
+                }, 300);
+            }
+        }
+    </script>
 
     <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
