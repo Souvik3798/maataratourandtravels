@@ -267,14 +267,14 @@
 
                         <div class="terms_conditions">
                             <h2>Terms and Conditions</h2>
-                            <ul>
+                            <ul style="color: black">
                                 <li><strong>Weather and Cancellation Policy:</strong> All tours in Andaman are subject
                                     to weather conditions. Tours may be cancelled at any time due to bad weather,
                                     technical issues, or other unforeseen reasons.</li>
                                 <li><strong>Tourist Place Closures:</strong> Many tourist spots in Port Blair are closed
                                     on Mondays and Wednesdays.</li>
-                                <li><strong>Payment Terms:</strong> A 40% advance payment is required at the time of
-                                    booking. The remaining 60% must be paid on the first day of your hotel check-in. If
+                                <li><strong>Payment Terms:</strong> A 60% advance payment is required at the time of
+                                    booking. The remaining 40% must be paid on the first day of your hotel check-in. If
                                     the full balance is not paid by the end of the first day, all tour services will be
                                     halted immediately. No excuses or compromises will be accepted regarding payments.
                                 </li>
