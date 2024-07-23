@@ -611,7 +611,13 @@
                 <strong>
                     <h1 style="font-family: Arial, Helvetica, sans-serif;">Contact Us</h1>
                     <p style="font-family: Arial, Helvetica, sans-serif;">For any Customize Plan just mail us or call
-                        us.</p>
+                        us.
+
+                        <br>
+
+
+                        +91-9933250564
+                    </p>
                     <a href="mailto:andamanblueoceantravel@gmail.com">
                         <button>Mail</button>
                     </a>
