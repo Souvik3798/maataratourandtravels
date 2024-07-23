@@ -1006,7 +1006,7 @@
             </div>
             <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
                 @php
-                    $packages = \App\Models\Package::where('Type', '==', 'Custom')->get();
+                    $packages = \App\Models\Package::where('Type', '=', 'Custom')->get();
                 @endphp
 
                 @foreach ($packages as $package)
