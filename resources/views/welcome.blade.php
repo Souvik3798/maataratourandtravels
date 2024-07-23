@@ -624,25 +624,28 @@
                                 </div>
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
-                                    <a
-                                        href="
-                                        @if ($location->id == 1) {{ url('https://andamanblueocean.com/package/1') }}
+                                    @if ($location->id == 1)
+                                        <a href="{{ url('https://andamanblueocean.com/package/1') }}">
                                         @elseif ($location->id == 2)
-                                            {{ url('https://andamanblueocean.com/package/3') }}
-                                        @elseif ($location->id == 3)
-                                            {{ url('https://andamanblueocean.com/package/4') }}
-                                        @elseif ($location->id == 4)
-                                            {{ url('https://andamanblueocean.com/package/2') }}
-                                        @elseif ($location->id == 5)
-                                            {{ url('https://andamanblueocean.com/package/5') }}
-                                        @elseif ($location->id == 6)
-                                            {{ url('https://andamanblueocean.com/package/8') }}
-                                        @elseif ($location->id == 7)
-                                            {{ url('https://andamanblueocean.com/package/6') }}
-                                        @elseif ($location->id == 8)
-                                            {{ url('https://andamanblueocean.com/package/7') }} @endif
-                                    ">see
-                                        more<span></span><span></span><span></span></a>
+                                            <a href="{{ url('https://andamanblueocean.com/package/3') }}">
+                                            @elseif ($location->id == 3)
+                                                <a href="{{ url('https://andamanblueocean.com/package/4') }}">
+                                                @elseif ($location->id == 4)
+                                                    <a href="{{ url('https://andamanblueocean.com/package/2') }}">
+                                                    @elseif ($location->id == 5)
+                                                        <a href="{{ url('https://andamanblueocean.com/package/5') }}">
+                                                        @elseif ($location->id == 6)
+                                                            <a
+                                                                href="{{ url('https://andamanblueocean.com/package/8') }}">
+                                                            @elseif ($location->id == 7)
+                                                                <a
+                                                                    href="{{ url('https://andamanblueocean.com/package/6') }}">
+                                                                @elseif ($location->id == 8)
+                                                                    <a
+                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}">
+                                    @endif
+                                    see
+                                    more<span></span><span></span><span></span></a>
                                 </div>
 
 
