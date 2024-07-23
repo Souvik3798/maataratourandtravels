@@ -136,10 +136,10 @@
             position: fixed;
             bottom: 20px;
             right: 20px;
-            width: 20px;
-            /* Adjusted size */
-            height: 20px;
-            /* Adjusted size */
+            width: 30px;
+            /* Halved size */
+            height: 30px;
+            /* Halved size */
             background-color: white;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -151,10 +151,10 @@
         }
 
         .chat-button img {
-            width: 10px;
-            /* Adjusted size */
-            height: 10px;
-            /* Adjusted size */
+            width: 15px;
+            /* Halved size */
+            height: 15px;
+            /* Halved size */
         }
 
         .chat-modal {
