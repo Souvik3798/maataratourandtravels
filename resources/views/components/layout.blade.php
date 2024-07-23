@@ -708,7 +708,7 @@
     </div>
 
     <!-- Chat Button -->
-    <div class="chat-button" id="chatButton">
+    <div class="chat-button" id="chatButton" style="width: 30px">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
     </div>
 
