@@ -975,7 +975,7 @@
                                 </div>
                                 <p class="offers_text"
                                     style="text-align: justify; margin: 15px 0; overflow: hidden; text-overflow: ellipsis; display: -webkit-box; -webkit-line-clamp: 8; -webkit-box-orient: vertical;color:black;font-size: 15px">
-                                    {{ $package->Description }}</p>
+                                </p>
                                 <div class="offers_icons">
                                     <ul class="offers_icons_list"
                                         style="list-style: none; padding: 0; display: flex; justify-content: space-around;">
