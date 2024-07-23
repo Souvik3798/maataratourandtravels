@@ -64,6 +64,59 @@
             width: auto !important;
             display: block !important;
         }
+
+        .custom-footer-column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .custom-footer-col {
+            width: 100%;
+        }
+
+        .custom-footer-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .custom-footer-content {
+            width: 100%;
+        }
+
+        .custom-tags-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 0;
+            list-style: none;
+            gap: 10px;
+            /* Add space between the items */
+        }
+
+        .custom-tag-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            /* Adjust width as needed */
+            height: 50px;
+            /* Adjust height as needed */
+            background: #f5f5f5;
+            /* Background color for each item */
+            border-radius: 5px;
+            /* Rounded corners */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            /* Shadow effect */
+            margin: 5px;
+            /* Space around each item */
+        }
+
+        .custom-tag-item img {
+            max-width: 80%;
+            max-height: 80%;
+        }
     </style>
 
 </head>
@@ -248,26 +301,6 @@
                     <!-- Footer Column -->
                     <div class="col-lg-3 footer_column">
                         <div class="footer_col">
-                            <div class="footer_title">Activities</div>
-                            <div class="footer_content footer_tags">
-                                <ul class="tags_list clearfix">
-
-                                    @php
-                                        $service = \App\Models\Service::all();
-                                    @endphp
-                                    @foreach ($service as $service)
-                                        <li class="tag_item" style="width: 100%"><a
-                                                href="{{ url('service-details/' . $service->id) }}">{{ $service->Service }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer Column -->
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
                             <div class="footer_title">contact info</div>
                             <div class="footer_content footer_contact">
                                 <ul class="contact_info_list">
@@ -307,25 +340,49 @@
                         </div>
                     </div>
 
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
-                            <div class="footer_title">Activities</div>
-                            <div class="footer_content footer_tags">
-                                <ul class="tags_list clearfix">
-
-                                    @php
-                                        $service = \App\Models\Service::all();
-                                    @endphp
-                                    @foreach ($service as $service)
-                                        <li class="tag_item" style="width: 100%"><a
-                                                href="{{ url('service-details/' . $service->id) }}">{{ $service->Service }}</a>
-                                        </li>
-                                    @endforeach
+                    <!-- Footer Column -->
+                    <div class="custom-footer-column">
+                        <div class="custom-footer-col">
+                            <div class="custom-footer-title">Payments</div>
+                            <div class="custom-footer-content">
+                                <ul class="custom-tags-list clearfix">
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/amex.png" alt="AMEX">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/mastercard.png" alt="MasterCard">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/visa.png" alt="Visa">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/rupay.png" alt="RuPay">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/netbanking.png" alt="Net Banking">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/emi.png" alt="Easy EMI Options">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/cod.png" alt="Cash on Delivery">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/paytm.png" alt="Paytm">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/paypal.png" alt="PayPal">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/mobikwik.png" alt="Mobikwik">
+                                    </li>
+                                    <li class="custom-tag-item">
+                                        <img src="path/to/payzapp.png" alt="PayZapp">
+                                    </li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-
 
 
                 </div>
