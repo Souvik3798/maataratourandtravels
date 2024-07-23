@@ -117,8 +117,120 @@
             max-width: 80%;
             max-height: 80%;
         }
-    </style>
 
+        .whatsapp_float {
+            position: fixed;
+            bottom: 140px;
+            /* Adjusted to avoid overlap with chat button */
+            right: 20px;
+        }
+
+        .callus_float {
+            position: fixed;
+            bottom: 210px;
+            /* Adjust as needed to avoid overlap with WhatsApp button */
+            right: 20px;
+        }
+
+        .chat-button {
+            position: fixed;
+            bottom: 70px;
+            right: 20px;
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .chat-button img {
+            width: 50px;
+            height: 50px;
+        }
+
+        .chat-modal {
+            display: none;
+            position: fixed;
+            bottom: 160px;
+            right: 20px;
+            width: 500px;
+            max-width: 90%;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1001;
+            overflow: hidden;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.3s ease, transform 0.3s ease;
+        }
+
+        .chat-modal.show {
+            display: flex;
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .modal-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .text-content {
+            flex: 1;
+            padding-right: 20px;
+        }
+
+        .text-content h1 {
+            font-size: 36px;
+            margin: 0 0 10px;
+            color: #5a3d2b;
+        }
+
+        .text-content p {
+            font-size: 16px;
+            margin: 0 0 20px;
+            color: #5a3d2b;
+        }
+
+        .text-content p span {
+            font-weight: bold;
+        }
+
+        .text-content button {
+            background-color: #5a3d2b;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .image-content img {
+            width: 200px;
+            height: auto;
+        }
+
+        .close-btn {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            font-size: 24px;
+            cursor: pointer;
+            color: #5a3d2b;
+        }
+
+    </style>
 </head>
 
 <body>
@@ -459,22 +571,21 @@
     <style>
         .whatsapp_float {
             position: fixed;
-            bottom: 40px;
+            bottom: 140px;
+            /* Adjusted to avoid overlap with chat button */
             right: 20px;
         }
 
         .callus_float {
             position: fixed;
-            bottom: 100px;
+            bottom: 210px;
             /* Adjust as needed to avoid overlap with WhatsApp button */
             right: 20px;
         }
 
-        /* contact is */
-
         .chat-button {
             position: fixed;
-            bottom: 20px;
+            bottom: 70px;
             right: 20px;
             width: 80px;
             height: 80px;
@@ -496,7 +607,7 @@
         .chat-modal {
             display: none;
             position: fixed;
-            bottom: 90px;
+            bottom: 160px;
             right: 20px;
             width: 500px;
             max-width: 90%;
@@ -569,6 +680,7 @@
             cursor: pointer;
             color: #5a3d2b;
         }
+
     </style>
 
     <div class="whatsapp_float">
@@ -581,6 +693,7 @@
                 class="callus_float_btn" alt="Call Us"></a>
     </div>
 
+    <!-- Chat Button -->
     <div class="chat-button" id="chatButton">
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
     </div>
@@ -591,14 +704,13 @@
         <div class="modal-content">
             <div class="text-content">
                 <h1>Contact Us</h1>
-                <p>For any <strong>Customize Plan</strong> just mail us or call us.</p>
+                <p>For any Customization just mail us or call us.</p>
                 <a href="mailto:andamanblueoceantravel@gmail.com">
                     <button>Mail</button>
                 </a>
             </div>
             <div class="image-content">
-                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
-                    alt="Email Image"> <!-- Replace with your image path -->
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg" alt="Email Image"> <!-- Replace with your image path -->
             </div>
         </div>
     </div>
