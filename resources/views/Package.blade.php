@@ -129,7 +129,7 @@
 
                         <div>
                             <ul>
-                                @foreach ($location as $location)
+                                @foreach ($package->location as $location)
                                     <li>
                                         {{ $location['location'] }}
                                     </li>
