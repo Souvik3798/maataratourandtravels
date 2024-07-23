@@ -729,6 +729,28 @@
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
     <script src="{{ asset('js/single_listing_custom.js') }}"></script>
 
+    <!-- Chat Button -->
+    <div class="chat-button" id="chatButton">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
+    </div>
+
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="modal-content">
+            <div class="text-content">
+                <h1>Contact Us</h1>
+                <p>For any Customization just mail us or call us.</p>
+                <a href="mailto:andamanblueoceantravel@gmail.com">
+                    <button>Mail</button>
+                </a>
+            </div>
+            <div class="image-content">
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
+                    alt="Email Image">
+            </div>
+        </div>
+    </div>
 
     <script>
         document.getElementById('chatButton').addEventListener('click', function() {
@@ -764,29 +786,6 @@
             }
         }
     </script>
-
-    <!-- Chat Button -->
-    <div class="chat-button" id="chatButton">
-        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
-    </div>
-
-    <!-- Chat Modal -->
-    <div class="chat-modal" id="chatModal">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <div class="modal-content">
-            <div class="text-content">
-                <h1>Contact Us</h1>
-                <p>For any Customization just mail us or call us.</p>
-                <a href="mailto:andamanblueoceantravel@gmail.com">
-                    <button>Mail</button>
-                </a>
-            </div>
-            <div class="image-content">
-                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
-                    alt="Email Image">
-            </div>
-        </div>
-    </div>
 
 
 </body>
