@@ -148,7 +148,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex flex-row">
-                            <div class="phone">+91-9933250564</div>
+                            <div class="phone">+91-9933250564 | andamanblueoceantravel@gmail.com</div>
                             <div class="social">
                                 <ul class="social_list">
                                     {{-- <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -160,7 +160,8 @@
                                 </ul>
                             </div>
                             <div class="user_box ml-auto">
-                                <div class="user_box_login user_box_link"><a href="{{ url('/admin') }}">login</a></div>
+                                <div class="user_box_login user_box_link"><a href="{{ url('/admin') }}">Ponghi Kyaung,
+                                        Port Blair, 744101 | login</a></div>
                             </div>
                         </div>
                     </div>
@@ -173,15 +174,13 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
-                            <div class="main_nav_container" style="margin-right: 0; padding-right: 0;">
-                                <ul class="main_nav_list" style="margin-right: 0; padding-right: 0;">
-                                    <li class="main_nav_item home-about-adjust" style="margin-right: 5px;"><a
-                                            href="{{ url('/') }}">home</a></li>
-                                    <li class="main_nav_item home-about-adjust" style="margin-right: 5px;"><a
-                                            href="{{ url('about/') }}">about us</a></li>
+                            <div class="main_nav_container ml-auto" style="margin-right: 150px">
+                                <ul class="main_nav_list">
+                                    <li class="main_nav_item"><a href="{{ url('/') }}">home</a></li>
+                                    <li class="main_nav_item"><a href="{{ url('about/') }}">about us</a></li>
                                 </ul>
                             </div>
-                            <div class="logo_container" style="margin-left: 0; padding-left: 0;">
+                            <div class="logo_container">
                                 <div class="logo"><a href="{{ url('/') }}"><img
                                             src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
                                 </div>
@@ -192,22 +191,13 @@
                                     <li class="main_nav_item"><a href="{{ url('contact/') }}">contact</a></li>
                                 </ul>
                             </div>
-                            <div class="content_search ml-lg-0 ml-auto">
-                                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-                                    xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17px"
-                                    height="17px" viewBox="0 0 512 512" enable-background="new 0 0 512 512"
-                                    xml:space="preserve">
-                                </svg>
-                            </div>
-                            <div class="hamburger">
+                            <div class="hamburger" style="margin-left: 340px">
                                 <i class="fa fa-bars trans_200"></i>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-
-
 
         </header>
 
@@ -351,7 +341,8 @@
                                         <div>
                                             <div class="contact_info_icon"><img
                                                     src="{{ asset('images/whstapp.png') }}" width="40px"
-                                                    alt=""></div>
+                                                    alt="">
+                                            </div>
                                         </div>
                                         <div class="contact_info_text"><a href="#">+91-95319 13980</a></div>
                                     </li>

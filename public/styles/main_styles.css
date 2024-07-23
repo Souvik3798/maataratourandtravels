@@ -289,7 +289,6 @@ section {
 .header {
     position: fixed;
     width: 100%;
-    background: rgba(54, 19, 84, 0.6);
     z-index: 12;
 }
 .header.scrolled {
@@ -303,7 +302,6 @@ section {
 .top_bar {
     width: 100%;
     height: 36px;
-    background: #350a4e;
     -webkit-transition: all 400ms ease;
     -moz-transition: all 400ms ease;
     -ms-transition: all 400ms ease;
@@ -1059,7 +1057,6 @@ section {
     width: 100%;
     height: 100%;
     z-index: 2;
-    background: rgba(49, 18, 75, 0.55);
 }
 .intro_item_background {
     position: absolute;

@@ -447,57 +447,6 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <!-- Image by https://unsplash.com/@anikindimitry -->
-                    <div class="home_slider_background"
-                        style="background-image:url({{ asset('images/Banner/Ross-Island-Port-Blair-Andaman.webp') }})">
-                    </div>
-
-                    <div class="home_slider_content text-center">
-                        <div class="home_slider_content_inner" data-animation-in="flipInX"
-                            data-animation-out="animate-out fadeOut">
-                            <h1>Welcome To</h1>
-                            <h1>Andaman Blue Ocean Travels</h1>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#contact">Enquiry Now</a>
-                            </div>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#Hotels">Hotel Bookings</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
-                    <!-- Image by https://unsplash.com/@anikindimitry -->
-                    <div class="home_slider_background"
-                        style="background-image:url({{ asset('images/Banner/062a9651-city-25275-16a4f932894.jpg') }})">
-                    </div>
-
-                    <div class="home_slider_content text-center">
-                        <div class="home_slider_content_inner" data-animation-in="flipInX"
-                            data-animation-out="animate-out fadeOut">
-                            <h1>Welcome To</h1>
-                            <h1>Andaman Blue Ocean Travels</h1>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#contact">Enquiry Now</a>
-                            </div>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#Hotels">Hotel Bookings</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
                     <div class="home_slider_background"
                         style="background-image:url({{ asset('images/Banner/havelock-338536_1920.jpg') }})"></div>
 
@@ -520,29 +469,6 @@
                     </div>
                 </div>
 
-                <!-- Slider Item -->
-                <div class="owl-item home_slider_item">
-                    <div class="home_slider_background"
-                        style="background-image:url({{ asset('images/Banner/jail-3988719_1920.jpg') }})"></div>
-
-                    <div class="home_slider_content text-center">
-                        <div class="home_slider_content_inner" data-animation-in="flipInX"
-                            data-animation-out="animate-out fadeOut">
-                            <h1>Welcome To</h1>
-                            <h1>Andaman Blue Ocean Travels</h1>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#contact">Enquiry Now</a>
-                            </div>
-                            <div class="button home_slider_button purple_button" style="border: 2px solid white">
-                                <div class="button_bcg">
-                                </div>
-                                <a href="#Hotels">Hotel Bookings</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
             </div>
 
@@ -670,7 +596,8 @@
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="intro_text text-center">
-                        <p>Discover the breathtaking Andaman & Nicobar Islands, where pristine beaches, crystal-clear
+                        <p style="color: black; font-weight: 500px">Discover the breathtaking Andaman & Nicobar Islands,
+                            where pristine beaches, crystal-clear
                             waters, and lush greenery await. Dive into vibrant coral reefs, explore exotic marine life,
                             and enjoy serene sunsets. A paradise for nature lovers and adventure seekers alike.. </p>
                     </div>
