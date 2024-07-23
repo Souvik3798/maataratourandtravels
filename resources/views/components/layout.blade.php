@@ -137,11 +137,11 @@
         }
 
         .main_nav .main_nav_item {
-            margin-right: 1rem;
+            margin-right: -1rem;
         }
 
         .logo_container {
-            margin-right: 1rem;
+            margin-right: -1rem;
         }
     </style>
 </head>
