@@ -301,6 +301,26 @@
                     <!-- Footer Column -->
                     <div class="col-lg-3 footer_column">
                         <div class="footer_col">
+                            <div class="footer_title">Services</div>
+                            <div class="footer_content footer_tags">
+                                <ul class="tags_list clearfix">
+
+                                    @php
+                                        $service = \App\Models\Service::all();
+                                    @endphp
+                                    @foreach ($service as $service)
+                                        <li class="tag_item" style="width: 100%"><a
+                                                href="{{ url('service-details/' . $service->id) }}">{{ $service->Service }}</a>
+                                        </li>
+                                    @endforeach
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer Column -->
+                    <div class="col-lg-3 footer_column">
+                        <div class="footer_col">
                             <div class="footer_title">contact info</div>
                             <div class="footer_content footer_contact">
                                 <ul class="contact_info_list">
@@ -341,63 +361,54 @@
                     </div>
 
                     <!-- Footer Column -->
-                    <div class="col-lg-3 footer_column">
-                        <div class="footer_col">
-                            <div class="footer_title">Services</div>
-                            <div class="footer_content footer_tags">
-                                <ul class="tags_list clearfix">
-
-                                    @php
-                                        $service = \App\Models\Service::all();
-                                    @endphp
-                                    @foreach ($service as $service)
-                                        <li class="tag_item" style="width: 100%"><a
-                                                href="{{ url('service-details/' . $service->id) }}">{{ $service->Service }}</a>
-                                        </li>
-                                    @endforeach
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer Column -->
                     <div class="custom-footer-column">
                         <div class="custom-footer-col">
                             <div class="custom-footer-title">Payments</div>
                             <div class="custom-footer-content">
                                 <ul class="custom-tags-list clearfix">
                                     <li class="custom-tag-item">
-                                        <img src="path/to/amex.png" alt="AMEX">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                                            alt="AMEX">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/mastercard.png" alt="MasterCard">
+                                        <img src="https://www.investopedia.com/thmb/F8CKM3YkF1fmnRCU2g4knuK0eDY=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/MClogo-c823e495c5cf455c89ddfb0e17fc7978.jpg"
+                                            alt="MasterCard">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/visa.png" alt="Visa">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRB6YnQoM78NCEw3f--iWcGhpQFjBxfo9k6fw&s"
+                                            alt="Visa">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/rupay.png" alt="RuPay">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHORQ-GcBDf-hHLQnRlWlw64vh6yRgbGlcQQ&s"
+                                            alt="RuPay">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/netbanking.png" alt="Net Banking">
+                                        <img src="https://cdn.iconscout.com/icon/free/png-256/free-netbanking-credit-debit-bank-transaction-card-32270.png"
+                                            alt="Net Banking">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/emi.png" alt="Easy EMI Options">
+                                        <img src="https://www.shutterstock.com/image-vector/easy-emi-payment-loans-finance-600nw-2082934240.jpg"
+                                            alt="Easy EMI Options">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/cod.png" alt="Cash on Delivery">
+                                        <img src="https://i.pinimg.com/736x/ab/b5/2c/abb52c0ac3fb3c96ebde3207c8992a02.jpg"
+                                            alt="Cash on Delivery">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/paytm.png" alt="Paytm">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cd/Paytm_logo.jpg"
+                                            alt="Paytm">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/paypal.png" alt="PayPal">
+                                        <img src="https://logos-world.net/wp-content/uploads/2020/07/PayPal-Logo.png"
+                                            alt="PayPal">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/mobikwik.png" alt="Mobikwik">
+                                        <img src="https://d1oq1nzr46kpxm.cloudfront.net/assets/mobikwik_logo_B-07d7963f9b55a08bb68e24754ce5aaf5240afbef2859e8d4b1e92074b337e62a.png"
+                                            alt="Mobikwik">
                                     </li>
                                     <li class="custom-tag-item">
-                                        <img src="path/to/payzapp.png" alt="PayZapp">
+                                        <img src="https://cdn.prod.website-files.com/64199d190fc7afa82666d89c/6491bed76fd58d731e9bc220_payzapp.png"
+                                            alt="PayZapp">
                                     </li>
                                 </ul>
                             </div>
