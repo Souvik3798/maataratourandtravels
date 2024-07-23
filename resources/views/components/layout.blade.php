@@ -173,15 +173,19 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+                            <div class="main_nav_container ml-auto">
+                                <ul class="main_nav_list">
+                                    <li class="main_nav_item"><a href="{{ url('/') }}">home</a></li>
+                                    <li class="main_nav_item"><a href="{{ url('about/') }}">about us</a></li>
+                                </ul>
+                            </div>
                             <div class="logo_container">
                                 <div class="logo"><a href="{{ url('/') }}"><img
                                             src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
                                 </div>
                             </div>
                             <div class="main_nav_container ml-auto">
-                                <ul class="main_nav_list">
-                                    <li class="main_nav_item"><a href="{{ url('/') }}">home</a></li>
-                                    <li class="main_nav_item"><a href="{{ url('about/') }}">about us</a></li>
+                                <ul>
                                     <li class="main_nav_item"><a href="{{ url('service/') }}">Services</a></li>
                                     <li class="main_nav_item"><a href="{{ url('contact/') }}">contact</a></li>
                                 </ul>
