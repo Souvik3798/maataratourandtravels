@@ -488,7 +488,7 @@
             position: fixed;
             bottom: 70px;
             right: 20px;
-            width: 40px;
+            width: 50px;
             height: 40px;
             background-color: white;
             border-radius: 50%;
