@@ -363,7 +363,7 @@
                     <!-- Footer Column -->
                     <div class="custom-footer-column">
                         <div class="custom-footer-col">
-                            <div class="custom-footer-title">Payments</div>
+                            <div class="footer-title">Payments</div>
                             <div class="custom-footer-content">
                                 <ul class="custom-tags-list clearfix">
                                     <li class="custom-tag-item">
