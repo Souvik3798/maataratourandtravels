@@ -931,7 +931,7 @@
             </div>
             <div class="row offers_items" style="display: flex; flex-wrap: wrap;">
                 @php
-                    $packages = \App\Models\Package::all();
+                    $packages = \App\Models\Package::where('Type', '!=', 'Holiday')->get();
                 @endphp
 
                 @foreach ($packages as $package)
