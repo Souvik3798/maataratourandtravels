@@ -15,13 +15,10 @@ return new class extends Migration
             $table->id();
             $table->string('Image')->nullable();
             $table->string('Name');
-            $table->string('destination covered');
-            $table->string('destination details');
             $table->text('Description');
             $table->string('Type');
             $table->json('Inclusions');
             $table->json('Exclusions');
-            $table->string('Hotel');
             $table->json('location');
             $table->string('Price');
             $table->json('Itinerary');

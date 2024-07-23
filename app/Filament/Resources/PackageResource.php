@@ -51,14 +51,6 @@ class PackageResource extends Resource
                         'Luxury' => 'Luxury'
                     ])
                     ->required(),
-                TextInput::make('destination covered')
-                    ->placeholder('Port Blair, Swaraj Dweep, Shaheed Dweep.')
-                    ->required()
-                    ->maxLength(255),
-                TextInput::make('destination details')
-                    ->placeholder('2 Night at Port Blair, 2 Night at Swaraj Dweep, 1 Night at Shaheed Dweep')
-                    ->required()
-                    ->maxLength(255),
                 Textarea::make('Description')
                     ->required()
                     ->rows(10)
@@ -71,10 +63,7 @@ class PackageResource extends Resource
                     ->schema([
                         TextInput::make('Exclusion')
                     ]),
-                TextInput::make('Hotel')
-                    ->required()
-                    ->maxLength(255),
-                Repeater::make('Location')
+                Repeater::make('location')
                     ->schema([
                         TextInput::make('location')
                             ->label('Exter the Location Covered')

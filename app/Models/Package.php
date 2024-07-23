@@ -11,14 +11,11 @@ class Package extends Model
     protected $fillable = [
         'Image',
         'Name',
-        'destination covered',
-        'destination details',
         'Description',
         'Price',
         'Inclusions',
         'Exclusions',
         'Hotel',
-        'location',
         'Type',
         'Itinerary',
     ];

@@ -51,7 +51,7 @@
                                         <i></i>
                                     </div>
                                     <div class="hotel_location">
-                                        <strong>₹.{{ number_format($package->Price, 2) }}/-</strong>
+                                        <strong>₹.{{ number_format($package->Price, 2) }}/- +5%GST</strong>
                                     </div>
                                 </div>
                                 <div class="hotel_title_button ml-lg-auto text-lg-right">
@@ -125,9 +125,16 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
-
-
+                        <div>
+                            <ul>
+                                @foreach ($location as $location)
+                                    <li>
+                                        {{ $location['location'] }}
+                                    </li>
+                                @endforeach
+                            </ul>
                         </div>
 
                         <div class="rooms">
