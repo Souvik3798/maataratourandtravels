@@ -489,7 +489,7 @@
             bottom: 70px;
             right: 20px;
             width: 50px;
-            height: 40px;
+            height: 50px;
             background-color: white;
             border-radius: 50%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -501,8 +501,8 @@
         }
 
         .chat-button img {
-            width: 20px;
-            height: 20px;
+            width: 30px;
+            height: 30px;
         }
 
         .chat-modal {
