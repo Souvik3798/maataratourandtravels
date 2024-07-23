@@ -608,11 +608,13 @@
                     alt="Email Image">
             </div>
             <div class="text-content">
-                <h1>Contact Us</h1>
-                <p>For any Customize Plan just mail us or call us.</p>
-                <a href="mailto:andamanblueoceantravel@gmail.com">
-                    <button>Mail</button>
-                </a>
+                <strong>
+                    <h1>Contact Us</h1>
+                    <p>For any Customize Plan just mail us or call us.</p>
+                    <a href="mailto:andamanblueoceantravel@gmail.com">
+                        <button>Mail</button>
+                    </a>
+                </strong>
             </div>
         </div>
     </div>
