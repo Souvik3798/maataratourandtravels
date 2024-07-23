@@ -192,6 +192,7 @@
 
         .text-content {
             flex: 1;
+            padding-right: 20px;
         }
 
         .text-content h1 {
@@ -221,9 +222,16 @@
             display: inline-block;
         }
 
-        .image-content img {
+        .image-content {
+            flex-shrink: 0;
+            /* Prevents shrinking */
             width: 100px;
             /* Adjusted size */
+        }
+
+        .image-content img {
+            width: 100%;
+            /* Ensures the image fits the container */
             height: auto;
         }
 
@@ -706,23 +714,20 @@
         <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
     </div>
 
-    <!-- Chat Modal -->
-    <div class="chat-modal" id="chatModal">
-        <span class="close-btn" id="closeBtn">&times;</span>
-        <div class="modal-content">
-            <div class="text-content">
-                <h1>Contact Us</h1>
-                <p>For any Customization just mail us or call us.</p>
-                <a href="mailto:andamanblueoceantravel@gmail.com">
-                    <button>Mail</button>
-                </a>
-            </div>
-            <div class="image-content">
-                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
-                    alt="Email Image">
-            </div>
-        </div>
-    </div>
+
+
+
+
+    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
+    <script src="{{ asset('styles/bootstrap4/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
+    <script src="{{ asset('plugins/easing/easing.js') }}"></script>
+    <script src="{{ asset('js/custom.js') }}"></script>
+    <script src="{{ asset('plugins/parallax-js-master/parallax.min.js') }}"></script>
+    <script src="{{ asset('plugins/colorbox/jquery.colorbox-min.js') }}"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
+    <script src="{{ asset('js/single_listing_custom.js') }}"></script>
 
 
     <script>
@@ -760,17 +765,29 @@
         }
     </script>
 
+    <!-- Chat Button -->
+    <div class="chat-button" id="chatButton">
+        <img src="https://cdn3d.iconscout.com/3d/premium/thumb/headphone-4035933-3342612.png?f=webp" alt="Chat Icon">
+    </div>
 
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
-    <script src="{{ asset('styles/bootstrap4/popper.js') }}"></script>
-    <script src="{{ asset('styles/bootstrap4/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('plugins/OwlCarousel2-2.2.1/owl.carousel.js') }}"></script>
-    <script src="{{ asset('plugins/easing/easing.js') }}"></script>
-    <script src="{{ asset('js/custom.js') }}"></script>
-    <script src="{{ asset('plugins/parallax-js-master/parallax.min.js') }}"></script>
-    <script src="{{ asset('plugins/colorbox/jquery.colorbox-min.js') }}"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-    <script src="{{ asset('js/single_listing_custom.js') }}"></script>
+    <!-- Chat Modal -->
+    <div class="chat-modal" id="chatModal">
+        <span class="close-btn" id="closeBtn">&times;</span>
+        <div class="modal-content">
+            <div class="text-content">
+                <h1>Contact Us</h1>
+                <p>For any Customization just mail us or call us.</p>
+                <a href="mailto:andamanblueoceantravel@gmail.com">
+                    <button>Mail</button>
+                </a>
+            </div>
+            <div class="image-content">
+                <img src="https://w0.peakpx.com/wallpaper/363/685/HD-wallpaper-email-youve-got-mail-you-have-new-mail-web-mail.jpg"
+                    alt="Email Image">
+            </div>
+        </div>
+    </div>
+
 
 </body>
 
