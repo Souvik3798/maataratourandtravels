@@ -271,7 +271,7 @@
             flex-direction: column;
             height: auto;
             /* Changed to auto */
-            min-height: 400px;
+            min-height: 200px;
             /* Ensure a minimum height */
             transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
             /* Add transition for scaling and shadow effect */
