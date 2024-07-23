@@ -325,7 +325,7 @@
 
                         <div class="important_notes">
                             <h2>Important Notes</h2>
-                            <ul>
+                            <ul style="color: black">
                                 <li><strong>Mobile Network Availability:</strong> Airtel, BSNL, and Vodafone are
                                     available. BSNL is preferred.</li>
                                 <li><strong>Adherence to Timings and Instructions:</strong> Please follow all timings
@@ -376,7 +376,7 @@
 
                         <div class="dos_and_donts">
                             <h2>Do's and Don'ts for Tourists</h2>
-                            <div class="row">
+                            <div class="row" style="color: black">
                                 <div class="col-md-6">
                                     <div class="dos_section">
                                         <h3>Do's</h3>
