@@ -175,8 +175,10 @@
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                             <div class="main_nav_container ml-auto">
                                 <ul class="main_nav_list">
-                                    <li class="main_nav_item"><a href="{{ url('/') }}">home</a></li>
-                                    <li class="main_nav_item"><a href="{{ url('about/') }}">about us</a></li>
+                                    <li class="main_nav_item" style="text-align: right"><a
+                                            href="{{ url('/') }}">home</a></li>
+                                    <li class="main_nav_item" style="text-align: right"><a
+                                            href="{{ url('about/') }}">about us</a></li>
                                 </ul>
                             </div>
                             <div class="logo_container">
