@@ -148,7 +148,8 @@
                 <div class="container">
                     <div class="row">
                         <div class="col d-flex flex-row">
-                            <div class="phone">+91-9933250564 | andamanblueoceantravel@gmail.com</div>
+                            <div class="phone">+91-9933250564 | +91 99332 21553 | andamanblueoceantravel@gmail.com
+                            </div>
                             <div class="social">
                                 <ul class="social_list">
                                     {{-- <li class="social_list_item"><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
@@ -325,7 +326,7 @@
                                             <div class="contact_info_icon"><img
                                                     src="{{ asset('images/phone-call.svg') }}" alt=""></div>
                                         </div>
-                                        <div class="contact_info_text">+91-9933250564</div>
+                                        <div class="contact_info_text">+91-9933250564 | +91 99332 21553</div>
                                     </li>
                                     <li class="contact_info_item d-flex flex-row">
                                         <div>
@@ -599,7 +600,7 @@
                         <br>
 
 
-                        +91-9933250564
+                        +91-9933250564 | +91 99332 21553
                     </p>
                     <a href="mailto:andamanblueoceantravel@gmail.com">
                         <button>Mail</button>
