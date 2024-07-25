@@ -453,8 +453,9 @@
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
-                            <h1> </h1>
-                            <h1>Andaman Blue Ocean Travels</h1>
+                            <h1 style="text-shadow: 2px 2px 5px rgba(0,0,0,0.3);">Welcome</h1>
+                            <h1 style="text-shadow: 2px 2px 5px rgba(0,0,0,0.3);">Andaman Blue Ocean Travels</h1>
+
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
                                 <div class="button_bcg">
                                 </div>
