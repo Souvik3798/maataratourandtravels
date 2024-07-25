@@ -720,7 +720,6 @@ section {
     font-size: 100px;
     font-weight: 900;
     color: #ffffff;
-    text-transform: uppercase;
 }
 .home_slider_content h1:nth-child(2) {
     font-family: "Beyond";
