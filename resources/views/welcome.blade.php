@@ -647,7 +647,10 @@
                                                                     href="{{ url('https://andamanblueocean.com/package/6') }}"
                                                                 @elseif ($i == 8)
 
-                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}" @endif>
+                                                                        href="{{ url('https://andamanblueocean.com/package/7') }}"
+                                                                        @elseif ($i == 9){
+                                                                            href="{{ url('https://andamanblueocean.com/package/9') }}"
+                                                                        } @endif>
                                         see more<span></span><span></span><span></span></a>
                                 </div>
 
