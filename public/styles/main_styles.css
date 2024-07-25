@@ -720,6 +720,7 @@ section {
     font-size: 100px;
     font-weight: 900;
     color: #5285f1;
+    outline-color: white;
 }
 .home_slider_content h1:nth-child(2) {
     font-family: "Beyond";
