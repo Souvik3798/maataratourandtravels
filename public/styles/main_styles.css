@@ -1113,7 +1113,7 @@ section {
     font-weight: 700;
     color: #ffffff;
     letter-spacing: -0.05em;
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.568);
 }
 .intro_price {
     font-size: 14px;
