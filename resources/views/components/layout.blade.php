@@ -182,7 +182,7 @@
                             </div>
                             <div class="logo_container">
                                 <div class="logo"><a href="{{ url('/') }}"><img
-                                            src={{ asset('images/ABS Logo.png') }} alt=""
+                                            src={{ asset('images/ABSLogo.png') }} alt=""
                                             class="img-thumbnail"></a>
                                 </div>
                             </div>
