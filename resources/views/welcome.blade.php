@@ -447,8 +447,8 @@
 
                 <!-- Slider Item -->
                 <div class="owl-item home_slider_item">
-                    <div class="home_slider_background"
-                        style="background-image:url({{ asset('images/Banner/havelock-338536_1920.jpg') }})"></div>
+                    <div class="home_slider_background" style="background-image:url({{ asset('images/hero.jpg') }})">
+                    </div>
 
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
@@ -623,7 +623,7 @@
                                 style="background-image:url({{ asset('storage/' . $location->image_path) }})"></div>
                             <div
                                 class="intro_item_content d-flex flex-column align-items-center justify-content-center">
-                                <div class="intro_date" style="background-color: #470099">{{ $location->Location }}
+                                <div class="intro_date" style="background-color: #47009938">{{ $location->Location }}
                                 </div>
                                 <div class="button intro_button purple_button">
                                     <div class="button_bcg"></div>
