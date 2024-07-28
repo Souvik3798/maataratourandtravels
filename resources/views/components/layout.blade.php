@@ -182,7 +182,8 @@
                             </div>
                             <div class="logo_container">
                                 <div class="logo"><a href="{{ url('/') }}"><img
-                                            src={{ asset('images/ABS.png') }} alt="" class="img-thumbnail"></a>
+                                            src={{ asset('images/ABS Logo.png') }} alt=""
+                                            class="img-thumbnail"></a>
                                 </div>
                             </div>
                             <div class="main_nav_container ml-auto">
