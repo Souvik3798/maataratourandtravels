@@ -1201,7 +1201,7 @@
 
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/library/FD/17/CF/8FB216B361B344F3155564D4DA_1496936555961_cropped_450X450.jpeg"
                     alt="24 Hours Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">24 Hours Travel Agents</h3>
@@ -1209,7 +1209,7 @@
                     attractive travel packages.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
                     alt="Adventure Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
@@ -1217,7 +1217,7 @@
                     with best tour packages available with us.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image2.jdomni.in/library/C9/A5/CE/31F37E4418ABBD4D7C33DBF431_1496334323751_cropped_450X450.jpeg"
                     alt="Air Ticketing Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Air Ticketing Agents</h3>
@@ -1225,7 +1225,7 @@
                     make the process of air ticket booking easy.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/library/B4/40/71/74900D3BDF1534CE61A91EEB38_1496333473729_cropped_450X450.jpeg"
                     alt="Car Hire">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car Hire</h3>
@@ -1233,7 +1233,7 @@
                     be used to travel to various locations.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image1.jdomni.in/library/39/CE/2D/40B10C37EADABAB24F450E867B_1496331650841_cropped_450X450.jpeg"
                     alt="Car On Hire For Outstation-Xylo">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car On Hire For Outstation-Xylo</h3>
@@ -1241,7 +1241,7 @@
                     travel & is comfortable & cosy all at once!</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image2.jdomni.in/library/70/11/6B/DA60E66CEFF76A40DE35199DA5_1496269572424_cropped_450X450.jpeg"
                     alt="Domestic Tour Operators">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Operators</h3>
@@ -1249,7 +1249,7 @@
                     our clients as per their demands.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/library/1B/F1/8C/793EA679D44FC78AE24EFBC524_1496937988565_cropped_450X450.jpeg"
                     alt="Domestic Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Packages</h3>
@@ -1257,7 +1257,7 @@
                     clients are the focal points of all our packages.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image2.jdomni.in/banner/30052019/30/04/2F/13E8B4401D04778386CB9B5850_1559159603474.jpg?output-format=webp"
                     alt="Domestic Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Travel Agents</h3>
@@ -1265,7 +1265,7 @@
                     country with the best domestic travel agents.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image2.jdomni.in/banner/30052019/75/72/B3/C506855A217AAA561B7DF35A80_1559159405278.jpg?output-format=webp"
                     alt="Hotel Reservations">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Hotel Reservations</h3>
@@ -1273,7 +1273,7 @@
                     requirements are efficiently met.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/library/E4/E3/DA/B932BBAD9EF9B3EB3A3B0115A0_1496252456466_cropped_450X450.jpeg"
                     alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Tour Packages For Honeymoon</h3>
@@ -1281,7 +1281,7 @@
                     honeymoon tour packages for the best price.</p>
             </div>
 
-            <div class="service-item reveal">
+            <div class="service-item">
                 <img src="https://image3.jdomni.in/library/27/A1/5F/C601C501D5166E5443AD394BBE_1496331665419_cropped_450X450.jpeg"
                     alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
@@ -1517,14 +1517,27 @@
     </script>
 
     <script>
-        // Initialize ScrollReveal
         ScrollReveal().reveal('.reveal', {
+            reset: true, // Keep reset enabled
             duration: 1000, // Animation duration in milliseconds
             distance: '500px', // Distance to move during the reveal
             easing: 'ease-in', // Easing function
-            origin: 'left', // Direction the element will move from (bottom, top, left, right)
+            origin: 'left', // Direction the element will move from
+            viewFactor: 0.3, // Adjust this value to change when the animation triggers (0.0 - 1.0)
+        });
+
+        // Specific settings for service-item
+        ScrollReveal().reveal('.service-item', {
+            reset: true,
+            duration: 1000,
+            distance: '100px', // Smaller distance to avoid early triggering
+            easing: 'ease-in',
+            origin: 'left', // Example: change direction for service-items
+            viewFactor: 0.03, // Adjust viewFactor to ensure it triggers at the right moment
         });
     </script>
+
+
 
 
 
