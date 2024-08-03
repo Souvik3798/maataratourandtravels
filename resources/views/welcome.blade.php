@@ -1522,7 +1522,7 @@
             duration: 1000, // Animation duration in milliseconds
             distance: '500px', // Distance to move during the reveal
             easing: 'ease-in', // Easing function
-            origin: 'top', // Direction the element will move from (bottom, top, left, right)
+            origin: 'left', // Direction the element will move from (bottom, top, left, right)
         });
     </script>
 
