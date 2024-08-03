@@ -45,7 +45,9 @@
 
                             <!-- Title -->
                             <div class="hotel_title_container d-flex flex-lg-row flex-column">
-                                <div class="hotel_title_content">
+                                <div class="hotel_title_content" data-aos="zoom-in-right" data-aos-offset="200"
+                                    data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                    data-aos-once="false">
                                     <h1 class="hotel_title">{{ $package->Name }}</h1>
                                     <p style="color: black;font-size: 18px">This Rate is Applicable More Than
                                         {{ $package->peoples }}
@@ -88,7 +90,9 @@
 
                             <!-- Hotel Info Text -->
 
-                            <div class="hotel_info_text">
+                            <div class="hotel_info_text" data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 <p style="color: black;font-size: 18px">{{ $package->Description }}</p>
                             </div>
 
@@ -121,18 +125,25 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="room_content">
-                                            <div class="room_title">Inclusions</div>
+                                            <div class="room_title" data-aos="zoom-in-right" data-aos-offset="200"
+                                                data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false">Inclusions</div>
                                             {{-- <div class="room_price">$99/night</div> --}}
                                             @foreach ($package->Inclusions as $Inclusion)
                                                 <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
-                                                    <li>{{ ucfirst($Inclusion['Inclusion']) }}</li>
+                                                    <li data-aos="zoom-in-right" data-aos-offset="200"
+                                                        data-aos-delay="50" data-aos-duration="1000"
+                                                        data-aos-easing="ease-in-out" data-aos-once="false">
+                                                        {{ ucfirst($Inclusion['Inclusion']) }}</li>
                                                 </ul>
                                             @endforeach
                                             {{-- <div class="room_extra">Breakfast $7.50</div> --}}
                                         </div>
                                     </div>
                                     <div class="col-lg-3 text-lg-right">
-                                        <div class="room_button">
+                                        <div class="room_button" data-aos="zoom-in-right" data-aos-offset="200"
+                                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                            data-aos-once="false">
                                             {{-- <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div> --}}
                                         </div>
                                     </div>
@@ -149,11 +160,15 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="room_content">
-                                            <div class="room_title">Hotels</div>
+                                            <div class="room_title" data-aos="zoom-in-right" data-aos-offset="200"
+                                                data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false">Hotels</div>
                                             {{-- <div class="room_price">$99/night</div> --}}
                                             <ul class="room_text" style="list-style-type: square; padding-left: 10px">
                                                 @foreach ($package->location as $location)
-                                                    <li>
+                                                    <li data-aos="zoom-in-right" data-aos-offset="200"
+                                                        data-aos-delay="50" data-aos-duration="1000"
+                                                        data-aos-easing="ease-in-out" data-aos-once="false">
                                                         {{ $location['location'] }}
                                                     </li>
                                                 @endforeach
@@ -162,7 +177,9 @@
                                         </div>
                                     </div>
                                     <div class="col-lg-3 text-lg-right">
-                                        <div class="room_button">
+                                        <div class="room_button" data-aos="zoom-in-right" data-aos-offset="200"
+                                            data-aos-delay="50" data-aos-duration="1000"
+                                            data-aos-easing="ease-in-out" data-aos-once="false">
                                             {{-- <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div> --}}
                                         </div>
                                     </div>
@@ -186,18 +203,26 @@
                                 <div class="row">
                                     <div class="col-lg-7">
                                         <div class="room_content">
-                                            <div class="room_title">Exclusions</div>
+                                            <div class="room_title" data-aos="zoom-in-right" data-aos-offset="200"
+                                                data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false">Exclusions</div>
                                             {{-- <div class="room_price">$99/night</div> --}}
                                             @foreach ($package->Exclusions as $Exclusion)
-                                                <ul class="room_text" style="list-style-type: disc; padding-left: 10px">
-                                                    <li>{{ ucfirst($Exclusion['Exclusion']) }}</li>
+                                                <ul class="room_text"
+                                                    style="list-style-type: disc; padding-left: 10px">
+                                                    <li data-aos="zoom-in-right" data-aos-offset="200"
+                                                        data-aos-delay="50" data-aos-duration="1000"
+                                                        data-aos-easing="ease-in-out" data-aos-once="false">
+                                                        {{ ucfirst($Exclusion['Exclusion']) }}</li>
                                                 </ul>
                                             @endforeach
                                             {{-- <div class="room_extra">Breakfast $7.50</div> --}}
                                         </div>
                                     </div>
                                     <div class="col-lg-3 text-lg-right">
-                                        <div class="room_button">
+                                        <div class="room_button" data-aos="zoom-in-right" data-aos-offset="200"
+                                            data-aos-delay="50" data-aos-duration="1000"
+                                            data-aos-easing="ease-in-out" data-aos-once="false">
                                             {{-- <div class="button book_button trans_200"><a href="#">book<span></span><span></span><span></span></a></div> --}}
                                         </div>
                                     </div>
@@ -211,7 +236,9 @@
                         <!-- Reviews -->
 
                         <div class="reviews">
-                            <div class="reviews_title">itinerary</div>
+                            <div class="reviews_title" data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">itinerary</div>
                             <div class="reviews_container">
 
                                 @php
@@ -225,7 +252,9 @@
                                                     <img src="{{ asset('images/664637.png') }}" alt="t">
                                                 </div>
                                             </div>
-                                            <div class="col-lg-11">
+                                            <div class="col-lg-11" data-aos="zoom-in-right" data-aos-offset="200"
+                                                data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false">
                                                 <div class="review_content">
                                                     <div class="review_title_container">
                                                         <div class="review_title">{{ $Itinerary['Title'] }}</div>
@@ -262,8 +291,12 @@
 
 
                         <div class="terms_conditions">
-                            <h2>Terms and Conditions</h2>
-                            <ul style="color: black">
+                            <h2 data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Terms
+                                and Conditions</h2>
+                            <ul style="color: black" data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 <li><strong>Weather and Cancellation Policy:</strong> All tours in Andaman are subject
                                     to weather conditions. Tours may be cancelled at any time due to bad weather,
                                     technical issues, or other unforeseen reasons.</li>
@@ -319,9 +352,15 @@
                         </div>
 
 
-                        <div class="important_notes">
-                            <h2>Important Notes</h2>
-                            <ul style="color: black">
+                        <div class="important_notes" data-aos="zoom-in-right" data-aos-offset="200"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
+                            <h2 data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
+                                Important Notes</h2>
+                            <ul style="color: black" data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                                 <li><strong>Mobile Network Availability:</strong> Airtel, BSNL, and Vodafone are
                                     available. BSNL is preferred.</li>
                                 <li><strong>Adherence to Timings and Instructions:</strong> Please follow all timings
@@ -371,12 +410,18 @@
                         <!-- Do's and Don'ts -->
 
                         <div class="dos_and_donts">
-                            <h2>Do's and Don'ts for Tourists</h2>
+                            <h2 data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">Do's and
+                                Don'ts for Tourists</h2>
                             <div class="row" style="color: black">
                                 <div class="col-md-6">
                                     <div class="dos_section">
-                                        <h3>Do's</h3>
-                                        <ul>
+                                        <h3 data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                            data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                            data-aos-once="false">Do's</h3>
+                                        <ul data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                            data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                            data-aos-once="false">
                                             <li><strong> Identification:</strong> Always carry your original ID proof,
                                                 such as Aadhar card, passport, or driving license.</li>
                                             <li><strong>Follow Timelines:</strong> Adhere to the provided itinerary and
@@ -405,8 +450,12 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="donts_section">
-                                        <h3>Don'ts</h3>
-                                        <ul>
+                                        <h3 data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                            data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                            data-aos-once="false">Don'ts</h3>
+                                        <ul data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                            data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                            data-aos-once="false">
                                             <li><strong>Avoid Littering:</strong> Do not litter in public places or
                                                 natural sites. Use designated bins for waste disposal.</li>
                                             <li><strong>Respect Wildlife:</strong> Do not disturb wildlife or damage

@@ -1,7 +1,6 @@
 <x-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <style>
         html {
@@ -454,8 +453,9 @@
                     </div>
 
                     <div class="home_slider_content text-center">
-                        <div class="home_slider_content_inner" data-animation-in="flipInX"
-                            data-animation-out="animate-out fadeOut">
+                        <div class="home_slider_content_inner" data-aos="zoom-in" data-aos-offset="100"
+                            data-aos-delay="0" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <h1 style="text-shadow: 2px 2px 5px rgb(0, 0, 0);">Andaman Blue Ocean Travels
                             </h1>
 
@@ -600,7 +600,8 @@
             <div class="row reveal">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="intro_text text-center">
-                        <p style="color: black; font-weight: 500px">Discover the breathtaking Andaman & Nicobar Islands,
+                        <p style="color: black; font-weight: 500px">Discover the breathtaking Andaman & Nicobar
+                            Islands,
                             where pristine beaches, crystal-clear
                             waters, and lush greenery await. Dive into vibrant coral reefs, explore exotic marine life,
                             and enjoy serene sunsets. A paradise for nature lovers and adventure seekers alike.. </p>
@@ -876,7 +877,8 @@
     <div class="offers">
         <div class="container" style="max-width: 1200px; margin: auto;">
             <div class="row">
-                <div class="col text-center reveal">
+                <div class="col text-center" data-aos="slide-right" data-aos-offset="200" data-aos-delay="50"
+                    data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Best Tour Package For
                         Andaman</h2>
                     <p style="color: black"><strong> Blair, Havelock Island, Neil Island, Rose Island, North Bay
@@ -896,7 +898,9 @@
 
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
-                    <div class="col-lg-6 offers_col reveal">
+                    <div class="col-lg-6 offers_col" data-aos="slide-right" data-aos-offset="200"
+                        data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                        data-aos-once="false">
                         <div class="offers_item" data-image-url="{{ asset('storage/' . $package->Image) }}">
                             <div class="offers_image_container">
                                 <div class="offers_image_background"
@@ -1387,20 +1391,32 @@
                             @csrf
                             <input type="text" name="name" id="contact_form_name"
                                 class="contact_form_name input_field" placeholder="Name" required="required"
-                                data-error="Name is required.">
+                                data-error="Name is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="email" name="email" id="contact_form_email"
                                 class="contact_form_email input_field" placeholder="E-mail" required="required"
-                                data-error="Email is required.">
+                                data-error="Email is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="text" name="subject" id="contact_form_subject"
                                 class="contact_form_subject input_field" placeholder="Subject" required="required"
-                                data-error="Subject is required.">
+                                data-error="Subject is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="tel" name="phone" id="contact_form_phone"
                                 class="contact_form_phone input_field" placeholder="Phone Number" required="required"
-                                data-error="Phone number is required.">
+                                data-error="Phone number is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <textarea id="contact_form_message" name="message" class="text_field contact_form_message" rows="4"
-                                placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
+                                placeholder="Message" required="required" data-error="Please, write us a message." data-aos="zoom-in-right"
+                                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false"></textarea>
                             <button type="submit" id="form_submit_button"
-                                class="form_submit_button button trans_200">send
+                                class="form_submit_button button trans_200" data-aos="zoom-in-right"
+                                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                                data-aos-easing="ease-in-out" data-aos-once="false">send
                                 message<span></span><span></span><span></span></button>
                         </form>
                     </div>
@@ -1540,12 +1556,5 @@
             origin: 'left', // Direction the element will move from
         });
     </script>
-
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
-
 
 </x-layout>

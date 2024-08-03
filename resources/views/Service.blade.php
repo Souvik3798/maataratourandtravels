@@ -91,7 +91,9 @@
                                 <div class="row">
                                     <div class="col-lg-1 temp_col"></div>
                                     <div class="col-lg-3 col-1680-4">
-                                        <div class="offers_image_container">
+                                        <div class="offers_image_container" data-aos="zoom-in-right"
+                                            data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                                            data-aos-easing="ease-in-out" data-aos-once="false">
                                             <div class="offers_image_background"
                                                 style="background-image:url({{ asset('storage/' . $service->Image) }})">
                                             </div>
@@ -102,7 +104,10 @@
                                     </div>
                                     <div class="col-lg-8">
                                         <div class="offers_content">
-                                            <div class="offers_price" style="color:rgb(70, 1, 70)">
+                                            <div class="offers_price" style="color:rgb(70, 1, 70)"
+                                                data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                                data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                                data-aos-once="false">
                                                 {{ $service->Service }}</div>
                                             <div class="rating_r rating_r_4 offers_rating" data-rating="4">
                                                 <i></i>
@@ -111,9 +116,14 @@
                                                 <i></i>
                                                 <i></i>
                                             </div>
-                                            <p class="offers_text" style="color: black;font-size: 20px">
+                                            <p class="offers_text" style="color: black;font-size: 20px"
+                                                data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                                data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                                data-aos-once="false">
                                                 {{ Str::limit($service->Description, 400, '...') }}</p>
-                                            <div class="offers_icons">
+                                            <div class="offers_icons" data-aos="zoom-in-right" data-aos-offset="200"
+                                                data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false">
                                                 <ul class="offers_icons_list">
                                                     <li class="offers_icons_item"><img src="images/post.png"
                                                             alt=""></li>
@@ -125,7 +135,9 @@
                                                             alt=""></li>
                                                 </ul>
                                             </div>
-                                            <div class="button book_button"><a
+                                            <div class="button book_button" data-aos="zoom-in-right"
+                                                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                                                data-aos-easing="ease-in-out" data-aos-once="false"><a
                                                     href="{{ url('service-details/' . $service->id) }}">See
                                                     More<span></span><span></span><span></span></a></div>
                                             <div class="offer_reviews">
@@ -134,7 +146,9 @@
                                                     <div class="offer_reviews_subtitle"></div>
                                                 </div>
                                                 <div class="offer_reviews_rating text-center"
-                                                    style="background-color: rgb(102, 2, 102)">8.1</div>
+                                                    style="background-color: rgb(102, 2, 102)" data-aos="zoom-in-right"
+                                                    data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                                                    data-aos-easing="ease-in-out" data-aos-once="false">8.1</div>
                                             </div>
                                         </div>
                                     </div>

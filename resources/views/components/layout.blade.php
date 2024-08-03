@@ -22,6 +22,8 @@
     <link rel="stylesheet" type="text/css" href={{ asset('styles/responsive.css') }}>
     <link rel="shortcut icon" type="image/x-icon" href={{ asset('images/ABSsmall.png') }}>
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
     <style>
         .logo_container .logo img {
@@ -664,7 +666,10 @@
     <script src="{{ asset('js/single_listing_custom.js') }}"></script>
 
 
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

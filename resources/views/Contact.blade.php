@@ -26,26 +26,39 @@
                     @endif
                     <!-- Contact Form -->
                     <div class="contact_form_container">
-                        <div class="contact_title text-center">get in touch</div>
+                        <div class="contact_title text-center" data-aos="zoom-in-right" data-aos-offset="200"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">get in touch</div>
                         <form action="{{ url('send/') }}" method="POST" id="contact_form"
                             class="contact_form text-center">
                             @csrf
                             <input type="text" name="name" id="contact_form_name"
                                 class="contact_form_name input_field" placeholder="Name" required="required"
-                                data-error="Name is required.">
+                                data-error="Name is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="email" name="email" id="contact_form_email"
                                 class="contact_form_email input_field" placeholder="E-mail" required="required"
-                                data-error="Email is required.">
+                                data-error="Email is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="text" name="subject" id="contact_form_subject"
                                 class="contact_form_subject input_field" placeholder="Subject" required="required"
-                                data-error="Subject is required.">
+                                data-error="Subject is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <input type="tel" name="phone" id="contact_form_phone"
                                 class="contact_form_phone input_field" placeholder="Phone Number" required="required"
-                                data-error="Phone number is required.">
+                                data-error="Phone number is required." data-aos="zoom-in-right" data-aos-offset="200"
+                                data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false">
                             <textarea id="contact_form_message" name="message" class="text_field contact_form_message" rows="4"
-                                placeholder="Message" required="required" data-error="Please, write us a message."></textarea>
-                            <button type="submit" id="form_submit_button"
-                                class="form_submit_button button trans_200">send
+                                placeholder="Message" required="required" data-error="Please, write us a message." data-aos="zoom-in-right"
+                                data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                                data-aos-once="false"></textarea>
+                            <button type="submit" id="form_submit_button" class="form_submit_button button trans_200"
+                                data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                                data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">send
                                 message<span></span><span></span><span></span></button>
                         </form>
                     </div>
@@ -64,7 +77,8 @@
 
                     <!-- About - Image -->
 
-                    <div class="about_image">
+                    <div class="about_image" data-aos="zoom-in-right" data-aos-offset="200" data-aos-delay="50"
+                        data-aos-duration="1000" data-aos-easing="ease-in-out" data-aos-once="false">
                         <img src="images/man.png" alt="">
                     </div>
 
@@ -75,16 +89,23 @@
                     <!-- About - Content -->
 
                     <div class="about_content">
-                        <div class="logo_container about_logo">
-                            <div class="logo"><a href="{{ url('/') }}"><img src="{{ asset('images/ABS.png') }}"
-                                        alt=""></a></div>
+                        <div class="logo_container about_logo" data-aos="zoom-in-right" data-aos-offset="200"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
+                            <div class="logo"><a href="{{ url('/') }}"><img
+                                        src="{{ asset('images/ABS.png') }}" alt=""></a></div>
                         </div>
-                        <p class="about_text" style="text-align: justify">Andaman Blue Ocean crafts unforgettable
+                        <p class="about_text" style="text-align: justify" data-aos="zoom-in-right"
+                            data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
+                            data-aos-easing="ease-in-out" data-aos-once="false">Andaman Blue Ocean crafts
+                            unforgettable
                             experiences by showcasing the pristine beauty and rich culture of the Andaman Islands. This
                             service boosts the local economy while fostering a global appreciation for this unique
                             destination. It prioritizes sustainable practices, ensuring that the natural and cultural
                             attractions of the islands are preserved for future explorers</p>
-                        <ul class="about_social_list">
+                        <ul class="about_social_list" data-aos="zoom-in-right" data-aos-offset="200"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <li class="about_social_item"><a href="#"><i class="fa fa-pinterest"></i></a></li>
                             <li class="about_social_item"><a href="#"><i class="fa fa-facebook-f"></i></a></li>
                             <li class="about_social_item"><a href="#"><i class="fa fa-twitter"></i></a></li>
@@ -99,7 +120,9 @@
                     <!-- About Info -->
 
                     <div class="about_info">
-                        <ul class="contact_info_list">
+                        <ul class="contact_info_list" data-aos="zoom-in-right" data-aos-offset="200"
+                            data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                            data-aos-once="false">
                             <li class="contact_info_item d-flex flex-row">
                                 <div>
                                     <div class="contact_info_icon"><img src="images/placeholder.svg" alt="">
