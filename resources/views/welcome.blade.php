@@ -1108,7 +1108,7 @@
                                 $activities = \App\Models\Activity::all();
                             @endphp
                             @foreach ($activities as $activity)
-                                <div class="owl-item reveal">
+                                <div class="owl-item">
                                     <div class="test_item"
                                         style="background-image: url('{{ asset('storage/' . $activity->image) }}'); width:100%; background-position: center; background-size: cover;">
                                         <div class="test_image"></div>
