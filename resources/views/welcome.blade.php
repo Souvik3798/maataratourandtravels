@@ -1,5 +1,11 @@
 <x-layout>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+        ScrollReveal({
+            reset: true
+        });
+    </script>
 
     <style>
         html {
@@ -52,6 +58,7 @@
             height: 400px;
             /* Increased height */
             position: relative;
+
         }
 
         .test_image {
@@ -453,7 +460,8 @@
                     <div class="home_slider_content text-center">
                         <div class="home_slider_content_inner" data-animation-in="flipInX"
                             data-animation-out="animate-out fadeOut">
-                            <h1 style="text-shadow: 2px 2px 5px rgb(0, 0, 0);">Andaman Blue Ocean Travels</h1>
+                            <h1 style="text-shadow: 2px 2px 5px rgb(0, 0, 0);">Andaman Blue Ocean Travels
+                            </h1>
 
                             <div class="button home_slider_button purple_button" style="border: 2px solid white">
                                 <div class="button_bcg">
@@ -589,11 +597,11 @@
     <div class="intro">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col reveal">
                     <h2 class="intro_title text-center">We have the best tours</h2>
                 </div>
             </div>
-            <div class="row">
+            <div class="row reveal">
                 <div class="col-lg-10 offset-lg-1">
                     <div class="intro_text text-center">
                         <p style="color: black; font-weight: 500px">Discover the breathtaking Andaman & Nicobar Islands,
@@ -616,7 +624,7 @@
                     @php
                         $i++;
                     @endphp
-                    <div class="col-lg-4 intro_col" style="margin-bottom: 10px">
+                    <div class="col-lg-4 intro_col reveal" style="margin-bottom: 10px">
                         <div class="intro_item">
                             <div class="intro_item_overlay"></div>
                             <div class="intro_item_background"
@@ -685,7 +693,7 @@
 
                     <!-- CTA Slider -->
 
-                    <div class="cta_slider_container">
+                    <div class="cta_slider_container reveal">
                         <div class="owl-carousel owl-theme cta_slider">
 
                             <!-- CTA Slider Item -->
@@ -872,7 +880,7 @@
     <div class="offers">
         <div class="container" style="max-width: 1200px; margin: auto;">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center reveal">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Best Tour Package For
                         Andaman</h2>
                     <p style="color: black"><strong> Blair, Havelock Island, Neil Island, Rose Island, North Bay
@@ -892,7 +900,7 @@
 
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
-                    <div class="col-lg-6 offers_col">
+                    <div class="col-lg-6 offers_col reveal">
                         <div class="offers_item" data-image-url="{{ asset('storage/' . $package->Image) }}">
                             <div class="offers_image_container">
                                 <div class="offers_image_background"
@@ -949,7 +957,7 @@
     <div class="offers">
         <div class="container" style="max-width: 1200px; margin: auto;">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center reveal">
                     <h2 class="section_title" style="font-size: 2.5em; margin: 20px 0;">Holiday Tour Package</h2>
                     <p style="color: black"><strong> here are some of the exclusive tour packages that we have
                             customized for our
@@ -965,7 +973,7 @@
 
                 @foreach ($packages as $package)
                     <!-- Offers Item -->
-                    <div class="col-lg-6 offers_col">
+                    <div class="col-lg-6 offers_col reveal">
                         <div class="offers_item" data-image-url="{{ asset('storage/' . $package->Image) }}">
                             <div class="offers_image_container">
                                 <div class="offers_image_background"
@@ -1024,7 +1032,7 @@
 
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;">
+            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;" class="reveal">
                 <img src="https://image3.jdomni.in/banner/04102023/6F/88/55/FAFA6BF2FFEA63C45392ADF5CD_1696397584757.png?output-format=webp"
                     alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
@@ -1034,7 +1042,7 @@
                     Now</a>
             </div>
 
-            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;">
+            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;" class="reveal">
                 <img src="https://image3.jdomni.in/banner/04102023/DC/06/19/2D7D61D7D08660A46AF5320128_1696399563721.jpg?output-format=webp"
                     alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
@@ -1044,7 +1052,7 @@
                     Now</a>
             </div>
 
-            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;">
+            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;" class="reveal">
                 <img src="https://image2.jdomni.in/banner/04102023/CB/88/5B/559D60E782BB4C581506E7C603_1696399813097.jpg?output-format=webp"
                     alt="Ferry Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Ferry Ticket Service</h3>
@@ -1054,7 +1062,7 @@
                     Now</a>
             </div>
 
-            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;">
+            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;" class="reveal">
                 <img src="https://image3.jdomni.in/banner/04102023/75/49/8B/C0F173813D499C99103F5B34F6_1696400724325.jpg?output-format=webp"
                     alt="Flight Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
@@ -1064,7 +1072,7 @@
                     Now</a>
             </div>
 
-            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;">
+            <div style="text-align: center; margin: 10px; width: 200px;border-radius: 10px;" class="reveal">
                 <img src="https://image2.jdomni.in/banner/04102023/C8/95/5E/36E33CFEE6A9AAF5A15E414220_1696400936113.jpg?output-format=webp"
                     alt="Flight Ticket Service" style="width: 100%; height: auto; border-radius: 10px;">
                 <h3 style="font-size: 18px; margin-top: 10px; color:black">Flight Ticket Service</h3>
@@ -1084,7 +1092,7 @@
         <div class="test_border"></div>
         <div class="container">
             <div class="row">
-                <div class="col text-center">
+                <div class="col text-center reveal">
                     <h2 class="section_title">Explore Our Range of Activities</h2>
                 </div>
             </div>
@@ -1100,7 +1108,7 @@
                                 $activities = \App\Models\Activity::all();
                             @endphp
                             @foreach ($activities as $activity)
-                                <div class="owl-item">
+                                <div class="owl-item reveal">
                                     <div class="test_item"
                                         style="background-image: url('{{ asset('storage/' . $activity->image) }}'); width:100%; background-position: center; background-size: cover;">
                                         <div class="test_image"></div>
@@ -1193,7 +1201,7 @@
 
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/library/FD/17/CF/8FB216B361B344F3155564D4DA_1496936555961_cropped_450X450.jpeg"
                     alt="24 Hours Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">24 Hours Travel Agents</h3>
@@ -1201,7 +1209,7 @@
                     attractive travel packages.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/banner/30052019/6C/11/64/B9F505EDCD2D3947F6D5488508_1559159349426.jpg?output-format=webp"
                     alt="Adventure Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
@@ -1209,7 +1217,7 @@
                     with best tour packages available with us.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image2.jdomni.in/library/C9/A5/CE/31F37E4418ABBD4D7C33DBF431_1496334323751_cropped_450X450.jpeg"
                     alt="Air Ticketing Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Air Ticketing Agents</h3>
@@ -1217,7 +1225,7 @@
                     make the process of air ticket booking easy.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/library/B4/40/71/74900D3BDF1534CE61A91EEB38_1496333473729_cropped_450X450.jpeg"
                     alt="Car Hire">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car Hire</h3>
@@ -1225,7 +1233,7 @@
                     be used to travel to various locations.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image1.jdomni.in/library/39/CE/2D/40B10C37EADABAB24F450E867B_1496331650841_cropped_450X450.jpeg"
                     alt="Car On Hire For Outstation-Xylo">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Car On Hire For Outstation-Xylo</h3>
@@ -1233,7 +1241,7 @@
                     travel & is comfortable & cosy all at once!</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image2.jdomni.in/library/70/11/6B/DA60E66CEFF76A40DE35199DA5_1496269572424_cropped_450X450.jpeg"
                     alt="Domestic Tour Operators">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Operators</h3>
@@ -1241,7 +1249,7 @@
                     our clients as per their demands.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/library/1B/F1/8C/793EA679D44FC78AE24EFBC524_1496937988565_cropped_450X450.jpeg"
                     alt="Domestic Tour Packages">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Tour Packages</h3>
@@ -1249,7 +1257,7 @@
                     clients are the focal points of all our packages.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image2.jdomni.in/banner/30052019/30/04/2F/13E8B4401D04778386CB9B5850_1559159603474.jpg?output-format=webp"
                     alt="Domestic Travel Agents">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Domestic Travel Agents</h3>
@@ -1257,7 +1265,7 @@
                     country with the best domestic travel agents.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image2.jdomni.in/banner/30052019/75/72/B3/C506855A217AAA561B7DF35A80_1559159405278.jpg?output-format=webp"
                     alt="Hotel Reservations">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Hotel Reservations</h3>
@@ -1265,7 +1273,7 @@
                     requirements are efficiently met.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/library/E4/E3/DA/B932BBAD9EF9B3EB3A3B0115A0_1496252456466_cropped_450X450.jpeg"
                     alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Tour Packages For Honeymoon</h3>
@@ -1273,7 +1281,7 @@
                     honeymoon tour packages for the best price.</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-item reveal">
                 <img src="https://image3.jdomni.in/library/27/A1/5F/C601C501D5166E5443AD394BBE_1496331665419_cropped_450X450.jpeg"
                     alt="Tour Packages For Honeymoon">
                 <h3 style="font-size: 18px; margin-top: 10px; color: #6a1b9a;">Adventure Tour Packages</h3>
@@ -1287,7 +1295,7 @@
     <div class="trending">
         <div class="container">
             <div class="row">
-                <div class="col text-center" id="Hotels">
+                <div class="col text-center reveal" id="Hotels">
                     <h2 class="section_title" style="color: #6A1B9A;">Luxurious Accommodations at Our Partner Hotels
                     </h2>
                 </div>
@@ -1299,7 +1307,7 @@
                 @endphp
                 @foreach ($hotels as $hotel)
                     <!-- Trending Item -->
-                    <div class="col s12 m6 l3 trending_item"
+                    <div class="col s12 m6 l3 trending_item reveal"
                         style="margin: 10px; box-sizing: border-box; display: flex;">
                         <div class="card"
                             style="box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); transition: transform 0.3s ease, box-shadow 0.3s ease; border-radius: 10px; overflow: hidden; background: #fff; display: flex; flex-direction: column; justify-content: space-between; width: 100%;">
@@ -1308,7 +1316,7 @@
                                 <img src="{{ 'storage/' . $hotel->Image }}" alt=""
                                     style="width: 100%; height: 100%; transition: transform 0.3s ease; object-fit: cover;">
                             </div>
-                            <div class="card-content"
+                            <div class="card-content reveal"
                                 style="text-align: center; padding: 15px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; font-family: 'TheWorldFont', sans-serif;">
                                 <div style="flex-grow: 1;">
                                     <div class="trending_title"
@@ -1505,6 +1513,16 @@
                     behavior: 'smooth'
                 });
             });
+        });
+    </script>
+
+    <script>
+        // Initialize ScrollReveal
+        ScrollReveal().reveal('.reveal', {
+            duration: 2000, // Animation duration in milliseconds
+            distance: '150px', // Distance to move during the reveal
+            easing: 'ease-in', // Easing function
+            origin: 'left', // Direction the element will move from (bottom, top, left, right)
         });
     </script>
 
