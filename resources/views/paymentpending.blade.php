@@ -121,16 +121,16 @@
     </div>
 
     <script>
-        // Set the date we're counting down to
-        const countDownDate = new Date("Aug 12, 2024 00:00:00").getTime();
+        // Set the date we're counting down from (current date and time)
+        const countFromDate = new Date().getTime();
 
-        // Update the count down every 1 second
+        // Update the count up every 1 second
         const x = setInterval(function() {
-            // Get today's date and time
+            // Get current date and time
             const now = new Date().getTime();
 
-            // Find the distance between now and the count down date
-            const distance = countDownDate - now;
+            // Find the distance between now and the count from date
+            const distance = now - countFromDate;
 
             // Time calculations for days, hours, minutes and seconds
             const days = Math.floor(distance / (1000 * 60 * 60 * 24));
@@ -143,12 +143,6 @@
             document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
             document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
             document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
-
-            // If the count down is finished, write some text
-            if (distance < 0) {
-                clearInterval(x);
-                document.querySelector(".countdown").innerHTML = "EXPIRED";
-            }
         }, 1000);
     </script>
 </body>
