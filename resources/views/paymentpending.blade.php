@@ -59,27 +59,41 @@
         }
 
         @keyframes shake {
+            10%, 90% { transform: translate3d(-1px, 0, 0); }
+            20%, 80% { transform: translate3d(2px, 0, 0); }
+            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
+            40%, 60% { transform: translate3d(4px, 0, 0); }
+        }
 
-            10%,
-            90% {
-                transform: translate3d(-1px, 0, 0);
-            }
+        .amount-paid {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
 
-            20%,
-            80% {
-                transform: translate3d(2px, 0, 0);
-            }
+        .countdown {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
 
-            30%,
-            50%,
-            70% {
-                transform: translate3d(-4px, 0, 0);
-            }
+        .countdown span {
+            display: inline-block;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            margin: 0 5px;
+            min-width: 60px;
+        }
 
-            40%,
-            60% {
-                transform: translate3d(4px, 0, 0);
-            }
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .countdown span {
+            animation: pulse 1s infinite;
         }
     </style>
 </head>
@@ -97,7 +111,46 @@
         </div>
         <h1>Payment Pending, Cheapskate!</h1>
         <p>Hey, Freeloader! Pay Up!</p>
+        <div class="amount-paid">₹0/- paid till now</div>
+        <div class="countdown">
+            <span id="days">00</span> days
+            <span id="hours">00</span> hours
+            <span id="minutes">00</span> minutes
+            <span id="seconds">00</span> seconds
+        </div>
     </div>
+
+    <script>
+        // Set the date we're counting down to
+        const countDownDate = new Date("Aug 12, 2024 00:00:00").getTime();
+
+        // Update the count down every 1 second
+        const x = setInterval(function() {
+            // Get today's date and time
+            const now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            const distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result
+            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
+            document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
+            document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.querySelector(".countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
 </body>
 
 </html>
