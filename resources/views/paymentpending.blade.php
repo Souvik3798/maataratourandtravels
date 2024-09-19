@@ -136,7 +136,7 @@
         </div>
         <h1>Payment Pending, Cheapskate!</h1>
         <p>Hey, Freeloader! Pay Up!</p>
-        <div class="amount-paid">₹0/- paid till now</div>
+        <div class="amount-paid">₹.0/- paid till now</div>
         <div class="countdown">
             <span id="days">00</span> days
             <span id="hours">00</span> hours
