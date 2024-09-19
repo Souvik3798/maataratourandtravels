@@ -121,8 +121,8 @@
     </div>
 
     <script>
-        // Set the date we're counting down from (current date and time)
-        const countFromDate = new Date().getTime();
+        // Set the date we're counting down from (12 Aug 2024 11:59 AM)
+        const countFromDate = new Date("2024-08-12T11:59:00").getTime();
 
         // Update the count up every 1 second
         const x = setInterval(function() {
@@ -139,7 +139,7 @@
             const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result
-            document.getElementById("days").innerHTML = days.toString().padStart(2, '0');
+            document.getElementById("days").innerHTML = Math.abs(days).toString().padStart(2, '0');
             document.getElementById("hours").innerHTML = hours.toString().padStart(2, '0');
             document.getElementById("minutes").innerHTML = minutes.toString().padStart(2, '0');
             document.getElementById("seconds").innerHTML = seconds.toString().padStart(2, '0');
