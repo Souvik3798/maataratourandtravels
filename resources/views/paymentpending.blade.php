@@ -55,14 +55,31 @@
 
         .icons i {
             margin: 0 10px;
-            animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both infinite;
+            animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
         }
 
         @keyframes shake {
-            10%, 90% { transform: translate3d(-1px, 0, 0); }
-            20%, 80% { transform: translate3d(2px, 0, 0); }
-            30%, 50%, 70% { transform: translate3d(-4px, 0, 0); }
-            40%, 60% { transform: translate3d(4px, 0, 0); }
+
+            10%,
+            90% {
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                transform: translate3d(4px, 0, 0);
+            }
         }
     </style>
 </head>
@@ -79,7 +96,7 @@
             <i class="fas fa-coins"></i>
         </div>
         <h1>Payment Pending, Cheapskate!</h1>
-        <p>Hey, Freeloader! Pay Up or Get Lost!</p>
+        <p>Hey, Freeloader! Pay Up!</p>
     </div>
 </body>
 
