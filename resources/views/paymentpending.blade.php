@@ -14,7 +14,7 @@
             padding: 0;
             font-family: 'Poppins', sans-serif;
             background: linear-gradient(135deg, #ff4d4d 0%, #ff9999 100%);
-            height: 100vh;
+            min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -26,35 +26,37 @@
             background: rgba(255, 255, 255, 0.1);
             backdrop-filter: blur(10px);
             border-radius: 20px;
-            padding: 40px;
+            padding: 20px;
             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+            width: 90%;
+            max-width: 500px;
         }
 
         h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 15px;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         p {
-            font-size: 1.5rem;
-            margin-bottom: 30px;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
             font-weight: bold;
         }
 
         .loader {
-            width: 200px;
-            height: 200px;
-            margin: 0 auto 30px;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 20px;
         }
 
         .icons {
-            font-size: 3rem;
-            margin-bottom: 20px;
+            font-size: 2rem;
+            margin-bottom: 15px;
         }
 
         .icons i {
-            margin: 0 10px;
+            margin: 0 8px;
             animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both infinite;
         }
 
@@ -83,24 +85,24 @@
         }
 
         .amount-paid {
-            font-size: 2rem;
-            margin-bottom: 20px;
+            font-size: 1.5rem;
+            margin-bottom: 15px;
             color: #ffffff;
             text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
         }
 
         .countdown {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
         }
 
         .countdown span {
             display: inline-block;
-            padding: 10px;
+            padding: 8px;
             background-color: rgba(255, 255, 255, 0.2);
-            border-radius: 10px;
-            margin: 0 5px;
-            min-width: 60px;
+            border-radius: 8px;
+            margin: 0 3px;
+            min-width: 40px;
         }
 
         @keyframes pulse {
@@ -119,6 +121,33 @@
 
         .countdown span {
             animation: pulse 1s infinite;
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .icons {
+                font-size: 1.5rem;
+            }
+
+            .amount-paid {
+                font-size: 1.2rem;
+            }
+
+            .countdown {
+                font-size: 1rem;
+            }
+
+            .countdown span {
+                padding: 6px;
+                min-width: 30px;
+            }
         }
     </style>
 </head>
