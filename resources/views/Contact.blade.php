@@ -135,7 +135,7 @@
                                     <div class="contact_info_icon"><img src="images/phone-call.svg" alt="">
                                     </div>
                                 </div>
-                                <div class="contact_info_text">+91-9933250564 | +91 99332 21553</div>
+                                <div class="contact_info_text">+91-9933250564 | +91-9434284077</div>
                             </li>
                             <li class="contact_info_item d-flex flex-row">
                                 <div>

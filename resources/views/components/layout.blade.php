@@ -602,7 +602,7 @@
                         <br>
 
 
-                        +91-9933250564 | +91 99332 21553
+                        +91-9933250564 | +91-9434284077
                     </p>
                     <a href="mailto:andamanblueoceantravel@gmail.com">
                         <button>Mail</button>
