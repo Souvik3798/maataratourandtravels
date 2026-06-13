@@ -176,6 +176,10 @@
                 <div class="container">
                     <div class="row">
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
+                            <div class="logo_container" style="margin-right: 20px;">
+                                <div class="logo"><a href="{{ url('/') }}"><img
+                                            src="{{ asset('images/ABS.png') }}" alt="" style="height: 60px; width: auto; object-fit: contain;"></a></div>
+                            </div>
                             <div class="main_nav_container ml-auto" style="margin-right: 150px">
                                 <ul class="main_nav_list">
                                     <li class="main_nav_item"><a href="{{ url('/') }}">home</a></li>
