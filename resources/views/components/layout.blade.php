@@ -178,7 +178,7 @@
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                             <div class="logo_container" style="margin-right: 20px;">
                                 <div class="logo"><a href="{{ url('/') }}"><img
-                                            src="{{ asset('images/ABS.png') }}" alt="" style="height: 60px; width: auto; object-fit: contain;"></a></div>
+                                            src="{{ asset('images/ABSsmall.png') }}" alt="" style="height: px; width: auto; object-fit: contain;"></a></div>
                             </div>
                             <div class="main_nav_container ml-auto" style="margin-right: 150px">
                                 <ul class="main_nav_list">
@@ -206,7 +206,7 @@
                     <div class="menu_close"></div>
                 </div>
                 <div class="logo menu_logo">
-                    <a href="#"><img src="{{ asset('images/ABS2.png') }}" alt=""
+                    <a href="#"><img src="{{ asset('images/ABS.png') }}" alt=""
                             style="height: 270px !important; width: 250px !important; object-fit: contain !important;"></a>
                 </div>
                 <ul>
@@ -239,7 +239,7 @@
                             <div class="footer_content footer_about">
                                 <div class="logo_container footer_logo">
                                     <div class="logo"><a href="{{ url('/') }}"><img
-                                                src={{ asset('images/ABS2.png') }} height="100" class="rounded"
+                                                src={{ asset('images/ABS.png') }} height="100" class="rounded"
                                                 alt=""></a></div>
                                 </div>
                                 <p class="footer_about_text" style="padding-top: 20px; text-align: justify">Discover
