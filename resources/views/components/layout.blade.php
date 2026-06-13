@@ -20,7 +20,7 @@
     <link rel="stylesheet" type="text/css" href={{ asset('plugins/OwlCarousel2-2.2.1/animate.css') }}>
     <link rel="stylesheet" type="text/css" href={{ asset('styles/main_styles.css') }}>
     <link rel="stylesheet" type="text/css" href={{ asset('styles/responsive.css') }}>
-    <link rel="shortcut icon" type="image/x-icon" href={{ asset('images/Sbs.png') }}>
+    <link rel="shortcut icon" type="image/x-icon" href={{ asset('images/ABSsmall.png') }}>
 
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
@@ -202,7 +202,7 @@
                     <div class="menu_close"></div>
                 </div>
                 <div class="logo menu_logo">
-                    <a href="#"><img src="{{ asset('images/Sbs.png') }}" alt=""
+                    <a href="#"><img src="{{ asset('images/ABS2.png') }}" alt=""
                             style="height: 270px !important; width: 250px !important; object-fit: contain !important;"></a>
                 </div>
                 <ul>
@@ -235,7 +235,7 @@
                             <div class="footer_content footer_about">
                                 <div class="logo_container footer_logo">
                                     <div class="logo"><a href="{{ url('/') }}"><img
-                                                src={{ asset('images/Sbs.png') }} height="100" class="rounded"
+                                                src={{ asset('images/ABS2.png') }} height="100" class="rounded"
                                                 alt=""></a></div>
                                 </div>
                                 <p class="footer_about_text" style="padding-top: 20px; text-align: justify">Discover

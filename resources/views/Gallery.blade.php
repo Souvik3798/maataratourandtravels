@@ -52,6 +52,51 @@
             opacity: 0;
             pointer-events: none;
         }
+
+        .video-modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+        .video-modal.active {
+            display: flex;
+        }
+        .video-modal-content {
+            position: relative;
+            max-width: 90vw;
+            max-height: 90vh;
+            cursor: default;
+        }
+        .video-modal-content video {
+            width: 100%;
+            height: auto;
+            max-height: 85vh;
+            display: block;
+            border-radius: 4px;
+        }
+        .video-modal-close {
+            position: absolute;
+            top: -40px;
+            right: 0;
+            color: #fff;
+            font-size: 30px;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 5px;
+            line-height: 1;
+        }
+        .video-modal-close:hover {
+            opacity: 0.7;
+        }
     </style>
 
     <div class="home">
@@ -93,30 +138,47 @@
         </div>
     </div>
 
+    <div class="video-modal" id="videoModal">
+        <div class="video-modal-content">
+            <button class="video-modal-close" id="modalCloseBtn">&times;</button>
+            <video id="modalVideo" controls playsinline></video>
+        </div>
+    </div>
+
     <script>
+        var modal = document.getElementById('videoModal');
+        var modalVideo = document.getElementById('modalVideo');
+        var modalCloseBtn = document.getElementById('modalCloseBtn');
+
         document.querySelectorAll('.gallery-item').forEach(function(item) {
-            var video = item.querySelector('video');
             var playBtn = item.querySelector('.play-btn');
+            var videoUrl = item.getAttribute('data-video');
 
             playBtn.addEventListener('click', function(e) {
                 e.stopPropagation();
-                video.play();
-                item.classList.add('playing');
+                modalVideo.src = videoUrl;
+                modal.classList.add('active');
+                modalVideo.play();
             });
+        });
 
-            video.addEventListener('click', function() {
-                if (video.paused) {
-                    video.play();
-                    item.classList.add('playing');
-                } else {
-                    video.pause();
-                    item.classList.remove('playing');
-                }
-            });
+        function closeModal() {
+            modal.classList.remove('active');
+            modalVideo.pause();
+            modalVideo.src = '';
+        }
 
-            video.addEventListener('ended', function() {
-                item.classList.remove('playing');
-            });
+        modalCloseBtn.addEventListener('click', function(e) {
+            e.stopPropagation();
+            closeModal();
+        });
+
+        modal.addEventListener('click', function() {
+            closeModal();
+        });
+
+        modal.querySelector('.video-modal-content').addEventListener('click', function(e) {
+            e.stopPropagation();
         });
     </script>
 
