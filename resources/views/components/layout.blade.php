@@ -178,7 +178,7 @@
                         <div class="col main_nav_col d-flex flex-row align-items-center justify-content-start">
                             <div class="logo_container" style="margin-right: 20px;">
                                 <div class="logo"><a href="{{ url('/') }}"><img
-                                            src="{{ asset('images/ABSsmall.png') }}" alt="" style="height: px; width: auto; object-fit: contain;"></a></div>
+                                            src="{{ asset('images/ABS.png') }}" alt="" style="height: 100px; width: auto; object-fit: contain; border-radius: 50%;"></a></div>
                             </div>
                             <div class="main_nav_container ml-auto" style="margin-right: 150px">
                                 <ul class="main_nav_list">
