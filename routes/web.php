@@ -24,5 +24,7 @@ Route::get('about/', function () {
 Route::get('contact/', function () {
     return view('Contact');
 });
-
+Route::get('gallery/', function () {
+    return view('Gallery');
+});
 Route::post('send/',[Contact::class,'send']);
